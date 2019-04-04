@@ -6,9 +6,6 @@ import java.time.LocalDate;
 import java.util.List;
 
 public interface MealItemDao extends CrudDao <MealItem> {
-    List<MealItem> getMenu(int userId, LocalDate chosenDate);
+    MealItem getItem(String name);
 
-    MealItem getTotalsByMealType(Integer userId, LocalDate date, Integer mealTypeId);
-
-    MealItem getTotals(Integer userId, LocalDate date);
 }

@@ -6,8 +6,8 @@ import java.util.Objects;
 public class MealItem implements Serializable {
     private Integer mealItemId;
     private String name;
-    private Float fats;
     private Integer calories;
+    private Float fats;
     private Float proteins;
     private Float carbs;
 
@@ -30,6 +30,30 @@ public class MealItem implements Serializable {
         this.proteins = proteins;
         this.carbs = carbs;
     }
+
+    public Integer getMealItemId() { return mealItemId; }
+
+    public void setMealItemId(Integer mealItemId) { this.mealItemId = mealItemId; }
+
+    public String getName() { return name; }
+
+    public void setName(String name) { this.name = name; }
+
+    public Integer getCalories() { return calories; }
+
+    public void setCalories(Integer calories) { this.calories = calories; }
+
+    public Float getFats() { return fats; }
+
+    public void setFats(Float fats) { this.fats = fats; }
+
+    public Float getProteins() { return proteins; }
+
+    public void setProteins(Float proteins) { this.proteins = proteins; }
+
+    public Float getCarbs() { return carbs; }
+
+    public void setCarbs(Float carbs) { this.carbs = carbs; }
 
     @Override
     public boolean equals(Object o) {
