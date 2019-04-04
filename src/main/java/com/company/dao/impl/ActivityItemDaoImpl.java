@@ -3,6 +3,7 @@ package com.company.dao.impl;
 import com.company.dao.connection.ConnectionPool;
 import com.company.dao.interfaces.ActivityItemDao;
 import com.company.model.ActivityItem;
+import com.company.utils.QueryManager;
 import org.apache.log4j.LogManager;
 import org.apache.log4j.Logger;
 
@@ -18,7 +19,7 @@ public class ActivityItemDaoImpl extends CrudDaoImpl<ActivityItem> implements Ac
 
     private String SELECT_ALL_ACTIVITIES = QueryManager.getProperty("activitySelectAll");
     private String SELECT_ACTIVITY_ITEM_BY_NAME = QueryManager.getProperty("activitySelectByName");
-    private String INSERT_ACTIVITY_ITEM = QueryManager.getProperty("activityInsertProperty");
+    private String INSERT_ACTIVITY_ITEM = QueryManager.getProperty("activityInsertItem");
 
     @Override
     public List<ActivityItem> getAll() {
@@ -73,12 +74,12 @@ public class ActivityItemDaoImpl extends CrudDaoImpl<ActivityItem> implements Ac
 
         try (Connection connection = ConnectionPool.getConnection();
              PreparedStatement statement = connection.prepareStatement(INSERT_ACTIVITY_ITEM)) {
-             statement.setString(1, activityItem.getName());
-             statement.setInt(2, activityItem.getCalories());
+            statement.setString(1, activityItem.getName());
+            statement.setInt(2, activityItem.getCalories());
 
-             logger.info("Query is: " + statement.toString());
-             resultAdd = statement.executeUpdate();
-             if (resultAdd > 1) {
+            logger.info("Query is: " + statement.toString());
+            resultAdd = statement.executeUpdate();
+            if (resultAdd > 1) {
                 logger.info("Activity item was not added");
             }
         } catch (SQLException e) {

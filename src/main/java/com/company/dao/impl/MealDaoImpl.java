@@ -4,6 +4,7 @@ import com.company.dao.connection.ConnectionPool;
 import com.company.dao.interfaces.MealDao;
 import com.company.model.Meal;
 import com.company.model.MealToDisplay;
+import com.company.utils.QueryManager;
 import com.sun.org.apache.regexp.internal.RE;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;

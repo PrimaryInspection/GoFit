@@ -4,6 +4,7 @@ import com.company.dao.connection.ConnectionPool;
 import com.company.dao.interfaces.ActivityDao;
 import com.company.model.Activity;
 import com.company.model.ActivityToDisplay;
+import com.company.utils.QueryManager;
 import org.apache.log4j.LogManager;
 import org.apache.log4j.Logger;
 
