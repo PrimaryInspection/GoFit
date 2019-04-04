@@ -6,8 +6,8 @@ import java.util.Objects;
 
 public class Activity implements Serializable {
     private Integer activityId;
-    private Integer activityItemId;
     private Integer userId;
+    private Integer activityItemId;
     private Integer timeSpent;
     private LocalDate date;
 

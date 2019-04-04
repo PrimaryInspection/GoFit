@@ -9,13 +9,13 @@ public class Meal implements Serializable {
     private Integer userId;
     private Integer mealTypeId;
     private Integer mealItemId;
-    private Float weight;
+    private Integer weight;
     private LocalDate date;
 
     public Meal() {
     }
 
-    public Meal(Integer userId, Integer mealTypeId, Integer mealItemId, Float weight, LocalDate date) {
+    public Meal(Integer userId, Integer mealTypeId, Integer mealItemId, Integer weight, LocalDate date) {
         this.userId = userId;
         this.mealTypeId = mealTypeId;
         this.mealItemId = mealItemId;
@@ -23,7 +23,7 @@ public class Meal implements Serializable {
         this.date = date;
     }
 
-    public Meal(Integer mealId, Integer userId, Integer mealTypeId, Integer mealItemId, Float weight, LocalDate date) {
+    public Meal(Integer mealId, Integer userId, Integer mealTypeId, Integer mealItemId, Integer weight, LocalDate date) {
         this.mealId = mealId;
         this.userId = userId;
         this.mealTypeId = mealTypeId;
@@ -64,11 +64,11 @@ public class Meal implements Serializable {
         this.mealItemId = mealItemId;
     }
 
-    public Float getWeight() {
+    public Integer getWeight() {
         return weight;
     }
 
-    public void setWeight(Float weight) {
+    public void setWeight(Integer weight) {
         this.weight = weight;
     }
 
