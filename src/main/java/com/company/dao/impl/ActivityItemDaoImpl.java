@@ -28,15 +28,15 @@ public class ActivityItemDaoImpl extends CrudDaoImpl<ActivityItem> implements Ac
         try (Connection connection = ConnectionPool.getConnection();
              PreparedStatement statement = connection.prepareStatement(SELECT_ALL_ACTIVITIES);
              ResultSet resultSet = statement.executeQuery()) {
-            logger.info("Query: " + statement.toString());
+            logger.info("Executing query: " + statement.toString());
             while (resultSet.next()) {
                 activities.add(new ActivityItem(
-                        resultSet.getInt("activity_item_id"),
+                        resultSet.getInt("id"),
                         resultSet.getString("name"),
                         resultSet.getInt("calories")));
             }
         } catch (SQLException e) {
-            logger.error("Error in 'get all Activities' method", e.getCause());
+            logger.error("Error in 'get all Activities' from DB, cause: ", e.getCause());
         }
         return activities;
     }
@@ -53,7 +53,7 @@ public class ActivityItemDaoImpl extends CrudDaoImpl<ActivityItem> implements Ac
                 logger.info("Query: " + statement.toString());
                 if (resultSet.next()) {
                     activityItem = new ActivityItem(
-                            resultSet.getInt("activity_item_id"),
+                            resultSet.getInt("id"),
                             resultSet.getString("name"),
                             resultSet.getInt("calories")
                     );
@@ -62,7 +62,7 @@ public class ActivityItemDaoImpl extends CrudDaoImpl<ActivityItem> implements Ac
                 }
             }
         } catch (SQLException e) {
-            logger.error("Error in getting activity item with name=" + name, e.getCause());
+            logger.error("Error in getting 'activity item' with name=" + name, e.getCause());
         }
         return activityItem;
     }
@@ -77,13 +77,13 @@ public class ActivityItemDaoImpl extends CrudDaoImpl<ActivityItem> implements Ac
             statement.setString(1, activityItem.getName());
             statement.setInt(2, activityItem.getCalories());
 
-            logger.info("Query is: " + statement.toString());
+            logger.info("Executing query is: " + statement.toString());
             resultAdd = statement.executeUpdate();
             if (resultAdd > 1) {
-                logger.info("Activity item was not added");
+                logger.info("'Activity item was not added");
             }
         } catch (SQLException e) {
-            logger.error("Error in adding activity", e.getCause());
+            logger.error("Error in adding 'activity item' to DB, cause: ", e.getCause());
         }
         return resultAdd > 0;
     }

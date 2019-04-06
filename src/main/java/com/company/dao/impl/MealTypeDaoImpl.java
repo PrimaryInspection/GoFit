@@ -17,7 +17,7 @@ import java.util.List;
 public class MealTypeDaoImpl extends CrudDaoImpl<MealType> implements MealTypeDao {
     private static final Logger logger= LogManager.getLogger(MealItemDaoImpl.class);
 
-    private String SELECT_ALL_TYPES= QueryManager.getProperty("mealTypeSelectAll");
+    private String SELECT_ALL_TYPES= QueryManager.getProperty("mealTypesSelectAll");
 
     @Override
     public List<MealType> getAll() {
@@ -36,7 +36,7 @@ public class MealTypeDaoImpl extends CrudDaoImpl<MealType> implements MealTypeDa
             }
 
         } catch (SQLException e) {
-            logger.error("Error in getting all meal types :" + e.getCause());
+            logger.error("Error in getting all meal types, cause: " + e.getCause());
         }
         return mealTypes;
     }

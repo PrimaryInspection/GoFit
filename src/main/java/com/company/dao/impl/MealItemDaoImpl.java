@@ -30,19 +30,19 @@ public class MealItemDaoImpl extends CrudDaoImpl<MealItem> implements MealItemDa
         try (Connection connection = ConnectionPool.getConnection();
              PreparedStatement statement = connection.prepareStatement(SELECT_ALL_MEAL_ITEM);
              ResultSet resultSet = statement.executeQuery()) {
-            logger.info("Query: " + statement.toString());
+            logger.info("Executing query: " + statement.toString());
             while (resultSet.next()) {
                 mealItems.add(new MealItem(
                         resultSet.getInt("id"),
                         resultSet.getString("name"),
-                        resultSet.getFloat("fat"),
+                        resultSet.getFloat("fats"),
                         resultSet.getInt("calories"),
-                        resultSet.getFloat("protein"),
+                        resultSet.getFloat("proteins"),
                         resultSet.getFloat("carbs")
                 ));
             }
         } catch (SQLException e) {
-            logger.error("Error in 'get all Activities' method", e.getCause());
+            logger.error("Error in 'get all Activities' from DB, cause: ", e.getCause());
         }
         return mealItems;
     }
@@ -55,14 +55,14 @@ public class MealItemDaoImpl extends CrudDaoImpl<MealItem> implements MealItemDa
             statement.setInt(1, id);
 
             try (ResultSet resultSet = statement.executeQuery()) {
-                logger.info("Query: " + statement.toString());
+                logger.info("Executing query: " + statement.toString());
                 if (resultSet.next()) {
                     mealItem = new MealItem(
                             resultSet.getInt("id"),
                             resultSet.getString("name"),
-                            resultSet.getFloat("fat"),
+                            resultSet.getFloat("fats"),
                             resultSet.getInt("calories"),
-                            resultSet.getFloat("protein"),
+                            resultSet.getFloat("proteins"),
                             resultSet.getFloat("carbs")
 
                     );
@@ -70,7 +70,7 @@ public class MealItemDaoImpl extends CrudDaoImpl<MealItem> implements MealItemDa
                 }
             }
         } catch (SQLException e) {
-            logger.info("Error in get item by id: " + id, e.getCause());
+            logger.info("Error in 'get item by id' :" + id + " cause: ", e.getCause());
         }
         return mealItem;
     }
@@ -91,7 +91,7 @@ public class MealItemDaoImpl extends CrudDaoImpl<MealItem> implements MealItemDa
                 logger.info("Meal item was not added");
             }
         } catch (SQLException e) {
-            logger.info("Error in  adding meal item :" + e.getCause());
+            logger.info("Error in  'adding meal item', cause: " + e.getCause());
         }
         return resultAdd > 0;
     }
@@ -108,7 +108,7 @@ public class MealItemDaoImpl extends CrudDaoImpl<MealItem> implements MealItemDa
                 logger.info("Meal item was not deleted.");
             }
         } catch (SQLException e) {
-            logger.error("Error in deleting meal item with id:" + id + ", " + e.getCause());
+            logger.error("Error in 'deleting meal item with id:" + id + ",cause  " , e.getCause());
         }
         return resultDelete > 0;
     }
@@ -121,14 +121,14 @@ public class MealItemDaoImpl extends CrudDaoImpl<MealItem> implements MealItemDa
             statement.setString(1, name);
 
             try (ResultSet resultSet = statement.executeQuery()) {
-                logger.info("Query: " + statement.toString());
+                logger.info("Executing query: " + statement.toString());
                 if (resultSet.next()) {
                     mealItem = new MealItem(
                             resultSet.getInt("id"),
                             resultSet.getString("name"),
-                            resultSet.getFloat("fat"),
+                            resultSet.getFloat("fats"),
                             resultSet.getInt("calories"),
-                            resultSet.getFloat("protein"),
+                            resultSet.getFloat("proteins"),
                             resultSet.getFloat("carbs")
 
                     );
@@ -136,7 +136,7 @@ public class MealItemDaoImpl extends CrudDaoImpl<MealItem> implements MealItemDa
                 }
             }
         } catch (SQLException e) {
-            logger.info("Error in get item by name: " + name, e.getCause());
+            logger.info("Error in 'get item by name': " + name + ",cause: ", e.getCause());
         }
         return mealItem;
     }

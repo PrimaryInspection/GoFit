@@ -7,16 +7,16 @@ import com.company.dao.interfaces.*;
 
 public class DaoFactory {
 
-    public static ActivityDao getActivities(){ return new ActivityDaoImpl(); }
+    public static ActivityDao getActivityMethods(){ return new ActivityDaoImpl(); }
 
-    public static ActivityItemDao getActivityitems(){return new ActivityItemDaoImpl();}
+    public static ActivityItemDao getActivityItemMethods(){return new ActivityItemDaoImpl();}
 
-    public static MealDao getMeals(){return new MealDaoImpl();}
+    public static MealDao getMealMethods(){return new MealDaoImpl();}
 
-    public static MealItemDao getMealItems(){return new MealItemDaoImpl();}
+    public static MealItemDao getMealItemMethods(){return new MealItemDaoImpl();}
 
-    public static MealTypeDao getMealTypes(){return new MealTypeDaoImpl();}
+    public static MealTypeDao getMealTypeMethods(){return new MealTypeDaoImpl();}
 
-    public static UserDao getUsers(){return new UserDaoImpl();}
+    public static UserDao getUserMethods(){return new UserDaoImpl();}
 
 }

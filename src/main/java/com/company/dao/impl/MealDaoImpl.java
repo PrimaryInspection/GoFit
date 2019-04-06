@@ -31,7 +31,7 @@ public class MealDaoImpl extends CrudDaoImpl<Meal> implements MealDao {
              PreparedStatement statement = connection.prepareStatement(SELECT_MEAL_BY_USER_ID)) {
             statement.setInt(1, userId);
             statement.setDate(2, Date.valueOf(chosenDate));
-            logger.info("Executing statement: " + statement.toString());
+            logger.info("Executing query: " + statement.toString());
             try (ResultSet resultSet = statement.executeQuery()) {
                 while (resultSet.next()) {
                     menu.add(new MealToDisplay(
@@ -40,16 +40,16 @@ public class MealDaoImpl extends CrudDaoImpl<Meal> implements MealDao {
                             resultSet.getString("prod"),
                             resultSet.getFloat("weight"),
                             resultSet.getInt("calories"),
-                            resultSet.getFloat("protein"),
-                            resultSet.getFloat("fat"),
+                            resultSet.getFloat("proteins"),
+                            resultSet.getFloat("fats"),
                             resultSet.getFloat("carbs")
                     ));
                 }
-                logger.info("Menu: " + menu.toString() + "was got");
+                logger.info("Executed Menu: " + menu.toString() + "was got");
             }
 
         } catch (SQLException e) {
-            logger.error("Error in getting menu from data base" + e.getCause());
+            logger.error("Error in getting 'menu' from DB, cause: " + e.getCause());
         }
         return menu;
 
@@ -65,12 +65,13 @@ public class MealDaoImpl extends CrudDaoImpl<Meal> implements MealDao {
             statement.setDate(2, Date.valueOf(date));
             statement.setInt(3, mealTypeId);
             try (ResultSet resultSet = statement.executeQuery()) {
+                logger.info("Executing query: " + statement.toString());
                 if (resultSet.next()) {
                     totalsMeal = new MealToDisplay(
                             resultSet.getFloat("weight"),
                             resultSet.getInt("calories"),
-                            resultSet.getFloat("protein"),
-                            resultSet.getFloat("fat"),
+                            resultSet.getFloat("proteins"),
+                            resultSet.getFloat("fats"),
                             resultSet.getFloat("carbs")
                     );
 
@@ -78,7 +79,7 @@ public class MealDaoImpl extends CrudDaoImpl<Meal> implements MealDao {
                 logger.info("Total Meals by type :" + totalsMeal + "was got");
             }
         } catch (SQLException e) {
-            logger.error("Error in getting total value by  meal type  from DB", e.getCause());
+            logger.error("Error in getting 'total value by  meal type'  from DB, cause: ", e.getCause());
         }
         return totalsMeal;
     }
@@ -92,19 +93,20 @@ public class MealDaoImpl extends CrudDaoImpl<Meal> implements MealDao {
             statement.setInt(1, userId);
             statement.setDate(2, Date.valueOf(date));
             try (ResultSet resultSet = statement.executeQuery()) {
+                logger.info("Executing query: " + statement.toString());
                 if (resultSet.next()) {
                     totalsMealDay = new MealToDisplay(
                             resultSet.getFloat("weight"),
                             resultSet.getInt("calories"),
-                            resultSet.getFloat("protein"),
-                            resultSet.getFloat("fat"),
+                            resultSet.getFloat("proteins"),
+                            resultSet.getFloat("fats"),
                             resultSet.getFloat("carbs")
                     );
                 }
-                logger.info("Get total day meal :" + resultSet.toString());
+                logger.info("Get total day meal :" + resultSet.toString() + "was got");
             }
         } catch (SQLException e) {
-            logger.info("Error in getting totals day meal from database", e.getCause());
+            logger.info("Error in getting 'totals day meal' from DB, cause: ", e.getCause());
         }
         return totalsMealDay;
     }
@@ -119,11 +121,11 @@ public class MealDaoImpl extends CrudDaoImpl<Meal> implements MealDao {
             statement.setInt(3, newMeal.getWeight());
             statement.setInt(4, newMeal.getMealTypeId());
             statement.setDate(5, Date.valueOf(newMeal.getDate()));
-            logger.info("Executing statement :" + statement.toString());
+            logger.info("Executing query :" + statement.toString());
             resultInsert = statement.executeUpdate();
             logger.info("Result set of adding :" + resultInsert);
         } catch (SQLException e) {
-            logger.error("Error in adding new meal to DB", e.getCause());
+            logger.error("Error in adding new meal to DB, cause: ", e.getCause());
         }
         return resultInsert > 0;
     }
@@ -134,11 +136,11 @@ public class MealDaoImpl extends CrudDaoImpl<Meal> implements MealDao {
         try (Connection connection = ConnectionPool.getConnection();
              PreparedStatement statement = connection.prepareStatement(DELETE_MEAL)) {
             statement.setInt(1, id);
-            logger.info("Executing request: " + statement.toString());
+            logger.info("Executing query: " + statement.toString());
             resultDelete = statement.executeUpdate();
             logger.info("Result set of adding = " + resultDelete);
         } catch (SQLException e) {
-            logger.error("Error in deleting 'MealDiary entry' from DB", e.getCause());
+            logger.error("Error in deleting 'Meal by id' from DB, cause", e.getCause());
         }
         return resultDelete > 0;
     }

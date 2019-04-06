@@ -17,7 +17,7 @@ public class User implements Serializable {
     private Integer height;
     private Integer calories_norm;
     private String lifestyle;
-    private String role;
+
 
     public User() {
     }
@@ -28,7 +28,7 @@ public class User implements Serializable {
      * */
     public User(String firstName, String secondName, String login, String password, String email,
                 LocalDate birthday, Float weight, Float weightGoal, Integer height, Integer calories_norm,
-                String lifestyle, String role) {
+                String lifestyle) {
         this.firstName = firstName;
         this.secondName = secondName;
         this.login = login;
@@ -40,7 +40,7 @@ public class User implements Serializable {
         this.height = height;
         this.calories_norm = calories_norm;
         this.lifestyle = lifestyle;
-        this.role = role;
+
     }
 
     /**
@@ -48,7 +48,7 @@ public class User implements Serializable {
      * */
     public User(Integer userId, String firstName, String secondName, String login, String password,
                 String email, LocalDate birthday, Float weight, Float weightGoal, Integer height,
-                Integer calories_norm, String lifestyle, String role) {
+                Integer calories_norm, String lifestyle) {
         this.userId = userId;
         this.firstName = firstName;
         this.secondName = secondName;
@@ -61,7 +61,7 @@ public class User implements Serializable {
         this.height = height;
         this.calories_norm = calories_norm;
         this.lifestyle = lifestyle;
-        this.role = role;
+
     }
 
     public Integer getUserId() { return userId; }
@@ -112,10 +112,6 @@ public class User implements Serializable {
 
     public void setLifestyle(String lifestyle) { this.lifestyle = lifestyle; }
 
-    public String getRole() { return role; }
-
-    public void setRole(String role) { this.role = role; }
-
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -132,14 +128,13 @@ public class User implements Serializable {
                 Objects.equals(getWeightGoal(), user.getWeightGoal()) &&
                 Objects.equals(getHeight(), user.getHeight()) &&
                 Objects.equals(getCalories_norm(), user.getCalories_norm()) &&
-                Objects.equals(getLifestyle(), user.getLifestyle()) &&
-                Objects.equals(getRole(), user.getRole());
+                Objects.equals(getLifestyle(), user.getLifestyle());
     }
 
     @Override
     public int hashCode() {
 
-        return Objects.hash(getUserId(), getFirstName(), getSecondName(), getLogin(), getPassword(), getEmail(), getBirthday(), getWeight(), getWeightGoal(), getHeight(), getCalories_norm(), getLifestyle(), getRole());
+        return Objects.hash(getUserId(), getFirstName(), getSecondName(), getLogin(), getPassword(), getEmail(), getBirthday(), getWeight(), getWeightGoal(), getHeight(), getCalories_norm(), getLifestyle());
     }
 
     @Override
@@ -157,7 +152,6 @@ public class User implements Serializable {
                 ", height=" + height +
                 ", calories_norm=" + calories_norm +
                 ", lifestyle='" + lifestyle + '\'' +
-                ", role='" + role + '\'' +
                 '}';
     }
 }

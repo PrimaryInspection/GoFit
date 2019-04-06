@@ -30,11 +30,11 @@ public class ActivityDaoImpl extends CrudDaoImpl<Activity> implements ActivityDa
             statement.setInt(2, activity.getActivityItemId());
             statement.setInt(3, activity.getTimeSpent());
             statement.setDate(4, Date.valueOf(activity.getDate()));
-            logger.info("Executed request" + statement.toString());
+            logger.info("Executing query: " + statement.toString());
             resultInsert = statement.executeUpdate();
             logger.info("Result of adding Activity = " + resultInsert);
         } catch (SQLException e) {
-            logger.error("Error in adding new 'Activity' " + e.getCause());
+            logger.error("Error in adding new 'Activity' , cause: " + e.getCause());
         }
         return resultInsert > 0;
     }
@@ -57,7 +57,7 @@ public class ActivityDaoImpl extends CrudDaoImpl<Activity> implements ActivityDa
                 while (resultSet.next()) {
                     listOfActivities.add(new ActivityToDisplay(
                             resultSet.getInt("id"),
-                            resultSet.getString("activity_name"),
+                            resultSet.getString("activity"),
                             resultSet.getInt("time_spent"),
                             resultSet.getInt("calories")
                     ));
@@ -70,7 +70,7 @@ public class ActivityDaoImpl extends CrudDaoImpl<Activity> implements ActivityDa
                 logger.debug("@@@@@@@@@@@@@@@@@@" + a);
             }
         } catch (SQLException e) {
-            logger.error("Error in getting 'list of activities' from database", e.getCause());
+            logger.error("Error in getting 'list of activities' DB, cause: ", e.getCause());
         }
         return listOfActivities;
     }
@@ -94,7 +94,7 @@ public class ActivityDaoImpl extends CrudDaoImpl<Activity> implements ActivityDa
                 }
             }
         } catch (SQLException e) {
-            logger.error("Error in getting totals activities from database" + e.getCause());
+            logger.error("Error in getting totals activities from database, cause: " + e.getCause());
         }
         return totals;
     }
@@ -109,7 +109,7 @@ public class ActivityDaoImpl extends CrudDaoImpl<Activity> implements ActivityDa
             resultDelete = statement.executeUpdate();
             logger.info("Result set of deleting = " + resultDelete);
         } catch (SQLException e) {
-            logger.error("Error in deleting activity from DB" + e.getCause());
+            logger.error("Error in deleting activity from DB, cause: " + e.getCause());
         }
         return resultDelete > 0;
     }
