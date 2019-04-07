@@ -7,12 +7,11 @@
   <title>Title</title>
 </head>
 <body >
-<h1>MEAL ITEMS ${meal} </h1>
-<form method="get" action="CarServlet">
+<form method="get" action="MainServlet">
   <h1 align="center">GoFit</h1>
+    ${meal}
   <table border="1" cellpadding="30%" align="center" bordercolor="red">
-    <h1>MEAL ITEMS ${meal} </h1>
-    <tr>
+      <tr>
       <th>№</th>
       <th>Name</th>
       <th>Fats</th>
@@ -23,8 +22,14 @@
 
     <c:forEach var="mealItems"  items="${meal}">
       <tr>
-        <td>${mealItems}</td>
-
+          <td>${mealItems}</td>
+          <td>${meal}</td>
+          <td>${mealItems.id}</td>
+          <td>${mealItems.name}</td>
+          <td>${mealItems.fats}</td>
+          <td>${mealItems.calories}</td>
+          <td>${mealItems.proteins}</td>
+          <td>${mealItems.carbs}</td>
       </tr>
     </c:forEach>
 

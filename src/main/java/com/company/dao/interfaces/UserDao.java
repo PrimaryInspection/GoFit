@@ -9,5 +9,7 @@ public interface UserDao extends CrudDao<User>{
 
     List<User> getAll(int limit, int offset);
 
+    boolean updateStatus(User user);
+
     int getUsersCount();
 }

@@ -17,6 +17,7 @@ public class User implements Serializable {
     private Integer height;
     private Integer calories_norm;
     private String lifestyle;
+    private String status;
 
 
     public User() {
@@ -41,6 +42,7 @@ public class User implements Serializable {
         this.calories_norm = calories_norm;
         this.lifestyle = lifestyle;
 
+
     }
 
     /**
@@ -48,7 +50,7 @@ public class User implements Serializable {
      * */
     public User(Integer userId, String firstName, String secondName, String login, String password,
                 String email, LocalDate birthday, Float weight, Float weightGoal, Integer height,
-                Integer calories_norm, String lifestyle) {
+                Integer calories_norm, String lifestyle , String status) {
         this.userId = userId;
         this.firstName = firstName;
         this.secondName = secondName;
@@ -61,8 +63,13 @@ public class User implements Serializable {
         this.height = height;
         this.calories_norm = calories_norm;
         this.lifestyle = lifestyle;
+        this.status=status;
 
     }
+
+    public String getStatus() { return status; }
+
+    public void setStatus(String status) { this.status = status; }
 
     public Integer getUserId() { return userId; }
 
@@ -128,13 +135,14 @@ public class User implements Serializable {
                 Objects.equals(getWeightGoal(), user.getWeightGoal()) &&
                 Objects.equals(getHeight(), user.getHeight()) &&
                 Objects.equals(getCalories_norm(), user.getCalories_norm()) &&
-                Objects.equals(getLifestyle(), user.getLifestyle());
+                Objects.equals(getLifestyle(), user.getLifestyle()) &&
+                Objects.equals(getStatus() , user.getStatus());
     }
 
     @Override
     public int hashCode() {
 
-        return Objects.hash(getUserId(), getFirstName(), getSecondName(), getLogin(), getPassword(), getEmail(), getBirthday(), getWeight(), getWeightGoal(), getHeight(), getCalories_norm(), getLifestyle());
+        return Objects.hash(getUserId(), getFirstName(), getSecondName(), getLogin(), getPassword(), getEmail(), getBirthday(), getWeight(), getWeightGoal(), getHeight(), getCalories_norm(), getLifestyle(),getStatus());
     }
 
     @Override
@@ -152,6 +160,7 @@ public class User implements Serializable {
                 ", height=" + height +
                 ", calories_norm=" + calories_norm +
                 ", lifestyle='" + lifestyle + '\'' +
+                ", status='" + status + '\'' +
                 '}';
     }
 }

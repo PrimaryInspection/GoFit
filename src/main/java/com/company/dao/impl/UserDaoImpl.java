@@ -22,6 +22,8 @@ public class UserDaoImpl extends CrudDaoImpl<User> implements UserDao {
     private static final String UPDATE_USER = QueryManager.getProperty("userUpdate");
     private static final String SELECT_COUNT_USERS = QueryManager.getProperty("userSelectCount");
     private static final String DELETE_USER = QueryManager.getProperty("userDeleteById");
+    private static final String UPDATE_STATUS_ID = QueryManager.getProperty("userUpdateStatusId");
+
 
     @Override
     public List<User> getAll() {
@@ -42,8 +44,10 @@ public class UserDaoImpl extends CrudDaoImpl<User> implements UserDao {
                         resultSet.getFloat("weight"),
                         resultSet.getFloat("weight_goal"),
                         resultSet.getInt("height"),
-                        resultSet.getInt("calorie_norm"),
-                        resultSet.getString("lifestyle_id")
+                        resultSet.getInt("calories_norm"),
+                        resultSet.getString("lifestyle_id"),
+                        resultSet.getString("status")
+
                 ));
 
             }
@@ -51,6 +55,27 @@ public class UserDaoImpl extends CrudDaoImpl<User> implements UserDao {
             logger.error("Error in 'getting all users' from DB, cause: " + e.getCause());
         }
         return users;
+    }
+
+    @Override
+    public boolean updateStatus(User user) {
+        int resultUpdate = 0;
+        try (Connection connection = ConnectionPool.getConnection();
+             PreparedStatement statement = connection.prepareStatement(UPDATE_STATUS_ID)
+        ) {
+            statement.setString(1, user.getStatus());
+            statement.setInt(2, user.getUserId());
+
+
+            logger.info("Executing query: " + statement.toString());
+            resultUpdate = statement.executeUpdate();
+            if (resultUpdate < 1) {
+                logger.info("User statusId was not updated.");
+            }
+        } catch (SQLException e) {
+            logger.error("Error in updating user statusId", e.getCause());
+        }
+        return resultUpdate > 0;
     }
 
     @Override
@@ -73,8 +98,9 @@ public class UserDaoImpl extends CrudDaoImpl<User> implements UserDao {
                             resultSet.getFloat("weight"),
                             resultSet.getFloat("weight_goal"),
                             resultSet.getInt("height"),
-                            resultSet.getInt("calorie_norm"),
-                            resultSet.getString("lifestyle_id")
+                            resultSet.getInt("calories_norm"),
+                            resultSet.getString("lifestyle_id"),
+                            resultSet.getString("status")
                     );
                 }
             }
@@ -178,8 +204,9 @@ public class UserDaoImpl extends CrudDaoImpl<User> implements UserDao {
                             resultSet.getFloat("weight"),
                             resultSet.getFloat("weight_goal"),
                             resultSet.getInt("height"),
-                            resultSet.getInt("calorie_norm"),
-                            resultSet.getString("lifestyle_id"));
+                            resultSet.getInt("calories_norm"),
+                            resultSet.getString("lifestyle_id"),
+                            resultSet.getString("status"));
                 } else {
                     logger.info("No user with login=" + login + " found");
                 }
@@ -212,8 +239,9 @@ public class UserDaoImpl extends CrudDaoImpl<User> implements UserDao {
                             resultSet.getFloat("weight"),
                             resultSet.getFloat("goal_weight"),
                             resultSet.getInt("height"),
-                            resultSet.getInt("calorie_norm"),
-                            resultSet.getString("lifestyle_id")
+                            resultSet.getInt("calories_norm"),
+                            resultSet.getString("lifestyle_id"),
+                            resultSet.getString("status")
 
                     ));
                 }

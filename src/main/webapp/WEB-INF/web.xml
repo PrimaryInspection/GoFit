@@ -5,8 +5,20 @@
          http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
          id="WebApp_ID" version="3.0">
 
+    <display-name>Archetype Created Web Application</display-name>
+
+
+
+    <servlet>
+        <servlet-name>MyServlet</servlet-name>
+        <servlet-class>com.company.servlet.MainServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>MyServlet</servlet-name>
+        <url-pattern>/controller</url-pattern>
+    </servlet-mapping>
+
     <resource-ref>
-        DB Connection
         <res-ref-name>jdbc/appname</res-ref-name>
         <res-type>javax.sql.DataSource</res-type>
         <res-auth>Container</res-auth>
