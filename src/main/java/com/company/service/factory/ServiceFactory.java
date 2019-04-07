@@ -7,7 +7,7 @@ import com.company.service.serviceImpl.*;
 public class ServiceFactory {
     public static IUserService getUserService() { return UserService.getInstance(); }
 
-    public static IMealItemService getProductService() {
+    public static IMealItemService getMealItemService() {
         return MealItemService.getInstance();
     }
 
@@ -23,11 +23,11 @@ public class ServiceFactory {
         return PageService.getInstance();
     }
 
-    public static IActivityService getActivityService() {
-        return ActivityService.getInstance();
+    public static IActivityItemService getActivityItemService() {
+        return ActivityItemService.getInstance();
     }
 
-    public static IActivityItemService getActivityDiaryService() {
-        return ActivityItemService.getInstance();
+    public static IActivityService getActivityService() {
+        return ActivityService.getInstance();
     }
 }

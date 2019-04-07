@@ -7,36 +7,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9dad994f-f91b-4bfe-b233-9303dc09bd41" name="Default" comment="#1 Create entities from MySQL data base&#10;#2 Create DAO layer for entities&#10;#3 Create Connection Pool with Data Source&#10;#4 Create functional for ActivityItemDaoImpl&#10;#5 Create logging using Logj4">
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/company/service/IActivityItemService.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/company/service/IActivityService.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/company/service/ILoginRegistrationService.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/company/service/IMealItemService.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/company/service/IMealTypeService.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/company/service/IMenuService.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/company/service/IPageService.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/company/service/IUserService.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/company/service/command/ActionCommand.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/company/service/command/client/CommandEnum.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/company/service/command/factory/ActionFactory.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/company/service/factory/ServiceFactory.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/company/service/filter/AuthFilter.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/company/service/serviceImpl/ActivityItemService.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/company/service/serviceImpl/ActivityService.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/company/service/serviceImpl/LoginRegistrationService.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/company/service/serviceImpl/MealItemService.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/company/service/serviceImpl/MealTypeService.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/company/service/serviceImpl/MenuService.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/company/service/serviceImpl/PageService.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/company/service/serviceImpl/UserService.java" />
-      <change beforePath="$PROJECT_DIR$/.idea/statistic.xml" afterPath="$PROJECT_DIR$/.idea/statistic.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/company/service/command/commands/AddMealCommand.java" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/dao/impl/UserDaoImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/company/dao/impl/UserDaoImpl.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/dao/interfaces/UserDao.java" afterPath="$PROJECT_DIR$/src/main/java/com/company/dao/interfaces/UserDao.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/model/User.java" afterPath="$PROJECT_DIR$/src/main/java/com/company/model/User.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/servlet/MainServlet.java" afterPath="$PROJECT_DIR$/src/main/java/com/company/servlet/MainServlet.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mysqlQueries.properties" afterPath="$PROJECT_DIR$/src/main/resources/mysqlQueries.properties" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/service/command/ActionCommand.java" afterPath="$PROJECT_DIR$/src/main/java/com/company/service/command/ActionCommand.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/service/command/factory/ActionFactory.java" afterPath="$PROJECT_DIR$/src/main/java/com/company/service/command/factory/ActionFactory.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/service/factory/ServiceFactory.java" afterPath="$PROJECT_DIR$/src/main/java/com/company/service/factory/ServiceFactory.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/service/serviceImpl/PageService.java" afterPath="$PROJECT_DIR$/src/main/java/com/company/service/serviceImpl/PageService.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -71,71 +47,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="UserDaoImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/company/dao/impl/UserDaoImpl.java">
+      <file leaf-file-name="AddMealCommand.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/company/service/command/commands/AddMealCommand.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="24" column="31" lean-forward="false" selection-start-line="24" selection-start-column="31" selection-end-line="24" selection-end-column="31" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="User.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/company/model/User.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="563">
-              <caret line="165" column="1" lean-forward="false" selection-start-line="165" selection-start-column="1" selection-end-line="165" selection-end-column="1" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="web.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="139">
-              <caret line="17" column="23" lean-forward="false" selection-start-line="17" selection-start-column="23" selection-end-line="17" selection-end-column="23" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MainServlet.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/company/servlet/MainServlet.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="25" column="26" lean-forward="false" selection-start-line="25" selection-start-column="26" selection-end-line="25" selection-end-column="26" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MealItem.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/company/model/MealItem.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ServiceFactory.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/company/service/factory/ServiceFactory.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+            <state relative-caret-position="352">
+              <caret line="53" column="16" lean-forward="false" selection-start-line="53" selection-start-column="16" selection-end-line="53" selection-end-column="16" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -143,25 +59,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UserService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/company/service/serviceImpl/UserService.java">
+      <file leaf-file-name="ActivityService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/company/service/serviceImpl/ActivityService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="33">
-              <caret line="74" column="0" lean-forward="false" selection-start-line="74" selection-start-column="0" selection-end-line="74" selection-end-column="0" />
+            <state relative-caret-position="187">
+              <caret line="20" column="18" lean-forward="false" selection-start-line="20" selection-start-column="18" selection-end-line="20" selection-end-column="18" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ActionFactory.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/company/service/command/factory/ActionFactory.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="256">
+              <caret line="23" column="40" lean-forward="false" selection-start-line="23" selection-start-column="40" selection-end-line="23" selection-end-column="40" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#844#845#0" expanded="true" />
-                <element signature="e#885#886#0" expanded="true" />
-                <element signature="e#934#935#0" expanded="true" />
-                <element signature="e#972#973#0" expanded="true" />
-                <element signature="e#1020#1021#0" expanded="true" />
-                <element signature="e#1059#1060#0" expanded="true" />
-                <element signature="e#1462#1463#0" expanded="true" />
-                <element signature="e#1511#1512#0" expanded="true" />
-                <element signature="e#1582#1583#0" expanded="true" />
-                <element signature="e#1633#1634#0" expanded="true" />
-                <element signature="e#1681#1682#0" expanded="true" />
-                <element signature="e#1727#1728#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -170,33 +84,59 @@
       <file leaf-file-name="PageService.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/company/service/serviceImpl/PageService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+            <state relative-caret-position="-216">
+              <caret line="161" column="39" lean-forward="false" selection-start-line="161" selection-start-column="39" selection-end-line="161" selection-end-column="39" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#691#692#0" expanded="true" />
-                <element signature="e#719#720#0" expanded="true" />
+                <element signature="e#810#811#0" expanded="true" />
+                <element signature="e#841#842#0" expanded="true" />
+                <element signature="e#3496#3497#0" expanded="true" />
+                <element signature="e#3527#3528#0" expanded="true" />
+                <element signature="e#3590#3591#0" expanded="true" />
+                <element signature="e#3630#3631#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MenuService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/company/service/serviceImpl/MenuService.java">
+      <file leaf-file-name="IUserService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/company/service/IUserService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="57" column="13" lean-forward="false" selection-start-line="57" selection-start-column="13" selection-end-line="57" selection-end-column="13" />
+            <state relative-caret-position="374">
+              <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="IPageService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/company/service/IPageService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="272">
+              <caret line="17" column="57" lean-forward="false" selection-start-line="17" selection-start-column="57" selection-end-line="17" selection-end-column="57" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ServiceFactory.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/company/service/factory/ServiceFactory.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="202">
+              <caret line="17" column="53" lean-forward="true" selection-start-line="17" selection-start-column="53" selection-end-line="17" selection-end-column="53" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#878#879#0" expanded="true" />
-                <element signature="e#922#923#0" expanded="true" />
-                <element signature="e#1012#1013#0" expanded="true" />
-                <element signature="e#1065#1066#0" expanded="true" />
-                <element signature="e#2966#2967#0" expanded="true" />
-                <element signature="e#3019#3020#0" expanded="true" />
-                <element signature="e#3083#3084#0" expanded="true" />
-                <element signature="e#3128#3129#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Meal.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/company/model/Meal.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17">
+              <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -207,8 +147,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -217,6 +157,7 @@
       <find>id</find>
       <find>offse</find>
       <find>getSta</find>
+      <find>updateFoodTab</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -235,7 +176,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/company/service/command/commands/AddMealCommand.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/company/utils/MessageManager.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/company/service/command/factory/ActionCommand.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/company/service/command/commands/AddNewActivityCommand.java" />
@@ -243,13 +183,11 @@
         <option value="$PROJECT_DIR$/src/main/java/com/company/service/command/client/ActionCommand.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/company/service/command/CommandEnum.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/company/service/ActionCommand.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/company/service/command/ActionCommand.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/company/service/impl/IPageService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/company/service/factory/serviceFactory.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/company/service/impl/PageServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/company/service/IActivityDiaryService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/company/service/command/client/CommandEnum.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/company/service/command/factory/ActionFactory.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/company/dao/impl/ActivityDaoImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/company/dao/impl/ActivityItemDaoImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/company/dao/impl/MealDaoImpl.java" />
@@ -276,16 +214,19 @@
         <option value="$PROJECT_DIR$/src/main/java/com/company/service/serviceImpl/MealTypeService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/company/service/serviceImpl/MealItemService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/company/service/serviceImpl/MenuService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/company/service/serviceImpl/PageService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/company/dao/interfaces/UserDao.java" />
         <option value="$PROJECT_DIR$/src/main/resources/mysqlQueries.properties" />
         <option value="$PROJECT_DIR$/src/main/java/com/company/dao/impl/UserDaoImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/company/service/serviceImpl/UserService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/company/service/factory/ServiceFactory.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/company/model/User.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/src/main/webapp/index.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/company/servlet/MainServlet.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/company/service/command/ActionCommand.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/company/service/factory/ServiceFactory.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/company/service/serviceImpl/PageService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/company/service/command/commands/AddMealCommand.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/company/service/command/factory/ActionFactory.java" />
       </list>
     </option>
   </component>
@@ -374,7 +315,57 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="company" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="GoFit" type="b2602c69:ProjectViewProjectNode" />
+              <item name="GoFit" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="company" type="462c0819:PsiDirectoryNode" />
               <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="GoFit" type="b2602c69:ProjectViewProjectNode" />
+              <item name="GoFit" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="company" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+              <item name="command" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="GoFit" type="b2602c69:ProjectViewProjectNode" />
+              <item name="GoFit" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="company" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+              <item name="command" type="462c0819:PsiDirectoryNode" />
+              <item name="factory" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="GoFit" type="b2602c69:ProjectViewProjectNode" />
+              <item name="GoFit" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="company" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+              <item name="factory" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="GoFit" type="b2602c69:ProjectViewProjectNode" />
+              <item name="GoFit" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="company" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+              <item name="serviceImpl" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="GoFit" type="b2602c69:ProjectViewProjectNode" />
@@ -636,7 +627,7 @@
       <workItem from="1554461912080" duration="123000" />
       <workItem from="1554462078657" duration="9106000" />
       <workItem from="1554545623884" duration="7933000" />
-      <workItem from="1554638208738" duration="10811000" />
+      <workItem from="1554638208738" duration="13804000" />
     </task>
     <task id="LOCAL-00001" summary="#1 Create entities from MySQL data base&#10;#2 Create DAO layer for entities&#10;#3 Create Connection Pool with Data Source&#10;#4 Create functional for ActivityItemDaoImpl&#10;#5 Create logging using Logj4">
       <created>1554323916492</created>
@@ -649,7 +640,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="69253000" />
+    <option name="totallyTimeSpent" value="72246000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -684,7 +675,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17434211" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27609682" sideWeight="0.48039216" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24508321" sideWeight="0.48039216" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26096824" sideWeight="0.51960784" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25718608" sideWeight="0.50980395" order="2" side_tool="true" content_ui="tabs" />
@@ -728,7 +719,6 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/com/company/service/impl/MenuServiceImpl.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/company/service/filter/BlockUserFilter.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/company/service/IActivityDiaryService.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/company/service/command/commands/AddMealCommand.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/company/service/impl/ActivityDiaryServiceImpl.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/company/dao/impl/ActivityItemDaoImpl.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -774,22 +764,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" column="23" lean-forward="false" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/company/service/command/factory/ActionFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="26" lean-forward="false" selection-start-line="2" selection-start-column="26" selection-end-line="2" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/company/service/command/ActionCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="30" lean-forward="false" selection-start-line="2" selection-start-column="30" selection-end-line="2" selection-end-column="30" />
           <folding />
         </state>
       </provider>
@@ -870,26 +844,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/company/service/IPageService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="57" lean-forward="false" selection-start-line="17" selection-start-column="57" selection-end-line="17" selection-end-column="57" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/company/service/IUserService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/company/service/IActivityItemService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
@@ -915,20 +869,6 @@
         <state relative-caret-position="1161">
           <caret line="111" column="69" lean-forward="false" selection-start-line="111" selection-start-column="69" selection-end-line="111" selection-end-column="69" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/company/service/serviceImpl/ActivityService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="18" lean-forward="false" selection-start-line="20" selection-start-column="18" selection-end-line="20" selection-end-column="18" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#831#832#0" expanded="false" />
-            <element signature="e#883#884#0" expanded="false" />
-            <element signature="e#1298#1299#0" expanded="false" />
-            <element signature="e#1347#1348#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -991,14 +931,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/company/model/Meal.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/company/dao/interfaces/UserDao.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
@@ -1012,28 +944,6 @@
         <state relative-caret-position="425">
           <caret line="37" column="56" lean-forward="false" selection-start-line="37" selection-start-column="56" selection-end-line="37" selection-end-column="56" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/company/service/factory/ServiceFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/company/service/serviceImpl/PageService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#691#692#0" expanded="true" />
-            <element signature="e#719#720#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1122,6 +1032,92 @@
         <state relative-caret-position="153">
           <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/company/service/command/ActionCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="47" lean-forward="false" selection-start-line="6" selection-start-column="47" selection-end-line="6" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/company/model/Meal.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/company/service/IUserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/company/service/IPageService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="17" column="57" lean-forward="false" selection-start-line="17" selection-start-column="57" selection-end-line="17" selection-end-column="57" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/company/service/serviceImpl/PageService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-216">
+          <caret line="161" column="39" lean-forward="false" selection-start-line="161" selection-start-column="39" selection-end-line="161" selection-end-column="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#810#811#0" expanded="true" />
+            <element signature="e#841#842#0" expanded="true" />
+            <element signature="e#3496#3497#0" expanded="true" />
+            <element signature="e#3527#3528#0" expanded="true" />
+            <element signature="e#3590#3591#0" expanded="true" />
+            <element signature="e#3630#3631#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/company/service/command/commands/AddMealCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="53" column="16" lean-forward="false" selection-start-line="53" selection-start-column="16" selection-end-line="53" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/company/service/serviceImpl/ActivityService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="20" column="18" lean-forward="false" selection-start-line="20" selection-start-column="18" selection-end-line="20" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/company/service/command/factory/ActionFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="256">
+          <caret line="23" column="40" lean-forward="false" selection-start-line="23" selection-start-column="40" selection-end-line="23" selection-end-column="40" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/company/service/factory/ServiceFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="202">
+          <caret line="17" column="53" lean-forward="true" selection-start-line="17" selection-start-column="53" selection-end-line="17" selection-end-column="53" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
