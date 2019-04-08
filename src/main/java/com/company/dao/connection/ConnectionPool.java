@@ -1,5 +1,7 @@
 package com.company.dao.connection;
 
+import org.apache.tomcat.dbcp.dbcp.BasicDataSource;
+
 import javax.naming.Context;
 import javax.naming.InitialContext;
 import javax.naming.NamingException;
@@ -8,14 +10,14 @@ import java.sql.Connection;
 import java.sql.SQLException;
 
 public class ConnectionPool {
-    private static String DATASOURCE_NAME="jdbc/dbpool";
+    private static String DATASOURCE_NAME="java:comp/env/jdbc/gofit";
     private static volatile DataSource dataSource;
 
     static {
         try {
             Context initContex=new InitialContext();
-            Context context= (Context) initContex.lookup("java:comp/env/jdbc/dbconnect");
-            dataSource= (DataSource) context.lookup(DATASOURCE_NAME);
+            Context context= (Context) initContex.lookup("java:comp/env/");
+            dataSource = (DataSource) context.lookup(DATASOURCE_NAME);
         } catch (NamingException e) {
             e.printStackTrace();
         }
@@ -29,3 +31,26 @@ public class ConnectionPool {
         return connection;
     }
 }
+
+
+
+/*        public static DataSource getDataSource(){
+
+            if (dataSource == null){
+                synchronized (ConnectionPool.class) {
+                    if (dataSource == null) {
+                        BasicDataSource ds = new BasicDataSource();
+                        ds.setUrl("jdbc:mysql://localhost:3306/mystudentdb");
+                        ds.setUsername("root");
+                        ds.setPassword("root");
+                        ds.setMinIdle(5);
+                        ds.setMaxIdle(10);
+                        ds.setMaxOpenPreparedStatements(100);
+                        dataSource = ds;
+                    }
+                }
+            }
+            return dataSource;
+        }*/
+
+

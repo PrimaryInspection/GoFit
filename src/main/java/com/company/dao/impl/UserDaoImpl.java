@@ -45,8 +45,9 @@ public class UserDaoImpl extends CrudDaoImpl<User> implements UserDao {
                         resultSet.getFloat("weight_goal"),
                         resultSet.getInt("height"),
                         resultSet.getInt("calories_norm"),
-                        resultSet.getString("lifestyle_id"),
-                        resultSet.getString("status")
+                        resultSet.getString("lifestyle"),
+                        resultSet.getInt("status"),
+                        resultSet.getInt("role_id")
 
                 ));
 
@@ -63,7 +64,7 @@ public class UserDaoImpl extends CrudDaoImpl<User> implements UserDao {
         try (Connection connection = ConnectionPool.getConnection();
              PreparedStatement statement = connection.prepareStatement(UPDATE_STATUS_ID)
         ) {
-            statement.setString(1, user.getStatus());
+            statement.setInt(1, user.getStatus());
             statement.setInt(2, user.getUserId());
 
 
@@ -99,8 +100,9 @@ public class UserDaoImpl extends CrudDaoImpl<User> implements UserDao {
                             resultSet.getFloat("weight_goal"),
                             resultSet.getInt("height"),
                             resultSet.getInt("calories_norm"),
-                            resultSet.getString("lifestyle_id"),
-                            resultSet.getString("status")
+                            resultSet.getString("lifestyle"),
+                            resultSet.getInt("status"),
+                            resultSet.getInt("role_id")
                     );
                 }
             }
@@ -205,8 +207,9 @@ public class UserDaoImpl extends CrudDaoImpl<User> implements UserDao {
                             resultSet.getFloat("weight_goal"),
                             resultSet.getInt("height"),
                             resultSet.getInt("calories_norm"),
-                            resultSet.getString("lifestyle_id"),
-                            resultSet.getString("status"));
+                            resultSet.getString("lifestyle"),
+                            resultSet.getInt("status"),
+                            resultSet.getInt("role_id"));
                 } else {
                     logger.info("No user with login=" + login + " found");
                 }
@@ -240,8 +243,9 @@ public class UserDaoImpl extends CrudDaoImpl<User> implements UserDao {
                             resultSet.getFloat("goal_weight"),
                             resultSet.getInt("height"),
                             resultSet.getInt("calories_norm"),
-                            resultSet.getString("lifestyle_id"),
-                            resultSet.getString("status")
+                            resultSet.getString("lifestyle"),
+                            resultSet.getInt("status"),
+                            resultSet.getInt("role_id")
 
                     ));
                 }

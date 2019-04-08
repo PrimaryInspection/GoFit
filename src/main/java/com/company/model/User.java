@@ -17,7 +17,9 @@ public class User implements Serializable {
     private Integer height;
     private Integer calories_norm;
     private String lifestyle;
-    private String status;
+    private Integer status;
+    private Integer roleId;
+
 
 
     public User() {
@@ -28,7 +30,7 @@ public class User implements Serializable {
      * Constructor to input user to DB
      * */
     public User(String firstName, String secondName, String login, String password, String email,
-                LocalDate birthday, Float weight, Float weightGoal, Integer height, Integer calories_norm,
+                LocalDate birthday, Float weight, Float weightGoal, Integer height,
                 String lifestyle) {
         this.firstName = firstName;
         this.secondName = secondName;
@@ -39,9 +41,7 @@ public class User implements Serializable {
         this.weight = weight;
         this.weightGoal = weightGoal;
         this.height = height;
-        this.calories_norm = calories_norm;
         this.lifestyle = lifestyle;
-
 
     }
 
@@ -50,7 +50,7 @@ public class User implements Serializable {
      * */
     public User(Integer userId, String firstName, String secondName, String login, String password,
                 String email, LocalDate birthday, Float weight, Float weightGoal, Integer height,
-                Integer calories_norm, String lifestyle , String status) {
+                Integer calories_norm, String lifestyle , Integer status , Integer roleId) {
         this.userId = userId;
         this.firstName = firstName;
         this.secondName = secondName;
@@ -64,12 +64,17 @@ public class User implements Serializable {
         this.calories_norm = calories_norm;
         this.lifestyle = lifestyle;
         this.status=status;
+        this.roleId = roleId;
 
     }
 
-    public String getStatus() { return status; }
+    public Integer getRoleId() { return roleId; }
 
-    public void setStatus(String status) { this.status = status; }
+    public void setRoleId(Integer roleId) { this.roleId = roleId; }
+
+    public Integer getStatus() { return status; }
+
+    public void setStatus(Integer status) { this.status = status; }
 
     public Integer getUserId() { return userId; }
 

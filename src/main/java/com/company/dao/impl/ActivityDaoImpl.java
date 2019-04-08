@@ -86,8 +86,6 @@ public class ActivityDaoImpl extends CrudDaoImpl<Activity> implements ActivityDa
             try (ResultSet resultSet = statement.executeQuery()) {
                 if (resultSet.next()) {
                     totals = new ActivityToDisplay(
-                            null,
-                            null,
                             resultSet.getInt("time_spent"),
                             resultSet.getInt("calories")
                     );

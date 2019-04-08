@@ -1,0 +1,6 @@
+2019-04-08 17:05:54 INFO  Executing query: com.mysql.cj.jdbc.ClientPreparedStatement: SELECT * FROM meal_item ORDER BY name ASC;
+2019-04-08 17:05:55 INFO  Executing query: com.mysql.cj.jdbc.ClientPreparedStatement: SELECT * FROM meal_item ORDER BY name ASC;
+2019-04-08 17:05:55 INFO  Executing query: com.mysql.cj.jdbc.ClientPreparedStatement: SELECT * FROM meal_item ORDER BY name ASC;
+2019-04-08 17:05:14 INFO  Executing query: com.mysql.cj.jdbc.ClientPreparedStatement: SELECT * FROM meal_item ORDER BY name ASC;
+2019-04-08 17:05:15 INFO  Executing query: com.mysql.cj.jdbc.ClientPreparedStatement: SELECT * FROM meal_item ORDER BY name ASC;
+2019-04-08 17:05:15 INFO  Executing query: com.mysql.cj.jdbc.ClientPreparedStatement: SELECT * FROM meal_item ORDER BY name ASC;

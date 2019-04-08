@@ -12,6 +12,12 @@ public class ActivityToDisplay implements Serializable {
     public ActivityToDisplay() {
     }
 
+    public ActivityToDisplay( Integer timeSpent, Integer calories) {
+
+        this.timeSpent = timeSpent;
+        this.calories = calories;
+    }
+
     public ActivityToDisplay(Integer id, String activity, Integer timeSpent, Integer calories) {
         this.id = id;
         this.activityName = activity;

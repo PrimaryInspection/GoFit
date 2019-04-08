@@ -1,13 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Context>
-    <Resource name="jdbc/dbpool"
+    <Resource name="java:comp/env/jdbc/gofit"
               auth="Container"
               username="root"
               password="root"
               type="javax.sql.DataSource"
-              maxTotal="8"
-              maxIdle="5"
-              maxWaitMillis="-1"
+              maxTotal="100"
+              maxIdle="30"
+              maxWaitMillis="10000"
               driverClassName="com.mysql.cj.jdbc.Driver"
-              url="jdbc:mysql://localhost:3306/fitness?useSSL=false&amp;useUnicode=yes&amp;characterEncoding=UTF-8"/>
+              url="jdbc:mysql://localhost:3306/fitness?useUnicode=true&amp;useJDBCCompliantTimezoneShift=true&amp;useLegacyDatetimeCode=false&amp;serverTimezone=UTC"/>
 </Context>
+
+
+
