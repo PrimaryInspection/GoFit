@@ -38,7 +38,7 @@ public class MealDaoImpl extends CrudDaoImpl<Meal> implements MealDao {
                             resultSet.getInt("id"),
                             resultSet.getString("name"),
                             resultSet.getString("prod"),
-                            resultSet.getFloat("weight"),
+                            resultSet.getInt("weight"),
                             resultSet.getInt("calories"),
                             resultSet.getFloat("proteins"),
                             resultSet.getFloat("fats"),
@@ -68,7 +68,7 @@ public class MealDaoImpl extends CrudDaoImpl<Meal> implements MealDao {
                 logger.info("Executing query: " + statement.toString());
                 if (resultSet.next()) {
                     totalsMeal = new MealToDisplay(
-                            resultSet.getFloat("weight"),
+                            resultSet.getInt("weight"),
                             resultSet.getInt("calories"),
                             resultSet.getFloat("proteins"),
                             resultSet.getFloat("fats"),
@@ -96,7 +96,7 @@ public class MealDaoImpl extends CrudDaoImpl<Meal> implements MealDao {
                 logger.info("Executing query: " + statement.toString());
                 if (resultSet.next()) {
                     totalsMealDay = new MealToDisplay(
-                            resultSet.getFloat("weight"),
+                            resultSet.getInt("weight"),
                             resultSet.getInt("calories"),
                             resultSet.getFloat("proteins"),
                             resultSet.getFloat("fats"),

@@ -19,4 +19,6 @@ public class DaoFactory {
 
     public static UserDao getUserMethods(){return new UserDaoImpl();}
 
+    public static LifestyleDao getLifestyleMethods(){return new LifestyleDaoImpl();}
+
 }

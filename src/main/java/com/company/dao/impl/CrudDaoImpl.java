@@ -1,10 +1,13 @@
 package com.company.dao.impl;
 
 import com.company.dao.interfaces.CrudDao;
+import com.company.model.Lifestyle;
 
 import java.util.List;
 
-public class CrudDaoImpl<T> implements CrudDao<T> {
+public abstract class CrudDaoImpl<T> implements CrudDao<T> {
+    public abstract Lifestyle get(int id);
+
     @Override
     public List<T> getAll() {
         throw new UnsupportedOperationException();

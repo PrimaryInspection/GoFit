@@ -45,7 +45,7 @@ public class UserDaoImpl extends CrudDaoImpl<User> implements UserDao {
                         resultSet.getFloat("weight_goal"),
                         resultSet.getInt("height"),
                         resultSet.getInt("calories_norm"),
-                        resultSet.getString("lifestyle"),
+                        resultSet.getInt("lifestyle_id"),
                         resultSet.getInt("status"),
                         resultSet.getInt("role_id")
 
@@ -100,7 +100,7 @@ public class UserDaoImpl extends CrudDaoImpl<User> implements UserDao {
                             resultSet.getFloat("weight_goal"),
                             resultSet.getInt("height"),
                             resultSet.getInt("calories_norm"),
-                            resultSet.getString("lifestyle"),
+                            resultSet.getInt("lifestyle_id"),
                             resultSet.getInt("status"),
                             resultSet.getInt("role_id")
                     );
@@ -147,7 +147,7 @@ public class UserDaoImpl extends CrudDaoImpl<User> implements UserDao {
             statement.setFloat(9, newEntity.getWeightGoal());
             statement.setInt(10, newEntity.getHeight());
             statement.setInt(12, newEntity.getCalories_norm());
-            statement.setString(11, newEntity.getLifestyle());
+            statement.setInt(11, newEntity.getLifestyle_id());
 
             logger.info("Executing query: " + statement.toString());
 
@@ -171,7 +171,7 @@ public class UserDaoImpl extends CrudDaoImpl<User> implements UserDao {
                 statement.setFloat(3, user.getWeightGoal());
                 statement.setInt(4, user.getHeight());
                 statement.setInt(5, user.getCalories_norm());
-                statement.setString(6, user.getLifestyle());
+                statement.setInt(6, user.getLifestyle_id());
                 statement.setInt(7, user.getUserId());
 
                 logger.info("Executing query: " + statement.toString());
@@ -207,7 +207,7 @@ public class UserDaoImpl extends CrudDaoImpl<User> implements UserDao {
                             resultSet.getFloat("weight_goal"),
                             resultSet.getInt("height"),
                             resultSet.getInt("calories_norm"),
-                            resultSet.getString("lifestyle"),
+                            resultSet.getInt("lifestyle_id"),
                             resultSet.getInt("status"),
                             resultSet.getInt("role_id"));
                 } else {
@@ -243,7 +243,7 @@ public class UserDaoImpl extends CrudDaoImpl<User> implements UserDao {
                             resultSet.getFloat("goal_weight"),
                             resultSet.getInt("height"),
                             resultSet.getInt("calories_norm"),
-                            resultSet.getString("lifestyle"),
+                            resultSet.getInt("lifestyle_id"),
                             resultSet.getInt("status"),
                             resultSet.getInt("role_id")
 

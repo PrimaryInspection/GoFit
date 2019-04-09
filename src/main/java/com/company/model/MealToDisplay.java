@@ -13,7 +13,7 @@ public class MealToDisplay implements Serializable {
     private Integer id;
     private String mealType;
     private String mealItem;
-    private Float weight;
+    private Integer weight;
     private Integer calories;
     private Float protein;
     private Float fat;
@@ -23,7 +23,7 @@ public class MealToDisplay implements Serializable {
     }
 
     // constructor for displaying totals
-    public MealToDisplay(Float weight, Integer calories, Float protein, Float fat, Float carbs) {
+    public MealToDisplay(Integer weight, Integer calories, Float protein, Float fat, Float carbs) {
         this.weight = weight;
         this.calories = calories;
         this.protein = protein;
@@ -31,7 +31,7 @@ public class MealToDisplay implements Serializable {
         this.carbs = carbs;
     }
 
-    public MealToDisplay(Integer id, String mealNumber, String product, Float weight, Integer calories, Float protein, Float fat, Float carbs) {
+    public MealToDisplay(Integer id, String mealNumber, String product, Integer weight, Integer calories, Float protein, Float fat, Float carbs) {
         this.id = id;
         this.mealType = mealNumber;
         this.mealItem = product;
@@ -50,7 +50,7 @@ public class MealToDisplay implements Serializable {
         return mealItem;
     }
 
-    public Float getWeight() {
+    public Integer getWeight() {
         return weight;
     }
 
