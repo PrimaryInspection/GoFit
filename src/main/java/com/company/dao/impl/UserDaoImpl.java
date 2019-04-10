@@ -1,6 +1,7 @@
 package com.company.dao.impl;
 
 import com.company.dao.connection.ConnectionPool;
+import com.company.dao.factory.DaoFactory;
 import com.company.dao.interfaces.UserDao;
 import com.company.model.User;
 import com.company.utils.QueryManager;
@@ -220,6 +221,8 @@ public class UserDaoImpl extends CrudDaoImpl<User> implements UserDao {
         }
         return user;
     }
+
+
 
     @Override
     public List<User> getAll(int limit, int offset) {

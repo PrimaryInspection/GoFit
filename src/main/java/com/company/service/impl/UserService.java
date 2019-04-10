@@ -24,7 +24,7 @@ public class UserService implements IUserService{
 
     public static UserService getInstance(){return instance;}
 
-
+//TODO try to add other commands and after fix registration
     @Override
     public User getUser(String login) {
         logger.info("Getting user by login: " + login);

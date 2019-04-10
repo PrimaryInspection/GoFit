@@ -5,8 +5,8 @@ import com.company.model.Lifestyle;
 
 import java.util.List;
 
-public abstract class CrudDaoImpl<T> implements CrudDao<T> {
-    public abstract Lifestyle get(int id);
+public  class CrudDaoImpl<T> implements CrudDao<T> {
+
 
     @Override
     public List<T> getAll() {

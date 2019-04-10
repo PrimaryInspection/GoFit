@@ -22,7 +22,7 @@ public class LifestyleDaoImpl extends CrudDaoImpl<Lifestyle> implements Lifestyl
 
 
     @Override
-    public Lifestyle get(int id) {
+    public Lifestyle getItem(int id) {
         Lifestyle lifestyle = null;
         try (Connection connection = ConnectionPool.getConnection();
              PreparedStatement statement = connection.prepareStatement(SELECT);

@@ -19,21 +19,31 @@ public class LoginRegistrationService implements ILoginRegistrationService{
 
     @Override
     public boolean checkLogin(String login, String password) {
-        logger.info("Geting user from DB with login = " + login);
+        logger.info(" This is checkLogin service ,Geting user from DB with login = " + login);
         User user = userDao.get(login);
-        logger.debug("We was got user  : " + user.toString());
         if(user == null){
-            logger.info("user was not found");
+            logger.info("This is checkLogin service, user was not found");
             return false;
         }
+        logger.info("We was got user by login : " + login);
         logger.info("Checking user password...");
-        return  user.getPassword().equals(password);
+        if(user.getPassword().equals(password)){
+            logger.info("Password is ok");
+        }
+        return user.getPassword().equals(password);
+
     }
 
     @Override
     public boolean confirmPassword(String password, String passwordConfirm) {
         logger.info("Checking password confirmation...");
-        return password.equals(passwordConfirm);
+
+        if(password.equals(passwordConfirm)){
+            logger.info("Confirm password OK");
+            return  password.equals(passwordConfirm);
+        }else
+            logger.info("Confirm password NOT OK!!");
+        return false;
     }
 
     @Override
