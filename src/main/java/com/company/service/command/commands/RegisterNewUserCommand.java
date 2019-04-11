@@ -26,7 +26,7 @@ public class RegisterNewUserCommand implements ActionCommand {
     private static final String PARAM_NAME_PASSWORD_CONFIRM = "password_confirmation";
     private static final String PARAM_NAME_BIRTHDAY = "birthday";
     private static final String PARAM_NAME_WEIGHT = "weight";
-    private static final String PARAM_NAME_GOAL_WEIGHT = "goalWeight";
+    private static final String PARAM_NAME_GOAL_WEIGHT = "weightGoal";
     private static final String PARAM_NAME_HEIGHT = "height";
     private static final String PARAM_NAME_LIFESTYLE = "lifestyle";
 
@@ -73,10 +73,10 @@ public class RegisterNewUserCommand implements ActionCommand {
                 request.getParameter(PARAM_NAME_PASSWORD),
                 request.getParameter(PARAM_NAME_EMAIL),
                 LocalDate.parse(request.getParameter(PARAM_NAME_BIRTHDAY)),
-                Float.valueOf(request.getParameter(PARAM_NAME_WEIGHT)),
-                Float.valueOf(request.getParameter(PARAM_NAME_GOAL_WEIGHT)),
-                Integer.valueOf(request.getParameter(PARAM_NAME_HEIGHT)),
-                Integer.valueOf(request.getParameter(PARAM_NAME_LIFESTYLE))
+                Integer.parseInt(request.getParameter(PARAM_NAME_WEIGHT)),
+                Integer.parseInt(request.getParameter(PARAM_NAME_GOAL_WEIGHT)),
+                Integer.parseInt(request.getParameter(PARAM_NAME_HEIGHT)),
+                Integer.parseInt(request.getParameter(PARAM_NAME_LIFESTYLE))
         );
         return user;
     }

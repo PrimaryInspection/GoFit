@@ -62,7 +62,6 @@ public class PageService implements IPageService {
         session.setAttribute("minBirth", LocalDate.parse("1900-01-01"));
     }
 
-    //TODO CHECK updateAdminPageData() method
     @Override
     public void updateAdminPageData(HttpServletRequest request) {
         int size = userService.getUsersCount();
@@ -112,9 +111,10 @@ public class PageService implements IPageService {
         Integer remaining = user.getCalories_norm() - menuService.getUserMealTotal(userId, chosenDate).getCalories() +
                 activityService.getUserActivityTotals(user.getUserId(), chosenDate).getCalories();
         session.setAttribute("remaining", remaining);
+        Integer goal=user.getWeight() - user.getWeightGoal();
 
 //        GOALS
-        session.setAttribute("kgToGoal", user.getWeight() - user.getWeightGoal());
+        session.setAttribute("kgToGoal", goal);
     }
 
 

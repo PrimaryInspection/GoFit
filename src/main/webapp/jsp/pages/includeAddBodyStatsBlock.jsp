@@ -69,8 +69,8 @@
 
                 <%--GOAL WEIGHT--%>
                 <div class="main-caption">ENTER GOAL WEIGHT</div>
-                <input required class="form-control" type="number" name="goalWeight" min="1" max="250" step="0.1"
-                       value="${user.goalWeight}"
+                <input required class="form-control" type="number" name="weightGoal" min="1" max="250" step="1"
+                       value="${user.weightGoal}"
                        placeholder="Enter goal weight">
 
 
@@ -78,7 +78,7 @@
         </div>
 
         <br/><br/>
-        <h6 class="text-center">Your daily calorie requirement is <span class="color-success">${user.calorieNorm} calories.</span>
+        <h6 class="text-center">Your daily calorie requirement is <span class="color-success">${user.calories_norm} calories.</span>
         </h6>
         <%--<h6 class="text-center">To reach your goal, we suggest you to consume a maximum amount of 1700 calories, 112 g--%>
         <%--proteins, 88 g fats, and--%>

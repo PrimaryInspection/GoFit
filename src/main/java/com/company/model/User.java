@@ -12,8 +12,8 @@ public class User implements Serializable {
     private String password;
     private String email;
     private LocalDate birthday;
-    private Float weight;
-    private Float weightGoal;
+    private Integer weight;
+    private Integer weightGoal;
     private Integer height;
     private Integer calories_norm;
     private Integer lifestyle_id;
@@ -30,7 +30,7 @@ public class User implements Serializable {
      * Constructor to input user to DB
      * */
     public User(String firstName, String secondName, String login, String password, String email,
-                LocalDate birthday, Float weight, Float weightGoal, Integer height,
+                LocalDate birthday, Integer weight, Integer weightGoal, Integer height,
                 Integer lifestyle_id) {
         this.firstName = firstName;
         this.secondName = secondName;
@@ -49,7 +49,7 @@ public class User implements Serializable {
      * Constructor to output user from DB
      * */
     public User(Integer userId, String firstName, String secondName, String login, String password,
-                String email, LocalDate birthday, Float weight, Float weightGoal, Integer height,
+                String email, LocalDate birthday, Integer weight, Integer weightGoal, Integer height,
                 Integer calories_norm, Integer lifestyle_id , Integer status , Integer roleId) {
         this.userId = userId;
         this.firstName = firstName;
@@ -104,13 +104,13 @@ public class User implements Serializable {
 
     public void setBirthday(LocalDate birthday) { this.birthday = birthday; }
 
-    public Float getWeight() { return weight; }
+    public Integer getWeight() { return weight; }
 
-    public void setWeight(Float weight) { this.weight = weight; }
+    public void setWeight(Integer weight) { this.weight = weight; }
 
-    public Float getWeightGoal() { return weightGoal; }
+    public Integer getWeightGoal() { return weightGoal; }
 
-    public void setWeightGoal(Float weightGoal) { this.weightGoal = weightGoal; }
+    public void setWeightGoal(Integer weightGoal) { this.weightGoal = weightGoal; }
 
     public Integer getHeight() { return height; }
 
@@ -147,7 +147,7 @@ public class User implements Serializable {
     @Override
     public int hashCode() {
 
-        return Objects.hash(getUserId(), getFirstName(), getSecondName(), getLogin(), getPassword(), getEmail(), getBirthday(), getWeight(), getWeightGoal(), getHeight(), getCalories_norm(), getLifestyle_id(),getStatus());
+        return Objects.hash(getUserId(), getFirstName(), getSecondName(), getLogin(), getPassword(), getEmail(), getBirthday(), getWeight(), getWeightGoal(), getHeight(), getCalories_norm(), getLifestyle_id(),getStatus(),getRoleId());
     }
 
     @Override
@@ -166,6 +166,7 @@ public class User implements Serializable {
                 ", calories_norm=" + calories_norm +
                 ", lifestyle='" + lifestyle_id + '\'' +
                 ", status='" + status + '\'' +
+                ", status='" + roleId + '\'' +
                 '}';
     }
 }

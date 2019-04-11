@@ -24,7 +24,6 @@ public class UserService implements IUserService{
 
     public static UserService getInstance(){return instance;}
 
-//TODO try to add other commands and after fix registration
     @Override
     public User getUser(String login) {
         logger.info("Getting user by login: " + login);
@@ -90,15 +89,15 @@ public class UserService implements IUserService{
 
         switch (lifestyle.getName()){
             case "active": {
-                caloriesNorm = (int) ((caloriesNorm * 1.4625d) + (10 * Float.parseFloat(String.valueOf(user.getWeight())) +  (6.25d * user.getHeight()) - 5 * age + 5));
+                caloriesNorm = (int) ((caloriesNorm * 1.4625f) + (10 * user.getWeight() +  (6.25f * user.getHeight()) - (5 * age) + 5));
                 break;
             }
             case "average": {
-                caloriesNorm = (int) ((caloriesNorm * 1.375d) + (10 * Float.parseFloat(String.valueOf(user.getWeight())) +  (6.25d * user.getHeight()) - 5 * age + 5));
+                caloriesNorm = (int) ((caloriesNorm * 1.375f) + (10 * user.getWeight() +  (6.25f * user.getHeight()) - (5 * age) + 5));
                 break;
             }
             case "lazy": {
-                caloriesNorm = (int) ((caloriesNorm * 1.2d) + + (10 * Float.parseFloat(String.valueOf(user.getWeight())) +  (6.25d * user.getHeight()) - 5 * age + 5));
+                caloriesNorm = (int) ((caloriesNorm * 1.2f) + + (10 * user.getWeight() +  (6.25f * user.getHeight()) - (5 * age) + 5));
                 break;
             }
             default: {

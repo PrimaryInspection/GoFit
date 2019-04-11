@@ -43,8 +43,8 @@ public class UserDaoImpl extends CrudDaoImpl<User> implements UserDao {
                         resultSet.getString("password"),
                         resultSet.getString("email"),
                         resultSet.getDate("birthday").toLocalDate(),
-                        resultSet.getFloat("weight"),
-                        resultSet.getFloat("weight_goal"),
+                        resultSet.getInt("weight"),
+                        resultSet.getInt("weight_goal"),
                         resultSet.getInt("height"),
                         resultSet.getInt("calories_norm"),
                         resultSet.getInt("lifestyle_id"),
@@ -98,8 +98,8 @@ public class UserDaoImpl extends CrudDaoImpl<User> implements UserDao {
                             resultSet.getString("password"),
                             resultSet.getString("email"),
                             resultSet.getDate("birthday").toLocalDate(),
-                            resultSet.getFloat("weight"),
-                            resultSet.getFloat("weight_goal"),
+                            resultSet.getInt("weight"),
+                            resultSet.getInt("weight_goal"),
                             resultSet.getInt("height"),
                             resultSet.getInt("calories_norm"),
                             resultSet.getInt("lifestyle_id"),
@@ -145,11 +145,12 @@ public class UserDaoImpl extends CrudDaoImpl<User> implements UserDao {
             statement.setString(4, newEntity.getPassword());
             statement.setString(5, newEntity.getEmail());
             statement.setDate(6, Date.valueOf(newEntity.getBirthday()));
-            statement.setFloat(7, newEntity.getWeight());
-            statement.setFloat(8, newEntity.getWeightGoal());
+            statement.setInt(7, newEntity.getWeight());
+            statement.setInt(8, newEntity.getWeightGoal());
             statement.setInt(9, newEntity.getHeight());
             statement.setInt(10, newEntity.getCalories_norm());
             statement.setInt(11, newEntity.getLifestyle_id());
+            statement.setInt(12, 1);
             logger.info("Executing query: " + statement.toString());
 
             resultInsert = statement.executeUpdate();
@@ -169,8 +170,8 @@ public class UserDaoImpl extends CrudDaoImpl<User> implements UserDao {
              PreparedStatement statement = connection.prepareStatement(UPDATE_USER)) {
             {
                 statement.setDate(1, Date.valueOf(user.getBirthday()));
-                statement.setFloat(2, user.getWeight());
-                statement.setFloat(3, user.getWeightGoal());
+                statement.setInt(2, user.getWeight());
+                statement.setInt(3, user.getWeightGoal());
                 statement.setInt(4, user.getHeight());
                 statement.setInt(5, user.getCalories_norm());
                 statement.setInt(6, user.getLifestyle_id());
@@ -205,8 +206,8 @@ public class UserDaoImpl extends CrudDaoImpl<User> implements UserDao {
                             resultSet.getString("password"),
                             resultSet.getString("email"),
                             resultSet.getDate("birthday").toLocalDate(),
-                            resultSet.getFloat("weight"),
-                            resultSet.getFloat("weight_goal"),
+                            resultSet.getInt("weight"),
+                            resultSet.getInt("weight_goal"),
                             resultSet.getInt("height"),
                             resultSet.getInt("calories_norm"),
                             resultSet.getInt("lifestyle_id"),
@@ -243,8 +244,8 @@ public class UserDaoImpl extends CrudDaoImpl<User> implements UserDao {
                             resultSet.getString("password"),
                             resultSet.getString("email"),
                             resultSet.getDate("birthday").toLocalDate(),
-                            resultSet.getFloat("weight"),
-                            resultSet.getFloat("goal_weight"),
+                            resultSet.getInt("weight"),
+                            resultSet.getInt("goal_weight"),
                             resultSet.getInt("height"),
                             resultSet.getInt("calories_norm"),
                             resultSet.getInt("lifestyle_id"),

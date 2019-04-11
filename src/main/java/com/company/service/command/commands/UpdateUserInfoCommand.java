@@ -20,9 +20,8 @@ public class UpdateUserInfoCommand implements ActionCommand {
 
     private static final String PARAM_NAME_BIRTHDAY = "birthday";
     private static final String PARAM_NAME_WEIGHT = "weight";
-    private static final String PARAM_NAME_GOAL_WEIGHT = "goalWeight";
+    private static final String PARAM_NAME_GOAL_WEIGHT = "weightGoal";
     private static final String PARAM_NAME_HEIGHT = "height";
-    private static final String PARAM_NAME_GENDER = "genderId";
     private static final String PARAM_NAME_LIFESTYLE = "lifestyleId";
 
     private IUserService userService = ServiceFactory.getUserService();
@@ -50,11 +49,11 @@ public class UpdateUserInfoCommand implements ActionCommand {
     }
 
     private User updateUser(HttpServletRequest request, User user) {
+        user.setWeight(Integer.parseInt(request.getParameter(PARAM_NAME_WEIGHT)));
+        user.setWeightGoal(Integer.parseInt(request.getParameter(PARAM_NAME_GOAL_WEIGHT)));
         user.setBirthday(LocalDate.parse(request.getParameter(PARAM_NAME_BIRTHDAY)));
-        user.setWeight(Float.valueOf(request.getParameter(PARAM_NAME_WEIGHT)));
-        user.setWeightGoal(Float.valueOf(request.getParameter(PARAM_NAME_GOAL_WEIGHT)));
-        user.setLifestyle_id(Integer.valueOf(request.getParameter(PARAM_NAME_LIFESTYLE)));
-        user.setHeight(Integer.valueOf(request.getParameter(PARAM_NAME_HEIGHT)));
+        user.setLifestyle_id(Integer.parseInt(request.getParameter(PARAM_NAME_LIFESTYLE)));
+        user.setHeight(Integer.parseInt(request.getParameter(PARAM_NAME_HEIGHT)));
 
         return user;
     }

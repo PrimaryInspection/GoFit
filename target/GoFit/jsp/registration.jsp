@@ -52,14 +52,12 @@
                    required
                    maxlength="30"
                    name="password"
-                   value="${registrationUser.password}"
                    placeholder="Password"
                    class="register-form__input">
             <input type="password"
                    required
                    maxlength="30"
                    name="password_confirmation"
-                   value="${registrationUser.password}"
                    placeholder="Confirm password"
                    class="register-form__input">
             <input type="email"
@@ -84,14 +82,14 @@
             <label><span>Weight:</span>
                 <input type="number"
                        required
-                       name="weight" min="1" max="300" step="0.1"
+                       name="weight" min="1" max="300" step="1"
                        value="${registrationUser.weight}"
                        class="register-form__input"> kilos</label>
 
             <label><span>Goal weight:</span>
                 <input type="number"
                        required
-                       name="weightGoal" min="1" max="300" step="0.1"
+                       name="weightGoal" min="1" max="300" step="1"
                        value="${registrationUser.weightGoal}"
                        class="register-form__input"> kilos</label>
 
@@ -101,6 +99,7 @@
                        name="height" min="50" max="250" step="1"
                        value="${registrationUser.height}"
                        class="register-form__input"> santimeters</label>
+
 
 
             <label><span>Lifestyle:</span>

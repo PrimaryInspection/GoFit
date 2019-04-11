@@ -47,8 +47,8 @@ public class MenuService implements IMenuService {
         for (MealToDisplay m: menu) {
             totalCalories += m.getCalories();
         }
-        logger.debug("CALORIES------->" + new DecimalFormat("###,###").format(totalCalories));
-        return new DecimalFormat("###,###").format(totalCalories);
+        logger.debug("CALORIES------->" + new DecimalFormat("###.###").format(totalCalories));
+        return new DecimalFormat("###.###").format(totalCalories);
     }
 
     @Override
@@ -57,8 +57,8 @@ public class MenuService implements IMenuService {
         for (MealToDisplay m: menu) {
             totalProteins += m.getCalories();
         }
-        logger.debug("PROTEINS-------->" + new DecimalFormat("###,###").format(totalProteins));
-        return new DecimalFormat("###,###").format(totalProteins);
+        logger.debug("PROTEINS-------->" + new DecimalFormat(".##").format(totalProteins));
+        return new DecimalFormat(".##").format(totalProteins);
     }
 
     @Override
@@ -67,8 +67,8 @@ public class MenuService implements IMenuService {
         for (MealToDisplay m: menu) {
             totalFats += m.getCalories();
         }
-        logger.debug("FATS-------->" + new DecimalFormat("###,###").format(totalFats));
-        return new DecimalFormat("###,###").format(totalFats);    }
+        logger.debug("FATS-------->" + new DecimalFormat(".##").format(totalFats));
+        return new DecimalFormat(".##").format(totalFats);    }
 
     @Override
     public String getTotalCarbs(List<MealToDisplay> menu) {
@@ -76,8 +76,8 @@ public class MenuService implements IMenuService {
         for (MealToDisplay m: menu) {
             totalCarbs += m.getCalories();
         }
-        logger.debug("CARBS-------->" + new DecimalFormat("###,###").format(totalCarbs));
-        return new DecimalFormat("###,###").format(totalCarbs);    }
+        logger.debug("CARBS-------->" + new DecimalFormat(".#").format(totalCarbs));
+        return new DecimalFormat(".#").format(totalCarbs);    }
 
     @Override
     public MealToDisplay getTotalsByMealType(Integer userId, LocalDate date, Integer mealTypeId) {
