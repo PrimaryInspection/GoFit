@@ -19,7 +19,7 @@ public class RegisterNewUserCommand implements ActionCommand {
     private static final Logger logger = LogManager.getLogger(RegisterNewUserCommand.class);
 
     private static final String PARAM_NAME_FIRST_NAME = "first_name";
-    private static final String PARAM_NAME_LAST_NAME = "last_name";
+    private static final String PARAM_NAME_SECOND_NAME = "second_name";
     private static final String PARAM_NAME_LOGIN = "login";
     private static final String PARAM_NAME_EMAIL = "email";
     private static final String PARAM_NAME_PASSWORD = "password";
@@ -60,7 +60,7 @@ public class RegisterNewUserCommand implements ActionCommand {
         request.setAttribute("registrationSuccessMessage",MessageManager.getProperty("message.registrationconfirm"));
         page = ConfigurationManager.getProperty("path.page.login");
         }else{
-            request.setAttribute("errorRegistrationMessage" , MessageManager.getProperty("message.registrationError"));
+            request.setAttribute("errorRegistrationMessage" , MessageManager.getProperty("message.registrationerror"));
         }
         return page;
     }
@@ -68,7 +68,7 @@ public class RegisterNewUserCommand implements ActionCommand {
     private User getUserFromRequest(HttpServletRequest request){
         User user = new User(
                 request.getParameter(PARAM_NAME_FIRST_NAME),
-                request.getParameter(PARAM_NAME_LAST_NAME),
+                request.getParameter(PARAM_NAME_SECOND_NAME),
                 request.getParameter(PARAM_NAME_LOGIN),
                 request.getParameter(PARAM_NAME_PASSWORD),
                 request.getParameter(PARAM_NAME_EMAIL),

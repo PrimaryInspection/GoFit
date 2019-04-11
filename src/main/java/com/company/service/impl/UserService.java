@@ -88,17 +88,17 @@ public class UserService implements IUserService{
         int age = Period.between(user.getBirthday(), LocalDate.now()).getYears();
 
 
-        switch (lifestyle.toString()){
+        switch (lifestyle.getName()){
             case "active": {
-                caloriesNorm = (int) ((caloriesNorm * 1.4625d) + (10 * user.getWeight() +  (6.25d * user.getHeight()) - 5 * age + 5));
+                caloriesNorm = (int) ((caloriesNorm * 1.4625d) + (10 * Float.parseFloat(String.valueOf(user.getWeight())) +  (6.25d * user.getHeight()) - 5 * age + 5));
                 break;
             }
             case "average": {
-                caloriesNorm = (int) ((caloriesNorm * 1.375d) + (10 * user.getWeight() +  (6.25d * user.getHeight()) - 5 * age + 5));
+                caloriesNorm = (int) ((caloriesNorm * 1.375d) + (10 * Float.parseFloat(String.valueOf(user.getWeight())) +  (6.25d * user.getHeight()) - 5 * age + 5));
                 break;
             }
             case "lazy": {
-                caloriesNorm = (int) ((caloriesNorm * 1.2d) + + (10 * user.getWeight() +  (6.25d * user.getHeight()) - 5 * age + 5));
+                caloriesNorm = (int) ((caloriesNorm * 1.2d) + + (10 * Float.parseFloat(String.valueOf(user.getWeight())) +  (6.25d * user.getHeight()) - 5 * age + 5));
                 break;
             }
             default: {

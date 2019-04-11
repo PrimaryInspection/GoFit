@@ -1,0 +1,68 @@
+@font-face {
+    font-family: "HelveticaNeue-Medium";
+    src: url(/bootstrap/font/HelveticaNeue-Medium.otf);
+}
+
+.admin {
+    font-family: HelveticaNeue-Medium;
+    background-color: rgba(25, 169, 169, 0.6);
+    font-size: 24px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    height: 60px;
+    font-weight: 500;
+    color: #4A4A4A;
+}
+
+.btn-outline-info {
+color: #19a9a9;
+background-color: transparent;
+border-color: #19a9a9;
+}
+
+.btn-danger {
+color: #e30e17;
+background-color: transparent;
+border-color: #e30e17;
+}
+
+.btn-outline-info:hover {
+background-color: #19a9a9;
+border-color: #19a9a9;
+}
+
+.btn-danger:hover {
+background-color: #e30e17;
+border-color: #e30e17;
+}
+
+.page-link{
+    color: #19a9a9;
+    background-color: transparent;
+    border-color: #19a9a9;
+}
+.page-link:hover{
+    color: white;
+    background-color: #19a9a9;
+    border-color: #19a9a9;
+}
+.page-link:focus{
+    color: #19a9a9;
+    background-color: transparent;
+    border-color: #19a9a9;
+}
+.page-link:active{
+    color: white;
+    background-color: #19a9a9;
+    border-color: #19a9a9;
+}
+.page-item.active .page-link {
+    color: white;
+    background-color: #19a9a9;
+    border-color: #19a9a9;
+}
+
+.error{
+    color: #e30e17;
+    font-size: 18px;
+}

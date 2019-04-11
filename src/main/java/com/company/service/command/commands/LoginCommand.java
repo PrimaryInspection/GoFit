@@ -29,7 +29,7 @@ public class LoginCommand implements ActionCommand {
         HttpSession session = request.getSession();
 
         String login = request.getParameter(PARAM_NAME_LOGIN);
-        String password = request.getParameter(PARAM_NAME_LOGIN);
+        String password = request.getParameter(PARAM_NAME_PASSWORD);
 
         request.setAttribute("login",login);
         request.setAttribute("password",password);

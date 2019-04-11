@@ -10,4 +10,5 @@ public interface IMealItemService {
     boolean addMealItem(MealItem mealItem);
 
     boolean checkIsMealItemExist(String name);
+
 }

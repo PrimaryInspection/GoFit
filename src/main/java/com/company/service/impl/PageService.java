@@ -72,12 +72,14 @@ public class PageService implements IPageService {
 
         logger.debug("requested page number: " + request.getParameter(PARAM_NAME_LOGIN));
         if (request.getParameter(PARAM_NAME_LOGIN) != null) {
+            logger.info("This is updateAdminPage()");
             int requestedPage = Integer.valueOf(request.getParameter(PARAM_NAME_LOGIN));
             offset = (requestedPage - 1) * limit;
+            List<User> users = userService.getUsers(limit, offset);
+            request.setAttribute("users", users);
         }
 
-        List<User> users1 = userService.getUsers(limit, offset);
-        request.setAttribute("users", users1);
+
 
         /**
          * finding out how many pagination buttons (pages) shall be shown based on number of users (size) and
@@ -100,6 +102,7 @@ public class PageService implements IPageService {
 
     @Override
     public void updateUserData(HttpSession session, Integer userId) {
+        logger.info("This is updateUserData();");
         session.setAttribute("user", userService.getUser(userId));
     }
 

@@ -30,10 +30,10 @@
         <div class="row">
             <div class="col logo">
             <span class="logo__first-word">
-          Fitness
+          Go
         </span>
                 <span class="logo__second-word">
-          Buddy
+          Fit!
         </span>
             </div>
             <div class="col text-center">
@@ -62,7 +62,7 @@
 
 
     <h2 class="h2-index h2-index_grey">
-        Track meals. Stay commited.
+        Be healthy. Stay strong.
     </h2>
     <form class="login-form" method="post" action="/controller">
         <div class="wrapper">

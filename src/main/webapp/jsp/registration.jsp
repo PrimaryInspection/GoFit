@@ -36,9 +36,9 @@
             <input type="text"
                    required
                    maxlength="30"
-                   name="last_name"
-                   value="${registrationUser.lastName}"
-                   placeholder="Last name"
+                   name="second_name"
+                   value="${registrationUser.secondName}"
+                   placeholder="Second name"
                    class="register-form__input">
 
             <input type="text"
@@ -48,24 +48,26 @@
                    value="${registrationUser.login}"
                    placeholder="Login"
                    class="register-form__input  <c:if test="${not empty errorLoginExistMessage}">border-danger</c:if>">
-            <input type="email"
-                   required
-                   maxlength="30"
-                   value="${registrationUser.email}"
-                   name="email"
-                   placeholder="e-mail"
-                   class="register-form__input">
             <input type="password"
                    required
                    maxlength="30"
                    name="password"
+                   value="${registrationUser.password}"
                    placeholder="Password"
                    class="register-form__input">
             <input type="password"
                    required
                    maxlength="30"
                    name="password_confirmation"
+                   value="${registrationUser.password}"
                    placeholder="Confirm password"
+                   class="register-form__input">
+            <input type="email"
+                   required
+                   maxlength="30"
+                   value="${registrationUser.email}"
+                   name="email"
+                   placeholder="e-mail"
                    class="register-form__input">
         </div>
 
@@ -79,13 +81,6 @@
                        value="${registrationUser.birthday}"
                        class="register-form__input"></label>
 
-            <label><span>Height:</span>
-                <input type="number"
-                       required
-                       name="height" min="50" max="250" step="1"
-                       value="${registrationUser.height}"
-                       class="register-form__input"> santimeters</label>
-
             <label><span>Weight:</span>
                 <input type="number"
                        required
@@ -96,16 +91,23 @@
             <label><span>Goal weight:</span>
                 <input type="number"
                        required
-                       name="goalWeight" min="1" max="300" step="0.1"
-                       value="${registrationUser.goalWeight}"
+                       name="weightGoal" min="1" max="300" step="0.1"
+                       value="${registrationUser.weightGoal}"
                        class="register-form__input"> kilos</label>
+
+            <label><span>Height:</span>
+                <input type="number"
+                       required
+                       name="height" min="50" max="250" step="1"
+                       value="${registrationUser.height}"
+                       class="register-form__input"> santimeters</label>
 
 
             <label><span>Lifestyle:</span>
                 <select name="lifestyle" class="register-form__input">
                     <c:forEach var="item" items="${lifestyles}">
                         <option value="${item.id}"
-                                <c:if test="${registrationUser.lifestyleId == item.id}">selected</c:if>>
+                                <c:if test="${registrationUser.lifestyle_id == item.id}">selected</c:if>>
                             <c:out value="${item.name}"></c:out>
                         </option>
                     </c:forEach>

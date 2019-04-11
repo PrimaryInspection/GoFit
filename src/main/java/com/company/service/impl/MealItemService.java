@@ -26,12 +26,14 @@ public class MealItemService implements IMealItemService {
     @Override
     public boolean addMealItem(MealItem mealItem) {
         logger.info("Getting meal item :" + mealItem.toString());
-        return mealItemDao.addItem(mealItem);
-    }
+        return mealItemDao.addItem(mealItem);    }
+
 
     @Override
     public boolean checkIsMealItemExist(String name) {
     logger.info("Checking is meal item by name" + name + " exist ");
     return mealItemDao.getItem(name) !=null;
     }
+
+
 }

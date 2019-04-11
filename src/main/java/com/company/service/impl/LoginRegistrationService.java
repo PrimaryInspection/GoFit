@@ -49,6 +49,9 @@ public class LoginRegistrationService implements ILoginRegistrationService{
     @Override
     public boolean checkLoginExist(String login) {
         logger.info("check if login exists");
-        return userDao.get(login) != null;
+         if(userDao.get(login) != null){
+             logger.info("Such login does't existing");
+         }
+         return userDao.get(login) != null;
     }
 }

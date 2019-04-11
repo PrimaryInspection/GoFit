@@ -1,0 +1,439 @@
+@font-face {
+    font-family: "HelveticaNeue";
+    src: url(/bootstrap/font/HelveticaNeue.ttf);
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "HelveticaNeue";
+    src: url(/bootstrap/font/HelveticaNeue.otf);
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "HelveticaNeue";
+    src: url(/bootstrap/font/helvetica-neue-bold.ttf);
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "HelveticaNeue";
+    src: url(/bootstrap/font/helvetica-neue-bold.otf);
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "HelveticaNeue";
+    src: url(/bootstrap/font/HelveticaNeue-Medium.ttf);
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "HelveticaNeue";
+    src: url(/bootstrap/font/HelveticaNeue-Medium.otf);
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "HelveticaNeue";
+    src: url(/bootstrap/font/HelveticaNeue-Light.ttf);
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "HelveticaNeue";
+    src: url(/bootstrap/font/HelveticaNeue-Light.otf);
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "HelveticaNeue";
+    src: url(/bootstrap/font/HelveticaNeue-Thin.ttf);
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "HelveticaNeue";
+    src: url(/bootstrap/font/HelveticaNeue-Thin.otf);
+    font-weight: 100;
+    font-style: normal;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    list-style-type: none;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: HelveticaNeue;
+    -webkit-transition: .3s background-color, .3s color, .3s opacity, .3s box-shadow;
+    -o-transition: .3s background-color, .3s color, .3s opacity, .3s box-shadow;
+    transition: .3s background-color, .3s color, .3s opacity, .3s box-shadow;
+}
+
+body {
+    background: url(/bootstrap/images/loginBg.png) black center right/cover no-repeat;
+    min-height: 100vh;
+}
+
+input:focus {
+    -webkit-box-shadow: 5px 5px 10px rgba(0, 0, 0, .05);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, .05);
+}
+
+input[type="submit"]:hover {
+    -webkit-box-shadow: 5px 5px 15px rgba(0, 0, 0, .1);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, .1);
+}
+
+/*______________________header___________________*/
+.header {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    width: 100%;
+    height: 88px;
+}
+
+.header-black {
+    background: black;
+}
+
+/*_________________logo______________*/
+.logo {
+    padding: 20px 36px;
+    font-weight: bold;
+    text-align: left;
+    color: #19a9a9;
+    display: flex;
+    line-height: 33px;
+    font-size: 40px;
+}
+
+.logo__first-word {
+    font-weight: 700;
+    font-family: HelveticaNeue;
+}
+
+.logo__second-word {
+    font-weight: 100;
+    font-family: HelveticaNeue;
+}
+
+/*____________________h2-index______________*/
+.h2-index {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 45px;
+    opacity: 0.8;
+    font-size: 42px;
+    font-weight: 100;
+    text-align: center;
+}
+
+.h2-index_grey {
+    color: rgba(255, 255, 255, .65);
+}
+
+/*________________login-form__________________*/
+.login-form {
+    width: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.login-form__input {
+    width: 260px;
+    height: 50px;
+    margin: 5px;
+    padding: 0 15px 0 15px;
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+    background-color: rgba(255, 255, 255, 0.17);
+    border: solid 1px #ffffff;
+    font-size: 18px;
+    font-weight: 300;
+    color: rgba(255, 255, 255, .65);
+}
+
+.login-form__input::-webkit-input-placeholder {
+    width: 80px;
+    height: 21px;
+    opacity: 0.8;
+    font-size: 18px;
+    font-weight: 300;
+    color: rgba(255, 255, 255, .45);
+}
+
+.login-form__input::-moz-placeholder {
+    width: 80px;
+    height: 21px;
+    opacity: 0.8;
+    font-size: 18px;
+    font-weight: 300;
+    color: rgba(255, 255, 255, .45);
+}
+
+.login-form__input:-ms-input-placeholder {
+    width: 80px;
+    height: 21px;
+    opacity: 0.8;
+    font-size: 18px;
+    font-weight: 300;
+    color: rgba(255, 255, 255, .45);
+}
+
+.login-form__input:-ms-input-placeholder {
+    width: 80px;
+    height: 21px;
+    opacity: 0.8;
+    font-size: 18px;
+    font-weight: 300;
+    color: rgba(255, 255, 255, .45);
+}
+
+.login-form__input::placeholder {
+    width: 80px;
+    height: 21px;
+    opacity: 0.8;
+    font-size: 18px;
+    font-weight: 300;
+    color: rgba(255, 255, 255, .45);
+}
+
+.login-form__input_submit {
+    width: 250px;
+    margin: 30px;
+    font-size: 20px;
+    text-align: center;
+    color: white;
+    background-color: #19a9a9;
+    border: none;
+    cursor: pointer;
+}
+
+.login-form .wrapper {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.login-form__questions {
+    color: rgba(255, 255, 255, .65);
+    text-align: center;
+    margin-bottom: 14px;
+}
+
+.login-form__questions_green {
+    color: #19a9a9;
+}
+
+/*_________________page____________________*/
+.page_white-bg {
+    background: white;
+}
+
+/*______________h2-page_____________*/
+.h2-page {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 45px 20px 20px;
+    opacity: 0.8;
+    font-size: 34px;
+    font-weight: 300;
+    text-align: center;
+}
+
+.h2-page_grey {
+    color: #4A4A4A;
+}
+
+/*______________p-page_____________*/
+.p-page {
+    width: 100%;
+    padding: 0 10px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 300;
+    color: #4A4A4A;
+}
+
+.p-page__link {
+    padding: 0 10px;
+}
+
+.p-page__link-green {
+    color: #19a9a9;
+}
+
+/*______________register-form__________*/
+.error {
+    color: #dc3545;
+    padding-top: 1rem;
+}
+
+.register-form {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 100%;
+    padding: 10px 0;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.register-form .wrapper {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    max-width: 650px;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.register-form__input {
+    width: 280px;
+    height: 40px;
+    margin: 10px 15px;
+    padding: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    border: solid 1px #c3c7cf;
+    color: black;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.register-form__input::-webkit-input-placeholder {
+    color: rgba(0, 0, 0, .75);
+}
+
+.register-form__input::-moz-placeholder {
+    color: rgba(0, 0, 0, .75);
+}
+
+.register-form__input:-ms-input-placeholder {
+    color: rgba(0, 0, 0, .75);
+}
+
+.register-form__input:-ms-input-placeholder {
+    color: rgba(0, 0, 0, .75);
+}
+
+.register-form__input::placeholder {
+    color: rgba(0, 0, 0, .75);
+}
+
+.register-form label {
+    color: #4A4A4A;
+
+}
+
+.register-form__input-date {
+    color: rgba(0, 0, 0, .75);
+}
+
+.btn-cancel {
+    background: rgba(0, 0, 0, .5);
+}
+
+.register-form label span {
+    display: inline-block;
+    width: 120px;
+    margin-top: 21px;
+}
+
+.register-form .wrapper:nth-of-type(2) {
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    padding-left: 40px;
+}
+
+.register-form .wrapper:nth-of-type(3) {
+    /*margin-top: 40px;*/
+}
