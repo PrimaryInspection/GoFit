@@ -50,6 +50,7 @@ public class MealDaoImpl extends CrudDaoImpl<Meal> implements MealDao {
 
         } catch (SQLException e) {
             logger.error("Error in getting 'menu' from DB, cause: " + e.getCause());
+            e.printStackTrace();
         }
         return menu;
 
@@ -80,6 +81,7 @@ public class MealDaoImpl extends CrudDaoImpl<Meal> implements MealDao {
             }
         } catch (SQLException e) {
             logger.error("Error in getting 'total value by  meal type'  from DB, cause: ", e.getCause());
+            e.printStackTrace();
         }
         return totalsMeal;
     }
@@ -107,6 +109,7 @@ public class MealDaoImpl extends CrudDaoImpl<Meal> implements MealDao {
             }
         } catch (SQLException e) {
             logger.info("Error in getting 'totals day meal' from DB, cause: ", e.getCause());
+            e.printStackTrace();
         }
         return totalsMealDay;
     }
@@ -126,6 +129,7 @@ public class MealDaoImpl extends CrudDaoImpl<Meal> implements MealDao {
             logger.info("Result set of adding :" + resultInsert);
         } catch (SQLException e) {
             logger.error("Error in adding new meal to DB, cause: ", e.getCause());
+            e.printStackTrace();
         }
         return resultInsert > 0;
     }
@@ -141,6 +145,7 @@ public class MealDaoImpl extends CrudDaoImpl<Meal> implements MealDao {
             logger.info("Result set of adding = " + resultDelete);
         } catch (SQLException e) {
             logger.error("Error in deleting 'Meal by id' from DB, cause", e.getCause());
+            e.printStackTrace();
         }
         return resultDelete > 0;
     }

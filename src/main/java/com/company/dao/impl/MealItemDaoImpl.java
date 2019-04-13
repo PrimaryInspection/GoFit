@@ -43,6 +43,7 @@ public class MealItemDaoImpl extends CrudDaoImpl<MealItem> implements MealItemDa
             }
         } catch (SQLException e) {
             logger.error("Error in 'get all Activities' from DB, cause: ", e.getCause());
+            e.printStackTrace();
         }
         return mealItems;
     }
@@ -71,6 +72,7 @@ public class MealItemDaoImpl extends CrudDaoImpl<MealItem> implements MealItemDa
             }
         } catch (SQLException e) {
             logger.info("Error in 'get item by id' :" + id + " cause: ", e.getCause());
+            e.printStackTrace();
         }
         return mealItem;
     }
@@ -92,6 +94,7 @@ public class MealItemDaoImpl extends CrudDaoImpl<MealItem> implements MealItemDa
             }
         } catch (SQLException e) {
             logger.info("Error in  'adding meal item', cause: " + e.getCause());
+            e.printStackTrace();
         }
         return resultAdd > 0;
     }
@@ -109,6 +112,7 @@ public class MealItemDaoImpl extends CrudDaoImpl<MealItem> implements MealItemDa
             }
         } catch (SQLException e) {
             logger.error("Error in 'deleting meal item with id:" + id + ",cause  " , e.getCause());
+            e.printStackTrace();
         }
         return resultDelete > 0;
     }
@@ -137,6 +141,7 @@ public class MealItemDaoImpl extends CrudDaoImpl<MealItem> implements MealItemDa
             }
         } catch (SQLException e) {
             logger.info("Error in 'get item by name': " + name + ",cause: ", e.getCause());
+            e.printStackTrace();
         }
         return mealItem;
     }

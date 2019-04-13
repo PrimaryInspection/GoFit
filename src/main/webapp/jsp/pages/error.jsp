@@ -11,10 +11,10 @@
         <div class="row">
             <div class="col logo">
             <span class="logo__first-word">
-          Fitness
+          Go
         </span>
                 <span class="logo__second-word">
-          Buddy
+          Fit!
         </span>
             </div>
         </div>

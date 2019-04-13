@@ -13,7 +13,7 @@
                     <%------------  Choose activity ------------%>
                     <select class="form-control" name="activityId">
                         <c:forEach var="activity" items="${activities}">
-                            <option value="${activity.id}">
+                            <option value="${activity.activityItemId}">
                                 <c:out value="${activity.name}"/>
                             </option>
                         </c:forEach>

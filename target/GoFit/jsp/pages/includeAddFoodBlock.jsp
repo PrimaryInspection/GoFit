@@ -15,7 +15,7 @@
                 <%------------  Choose product ------------%>
                 <select class="form-control" name="product_id">
                     <c:forEach var="product" items="${products}">
-                        <option value="${product.id}">
+                        <option value="${product.mealItemId}">
                             <c:out value="${product.name}"/>
                         </option>
                     </c:forEach>
@@ -45,7 +45,7 @@
                 <%------------  Choose meal type ------------%>
                 <select class="form-control" name="meal_type_id">
                     <c:forEach var="meal_type" items="${mealTypes}">
-                        <option value="${meal_type.id}">
+                        <option value="${meal_type.mealTypeId}">
                             <c:out value="${meal_type.name}"/>
                         </option>
                     </c:forEach>
@@ -55,9 +55,7 @@
 
         <%------------  BUTTON: add to diary  ---------%>
         <div class="text-center">
-            <button type="submit" class="btn btn-success" name="command" value="ADD_MEAL">Add to Food
-                Diary
-            </button>
+            <button type="submit" class="btn btn-success" name="command" value="ADD_MEAL">Add to Food Diary</button>
         </div>
     </form>
 </div>

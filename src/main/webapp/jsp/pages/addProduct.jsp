@@ -46,14 +46,14 @@
                 <input type="number"
                        required
                        name="protein" min="0" max="99" step="0.1"
-                       value="${newProduct.protein}"
+                       value="${newProduct.proteins}"
                        class="register-form__input"></label>
 
             <label><span>Fat:</span>
                 <input type="number"
                        required
                        name="fat" min="0" max="99" step="0.1"
-                       value="${newProduct.fat}"
+                       value="${newProduct.fats}"
                        class="register-form__input"></label>
 
             <label><span>Carbs:</span>
