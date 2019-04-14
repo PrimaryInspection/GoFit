@@ -50,7 +50,7 @@
     <div class="container container-fluid table-bordered">
         <div class="row">
             <div class="col-4 jumbotron jumbotron1">
-                <div class="hello">Hello, ${users.firstName}!</div>
+                <div class="hello">Hello, ${user.firstName}!</div>
                 <div class="on_track">
                     ${remaining > 0 ? 'You are on track today!' : ''}</div>
                 <div class="still_to_go_text">
@@ -82,16 +82,16 @@
                 <table class="table text-center borderless">
                     <thead>
                     <tr class="your-daily-summary-numbers your-daily-summary-table">
-                        <th class="">${users.caloriesNorm}</th>
+                        <th class="">${user.calories_norm}</th>
                         <th>-</th>
                         <th>${totalDayCalories}</th>
                         <th>+</th>
                         <th>${activitiesListTotals.calories}</th>
                         <th>=</th>
-                        <th class="${remaining < 0 ? 'remaining-minus' : 'remaining'}">
-                            ${remaining}
+                        <th${remaining}
                         </th>
                     </tr>
+                    </thead>
                     </thead>
                     <tbody>
                     <tr class="main-caption">
@@ -158,9 +158,6 @@
                     <jsp:include page="/jsp/pages/includeActivityTable.jsp"/>
                 </c:if>
             </div>
-
-            <%------------- WATER ------------%>
-            <%--<div class="tab-pane" id="water" role="tabpanel">Water</div>--%>
 
             <%------------- BODY STATS ------------%>
             <div class="tab-pane " id="bodyStats" role="tabpanel">

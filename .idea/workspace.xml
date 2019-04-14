@@ -8,19 +8,80 @@
   <component name="ChangeListManager">
     <list default="true" id="9dad994f-f91b-4bfe-b233-9303dc09bd41" name="Default" comment="#1 Create entities from MySQL data base&#10;#2 Create DAO layer for entities&#10;#3 Create Connection Pool with Data Source&#10;#4 Create functional for ActivityItemDaoImpl&#10;#5 Create logging using Logj4">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/dao/impl/ActivityDaoImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/company/dao/impl/ActivityDaoImpl.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/dao/impl/ActivityItemDaoImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/company/dao/impl/ActivityItemDaoImpl.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/dao/impl/LifestyleDaoImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/company/dao/impl/LifestyleDaoImpl.java" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/company/dao/impl/MealDaoImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/company/dao/impl/MealDaoImpl.java" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/company/dao/impl/MealItemDaoImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/company/dao/impl/MealItemDaoImpl.java" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/company/dao/impl/MealTypeDaoImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/company/dao/impl/MealTypeDaoImpl.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/logs/application.log" afterPath="$PROJECT_DIR$/src/main/resources/logs/application.log" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/dao/impl/UserDaoImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/company/dao/impl/UserDaoImpl.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/model/MealItem.java" afterPath="$PROJECT_DIR$/src/main/java/com/company/model/MealItem.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/model/MealToDisplay.java" afterPath="$PROJECT_DIR$/src/main/java/com/company/model/MealToDisplay.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/model/MealType.java" afterPath="$PROJECT_DIR$/src/main/java/com/company/model/MealType.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/service/IMenuService.java" afterPath="$PROJECT_DIR$/src/main/java/com/company/service/IMenuService.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/service/command/commands/AddMealCommand.java" afterPath="$PROJECT_DIR$/src/main/java/com/company/service/command/commands/AddMealCommand.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/service/command/commands/AddNewProductCommand.java" afterPath="$PROJECT_DIR$/src/main/java/com/company/service/command/commands/AddNewProductCommand.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/service/command/commands/AddToActivityDiaryCommand.java" afterPath="$PROJECT_DIR$/src/main/java/com/company/service/command/commands/AddToActivityDiaryCommand.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/service/impl/MenuService.java" afterPath="$PROJECT_DIR$/src/main/java/com/company/service/impl/MenuService.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/service/impl/PageService.java" afterPath="$PROJECT_DIR$/src/main/java/com/company/service/impl/PageService.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/service/impl/UserService.java" afterPath="$PROJECT_DIR$/src/main/java/com/company/service/impl/UserService.java" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/mysqlQueries.properties" afterPath="$PROJECT_DIR$/src/main/resources/mysqlQueries.properties" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/referencec" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/utils.properties" afterPath="$PROJECT_DIR$/src/main/resources/utils.properties" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/jsp/pages/addActivity.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/pages/addActivity.jsp" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/jsp/pages/addProduct.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/pages/addProduct.jsp" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/jsp/pages/error.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/pages/error.jsp" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/jsp/pages/includeAddActivityBlock.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/pages/includeAddActivityBlock.jsp" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/jsp/pages/headerNavbar.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/pages/headerNavbar.jsp" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/jsp/pages/includeActivityTable.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/pages/includeActivityTable.jsp" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/jsp/pages/includeAddBodyStatsBlock.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/pages/includeAddBodyStatsBlock.jsp" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/jsp/pages/includeAddFoodBlock.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/pages/includeAddFoodBlock.jsp" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/jsp/registration.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/registration.jsp" />
-      <change beforePath="$PROJECT_DIR$/target/GoFit/WEB-INF/classes/logs/application.log" afterPath="$PROJECT_DIR$/target/GoFit/WEB-INF/classes/logs/application.log" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/jsp/pages/includeFoodTable.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/pages/includeFoodTable.jsp" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/jsp/pages/main.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/pages/main.jsp" />
+      <change beforePath="$PROJECT_DIR$/target/GoFit/WEB-INF/classes/com/company/dao/impl/ActivityDaoImpl.class" afterPath="$PROJECT_DIR$/target/GoFit/WEB-INF/classes/com/company/dao/impl/ActivityDaoImpl.class" />
+      <change beforePath="$PROJECT_DIR$/target/GoFit/WEB-INF/classes/com/company/dao/impl/LifestyleDaoImpl.class" afterPath="$PROJECT_DIR$/target/GoFit/WEB-INF/classes/com/company/dao/impl/LifestyleDaoImpl.class" />
+      <change beforePath="$PROJECT_DIR$/target/GoFit/WEB-INF/classes/com/company/dao/impl/MealDaoImpl.class" afterPath="$PROJECT_DIR$/target/GoFit/WEB-INF/classes/com/company/dao/impl/MealDaoImpl.class" />
+      <change beforePath="$PROJECT_DIR$/target/GoFit/WEB-INF/classes/com/company/dao/impl/MealItemDaoImpl.class" afterPath="$PROJECT_DIR$/target/GoFit/WEB-INF/classes/com/company/dao/impl/MealItemDaoImpl.class" />
+      <change beforePath="$PROJECT_DIR$/target/GoFit/WEB-INF/classes/com/company/dao/impl/MealTypeDaoImpl.class" afterPath="$PROJECT_DIR$/target/GoFit/WEB-INF/classes/com/company/dao/impl/MealTypeDaoImpl.class" />
+      <change beforePath="$PROJECT_DIR$/target/GoFit/WEB-INF/classes/com/company/dao/impl/UserDaoImpl.class" afterPath="$PROJECT_DIR$/target/GoFit/WEB-INF/classes/com/company/dao/impl/UserDaoImpl.class" />
+      <change beforePath="$PROJECT_DIR$/target/GoFit/WEB-INF/classes/com/company/model/MealItem.class" afterPath="$PROJECT_DIR$/target/GoFit/WEB-INF/classes/com/company/model/MealItem.class" />
+      <change beforePath="$PROJECT_DIR$/target/GoFit/WEB-INF/classes/com/company/model/MealToDisplay.class" afterPath="$PROJECT_DIR$/target/GoFit/WEB-INF/classes/com/company/model/MealToDisplay.class" />
+      <change beforePath="$PROJECT_DIR$/target/GoFit/WEB-INF/classes/com/company/model/MealType.class" afterPath="$PROJECT_DIR$/target/GoFit/WEB-INF/classes/com/company/model/MealType.class" />
+      <change beforePath="$PROJECT_DIR$/target/GoFit/WEB-INF/classes/com/company/service/IMenuService.class" afterPath="$PROJECT_DIR$/target/GoFit/WEB-INF/classes/com/company/service/IMenuService.class" />
+      <change beforePath="$PROJECT_DIR$/target/GoFit/WEB-INF/classes/com/company/service/command/commands/AddMealCommand.class" afterPath="$PROJECT_DIR$/target/GoFit/WEB-INF/classes/com/company/service/command/commands/AddMealCommand.class" />
+      <change beforePath="$PROJECT_DIR$/target/GoFit/WEB-INF/classes/com/company/service/command/commands/AddNewProductCommand.class" afterPath="$PROJECT_DIR$/target/GoFit/WEB-INF/classes/com/company/service/command/commands/AddNewProductCommand.class" />
+      <change beforePath="$PROJECT_DIR$/target/GoFit/WEB-INF/classes/com/company/service/command/commands/AddToActivityDiaryCommand.class" afterPath="$PROJECT_DIR$/target/GoFit/WEB-INF/classes/com/company/service/command/commands/AddToActivityDiaryCommand.class" />
+      <change beforePath="$PROJECT_DIR$/target/GoFit/WEB-INF/classes/com/company/service/impl/MenuService.class" afterPath="$PROJECT_DIR$/target/GoFit/WEB-INF/classes/com/company/service/impl/MenuService.class" />
+      <change beforePath="$PROJECT_DIR$/target/GoFit/WEB-INF/classes/com/company/service/impl/PageService.class" afterPath="$PROJECT_DIR$/target/GoFit/WEB-INF/classes/com/company/service/impl/PageService.class" />
+      <change beforePath="$PROJECT_DIR$/target/GoFit/WEB-INF/classes/mysqlQueries.properties" afterPath="$PROJECT_DIR$/target/GoFit/WEB-INF/classes/mysqlQueries.properties" />
+      <change beforePath="$PROJECT_DIR$/target/GoFit/WEB-INF/classes/referencec" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/GoFit/WEB-INF/classes/utils.properties" afterPath="$PROJECT_DIR$/target/GoFit/WEB-INF/classes/utils.properties" />
+      <change beforePath="$PROJECT_DIR$/target/GoFit/jsp/pages/addActivity.jsp" afterPath="$PROJECT_DIR$/target/GoFit/jsp/pages/addActivity.jsp" />
+      <change beforePath="$PROJECT_DIR$/target/GoFit/jsp/pages/addProduct.jsp" afterPath="$PROJECT_DIR$/target/GoFit/jsp/pages/addProduct.jsp" />
+      <change beforePath="$PROJECT_DIR$/target/GoFit/jsp/pages/error.jsp" afterPath="$PROJECT_DIR$/target/GoFit/jsp/pages/error.jsp" />
+      <change beforePath="$PROJECT_DIR$/target/GoFit/jsp/pages/headerNavbar.jsp" afterPath="$PROJECT_DIR$/target/GoFit/jsp/pages/headerNavbar.jsp" />
+      <change beforePath="$PROJECT_DIR$/target/GoFit/jsp/pages/includeActivityTable.jsp" afterPath="$PROJECT_DIR$/target/GoFit/jsp/pages/includeActivityTable.jsp" />
+      <change beforePath="$PROJECT_DIR$/target/GoFit/jsp/pages/includeAddBodyStatsBlock.jsp" afterPath="$PROJECT_DIR$/target/GoFit/jsp/pages/includeAddBodyStatsBlock.jsp" />
       <change beforePath="$PROJECT_DIR$/target/GoFit/jsp/pages/includeAddFoodBlock.jsp" afterPath="$PROJECT_DIR$/target/GoFit/jsp/pages/includeAddFoodBlock.jsp" />
-      <change beforePath="$PROJECT_DIR$/target/classes/logs/application.log" afterPath="$PROJECT_DIR$/target/classes/logs/application.log" />
+      <change beforePath="$PROJECT_DIR$/target/GoFit/jsp/pages/includeFoodTable.jsp" afterPath="$PROJECT_DIR$/target/GoFit/jsp/pages/includeFoodTable.jsp" />
+      <change beforePath="$PROJECT_DIR$/target/GoFit/jsp/pages/main.jsp" afterPath="$PROJECT_DIR$/target/GoFit/jsp/pages/main.jsp" />
+      <change beforePath="$PROJECT_DIR$/target/GoFit/jsp/registration.jsp" afterPath="$PROJECT_DIR$/target/GoFit/jsp/registration.jsp" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/company/dao/impl/ActivityDaoImpl.class" afterPath="$PROJECT_DIR$/target/classes/com/company/dao/impl/ActivityDaoImpl.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/company/dao/impl/LifestyleDaoImpl.class" afterPath="$PROJECT_DIR$/target/classes/com/company/dao/impl/LifestyleDaoImpl.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/company/dao/impl/MealDaoImpl.class" afterPath="$PROJECT_DIR$/target/classes/com/company/dao/impl/MealDaoImpl.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/company/dao/impl/MealItemDaoImpl.class" afterPath="$PROJECT_DIR$/target/classes/com/company/dao/impl/MealItemDaoImpl.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/company/dao/impl/MealTypeDaoImpl.class" afterPath="$PROJECT_DIR$/target/classes/com/company/dao/impl/MealTypeDaoImpl.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/company/dao/impl/UserDaoImpl.class" afterPath="$PROJECT_DIR$/target/classes/com/company/dao/impl/UserDaoImpl.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/company/model/MealItem.class" afterPath="$PROJECT_DIR$/target/classes/com/company/model/MealItem.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/company/model/MealToDisplay.class" afterPath="$PROJECT_DIR$/target/classes/com/company/model/MealToDisplay.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/company/model/MealType.class" afterPath="$PROJECT_DIR$/target/classes/com/company/model/MealType.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/company/service/IMenuService.class" afterPath="$PROJECT_DIR$/target/classes/com/company/service/IMenuService.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/company/service/command/commands/AddMealCommand.class" afterPath="$PROJECT_DIR$/target/classes/com/company/service/command/commands/AddMealCommand.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/company/service/command/commands/AddNewProductCommand.class" afterPath="$PROJECT_DIR$/target/classes/com/company/service/command/commands/AddNewProductCommand.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/company/service/command/commands/AddToActivityDiaryCommand.class" afterPath="$PROJECT_DIR$/target/classes/com/company/service/command/commands/AddToActivityDiaryCommand.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/company/service/impl/MenuService.class" afterPath="$PROJECT_DIR$/target/classes/com/company/service/impl/MenuService.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/company/service/impl/PageService.class" afterPath="$PROJECT_DIR$/target/classes/com/company/service/impl/PageService.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mysqlQueries.properties" afterPath="$PROJECT_DIR$/target/classes/mysqlQueries.properties" />
+      <change beforePath="$PROJECT_DIR$/target/classes/referencec" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/utils.properties" afterPath="$PROJECT_DIR$/target/classes/utils.properties" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -55,21 +116,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="includeAddBodyStatsBlock.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/pages/includeAddBodyStatsBlock.jsp">
+      <file leaf-file-name="ActivityDaoImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/company/dao/impl/ActivityDaoImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="349">
-              <caret line="82" column="47" lean-forward="false" selection-start-line="82" selection-start-column="47" selection-end-line="82" selection-end-column="47" />
+            <state relative-caret-position="175">
+              <caret line="59" column="57" lean-forward="false" selection-start-line="59" selection-start-column="57" selection-end-line="59" selection-end-column="57" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
+      <file leaf-file-name="ActivityItemDaoImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/company/dao/impl/ActivityItemDaoImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="442">
+              <caret line="38" column="95" lean-forward="false" selection-start-line="38" selection-start-column="95" selection-end-line="38" selection-end-column="95" />
               <folding />
             </state>
           </provider>
@@ -78,8 +139,8 @@
       <file leaf-file-name="main.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/pages/main.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="31" column="37" lean-forward="false" selection-start-line="31" selection-start-column="31" selection-end-line="31" selection-end-column="37" />
+            <state relative-caret-position="207">
+              <caret line="160" column="0" lean-forward="true" selection-start-line="160" selection-start-column="0" selection-end-line="160" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -88,8 +149,8 @@
       <file leaf-file-name="includeFoodTable.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/pages/includeFoodTable.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-29">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="527">
+              <caret line="31" column="58" lean-forward="true" selection-start-line="31" selection-start-column="58" selection-end-line="31" selection-end-column="58" />
               <folding />
             </state>
           </provider>
@@ -98,58 +159,58 @@
       <file leaf-file-name="includeAddFoodBlock.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/pages/includeAddFoodBlock.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="332">
-              <caret line="61" column="4" lean-forward="true" selection-start-line="61" selection-start-column="4" selection-end-line="61" selection-end-column="4" />
+            <state relative-caret-position="-314">
+              <caret line="15" column="63" lean-forward="false" selection-start-line="15" selection-start-column="63" selection-end-line="15" selection-end-column="63" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="includeAddActivityBlock.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/pages/includeAddActivityBlock.jsp">
+      <file leaf-file-name="addActivity.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/pages/addActivity.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="175">
-              <caret line="15" column="52" lean-forward="true" selection-start-line="15" selection-start-column="52" selection-end-line="15" selection-end-column="52" />
+            <state relative-caret-position="191">
+              <caret line="30" column="25" lean-forward="false" selection-start-line="30" selection-start-column="25" selection-end-line="30" selection-end-column="25" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="includeActivityTable.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/pages/includeActivityTable.jsp">
+      <file leaf-file-name="addProduct.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/pages/addProduct.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="158">
-              <caret line="20" column="67" lean-forward="false" selection-start-line="20" selection-start-column="67" selection-end-line="20" selection-end-column="67" />
+            <state relative-caret-position="786">
+              <caret line="47" column="37" lean-forward="false" selection-start-line="47" selection-start-column="37" selection-end-line="47" selection-end-column="37" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="headerNavbar.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/pages/headerNavbar.jsp">
+      <file leaf-file-name="mysqlQueries.properties" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/mysqlQueries.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" column="46" lean-forward="false" selection-start-line="3" selection-start-column="40" selection-end-line="3" selection-end-column="46" />
+            <state relative-caret-position="17">
+              <caret line="1" column="78" lean-forward="false" selection-start-line="1" selection-start-column="78" selection-end-line="1" selection-end-column="78" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="error.jsp" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/pages/error.jsp">
+      <file leaf-file-name="UserDaoImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/company/dao/impl/UserDaoImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="243">
-              <caret line="16" column="14" lean-forward="false" selection-start-line="16" selection-start-column="14" selection-end-line="16" selection-end-column="14" />
+            <state relative-caret-position="68">
+              <caret line="15" column="13" lean-forward="false" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="header.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/pages/header.jsp">
+      <file leaf-file-name="MealDaoImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/company/dao/impl/MealDaoImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="342">
+              <caret line="67" column="66" lean-forward="true" selection-start-line="67" selection-start-column="66" selection-end-line="67" selection-end-column="66" />
               <folding />
             </state>
           </provider>
@@ -168,36 +229,36 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>tra</find>
-      <find>track meals</find>
-      <find>lifestyle</find>
-      <find>registrationerr</find>
-      <find>getwe</find>
-      <find>last_name</find>
-      <find>can</find>
-      <find>No lifestyle found.</find>
-      <find>add</find>
-      <find>last</find>
-      <find>confir</find>
-      <find>PARAM_NAME_PASSWORD_CONFIRM</find>
-      <find>heigh</find>
-      <find>confi</find>
-      <find>Float</find>
-      <find>getUser</find>
-      <find>float</find>
-      <find>weigh</find>
-      <find>parseInt</find>
-      <find>weightGoal</find>
-      <find>weight</find>
       <find>goal</find>
       <find>calorie</find>
       <find>12</find>
       <find>FOOD</find>
       <find>meal_dia</find>
-      <find>fat</find>
       <find>SELECT_TOTALS_MEAL_BY_TYPE</find>
       <find>mealSelectTotalsByType</find>
       <find>fitnes</find>
+      <find>products</find>
+      <find>users</find>
+      <find>productsme</find>
+      <find>types</find>
+      <find>Select</find>
+      <find>Select meal</find>
+      <find>activit</find>
+      <find>SELECT</find>
+      <find>mainP</find>
+      <find>lifes</find>
+      <find>Float</find>
+      <find>float</find>
+      <find>step</find>
+      <find>total fo</find>
+      <find>Total for the day</find>
+      <find>mealItem</find>
+      <find>protein</find>
+      <find>product_id</find>
+      <find>activityId</find>
+      <find>activitySelectAllById</find>
+      <find>activity</find>
+      <find>fat</find>
     </findStrings>
     <dirStrings>
       <dir>E:\JAVA Projects\GoFit</dir>
@@ -219,17 +280,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/company/servlet/MainServlet.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/index.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/com/company/servlet/Main.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/company/dao/impl/BlockUnblockUserCommand.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/company/service/command/commands/LoginCommand.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/company/service/command/commands/ToAdminPageCommand.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/company/service/filter/BlockUserFilter.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/jsp/main.jsp" />
-        <option value="$PROJECT_DIR$/src/main/resources/utils.properties" />
-        <option value="$PROJECT_DIR$/src/main/java/com/company/service/command/commands/BlockUnblockUserCommand.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/config.properties" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/company/service/command/commands/AddNewActivityCommand.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/company/service/command/commands/DeleteEntryFromActivityDiaryCommand.java" />
@@ -242,34 +292,45 @@
         <option value="$PROJECT_DIR$/src/main/java/com/company/service/command/commands/ToPreviousPageCommand.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/company/service/IMealItemService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/company/service/impl/MealItemService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/company/service/command/commands/AddNewProductCommand.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/company/service/command/commands/AddMealCommand.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/company/service/command/commands/AddToActivityDiaryCommand.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/bootstrap/css/login.css" />
         <option value="$PROJECT_DIR$/src/main/webapp/jsp/login.jsp" />
         <option value="$PROJECT_DIR$/src/main/resources/referencec" />
         <option value="$PROJECT_DIR$/src/main/java/com/company/service/command/CommandsEnum.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/jsp/pages/main.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/company/service/impl/LoginRegistrationService.java" />
         <option value="$PROJECT_DIR$/src/main/resources/logs/application.log" />
-        <option value="$PROJECT_DIR$/src/main/java/com/company/service/impl/MenuService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/company/service/impl/UserService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/company/model/User.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/company/service/filter/AuthFilter.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/company/service/impl/PageService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/company/service/command/commands/UpdateUserInfoCommand.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/company/service/command/commands/RegisterNewUserCommand.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/jsp/pages/includeAddBodyStatsBlock.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/com/company/dao/impl/UserDaoImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/jsp/pages/includeAddFoodBlock.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/jsp/pages/includeAddActivityBlock.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/jsp/pages/addProduct.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/com/company/dao/impl/MealDaoImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/company/dao/impl/MealItemDaoImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/company/dao/impl/MealTypeDaoImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/mysqlQueries.properties" />
         <option value="$PROJECT_DIR$/src/main/webapp/jsp/registration.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/jsp/pages/error.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/jsp/pages/addActivity.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/jsp/pages/headerNavbar.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/jsp/pages/includeActivityTable.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/jsp/pages/includeFoodTable.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/company/dao/impl/LifestyleDaoImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/company/dao/impl/MealTypeDaoImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/company/service/impl/UserService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/company/service/impl/PageService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/company/model/MealType.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/utils.properties" />
+        <option value="$PROJECT_DIR$/src/main/java/com/company/model/MealItem.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/company/dao/impl/MealItemDaoImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/jsp/pages/includeAddBodyStatsBlock.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/company/service/impl/MenuService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/company/service/command/commands/AddMealCommand.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/company/model/MealToDisplay.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/jsp/pages/includeAddFoodBlock.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/company/service/command/commands/AddToActivityDiaryCommand.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/jsp/pages/includeAddActivityBlock.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/company/service/command/commands/AddNewProductCommand.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/jsp/pages/addProduct.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/company/dao/impl/MealDaoImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/company/dao/impl/ActivityDaoImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/company/dao/impl/ActivityItemDaoImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/mysqlQueries.properties" />
+        <option value="$PROJECT_DIR$/src/main/java/com/company/dao/impl/UserDaoImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/jsp/pages/main.jsp" />
       </list>
     </option>
   </component>
@@ -317,44 +378,42 @@
     </navigator>
     <panes>
       <pane id="AndroidView" />
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="GoFit" type="b2602c69:ProjectViewProjectNode" />
-              <item name="GoFit" type="462c0819:PsiDirectoryNode" />
+              <item name="GoFit2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="GoFit2" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="GoFit" type="b2602c69:ProjectViewProjectNode" />
-              <item name="GoFit" type="462c0819:PsiDirectoryNode" />
+              <item name="GoFit2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="GoFit2" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="GoFit" type="b2602c69:ProjectViewProjectNode" />
-              <item name="GoFit" type="462c0819:PsiDirectoryNode" />
+              <item name="GoFit2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="GoFit2" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="GoFit" type="b2602c69:ProjectViewProjectNode" />
-              <item name="GoFit" type="462c0819:PsiDirectoryNode" />
+              <item name="GoFit2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="GoFit2" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="GoFit" type="b2602c69:ProjectViewProjectNode" />
-              <item name="GoFit" type="462c0819:PsiDirectoryNode" />
+              <item name="GoFit2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="GoFit2" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="company" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="GoFit" type="b2602c69:ProjectViewProjectNode" />
-              <item name="GoFit" type="462c0819:PsiDirectoryNode" />
+              <item name="GoFit2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="GoFit2" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
@@ -362,8 +421,8 @@
               <item name="dao" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="GoFit" type="b2602c69:ProjectViewProjectNode" />
-              <item name="GoFit" type="462c0819:PsiDirectoryNode" />
+              <item name="GoFit2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="GoFit2" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
@@ -372,18 +431,8 @@
               <item name="impl" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="GoFit" type="b2602c69:ProjectViewProjectNode" />
-              <item name="GoFit" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="company" type="462c0819:PsiDirectoryNode" />
-              <item name="dao" type="462c0819:PsiDirectoryNode" />
-              <item name="interfaces" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="GoFit" type="b2602c69:ProjectViewProjectNode" />
-              <item name="GoFit" type="462c0819:PsiDirectoryNode" />
+              <item name="GoFit2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="GoFit2" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
@@ -391,8 +440,8 @@
               <item name="model" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="GoFit" type="b2602c69:ProjectViewProjectNode" />
-              <item name="GoFit" type="462c0819:PsiDirectoryNode" />
+              <item name="GoFit2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="GoFit2" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
@@ -400,8 +449,8 @@
               <item name="service" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="GoFit" type="b2602c69:ProjectViewProjectNode" />
-              <item name="GoFit" type="462c0819:PsiDirectoryNode" />
+              <item name="GoFit2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="GoFit2" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
@@ -410,8 +459,8 @@
               <item name="command" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="GoFit" type="b2602c69:ProjectViewProjectNode" />
-              <item name="GoFit" type="462c0819:PsiDirectoryNode" />
+              <item name="GoFit2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="GoFit2" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
@@ -421,102 +470,60 @@
               <item name="commands" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="GoFit" type="b2602c69:ProjectViewProjectNode" />
-              <item name="GoFit" type="462c0819:PsiDirectoryNode" />
+              <item name="GoFit2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="GoFit2" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="company" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-              <item name="filter" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="GoFit" type="b2602c69:ProjectViewProjectNode" />
-              <item name="GoFit" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="company" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-              <item name="impl" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="GoFit" type="b2602c69:ProjectViewProjectNode" />
-              <item name="GoFit" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="company" type="462c0819:PsiDirectoryNode" />
-              <item name="servlet" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="GoFit" type="b2602c69:ProjectViewProjectNode" />
-              <item name="GoFit" type="462c0819:PsiDirectoryNode" />
+              <item name="GoFit2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="GoFit2" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="GoFit" type="b2602c69:ProjectViewProjectNode" />
-              <item name="GoFit" type="462c0819:PsiDirectoryNode" />
+              <item name="GoFit2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="GoFit2" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="logs" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="GoFit" type="b2602c69:ProjectViewProjectNode" />
-              <item name="GoFit" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="Resource Bundle 'lang'" type="a6c14932:ResourceBundleNode" />
-            </path>
-            <path>
-              <item name="GoFit" type="b2602c69:ProjectViewProjectNode" />
-              <item name="GoFit" type="462c0819:PsiDirectoryNode" />
+              <item name="GoFit2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="GoFit2" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="GoFit" type="b2602c69:ProjectViewProjectNode" />
-              <item name="GoFit" type="462c0819:PsiDirectoryNode" />
+              <item name="GoFit2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="GoFit2" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
               <item name="jsp" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="GoFit" type="b2602c69:ProjectViewProjectNode" />
-              <item name="GoFit" type="462c0819:PsiDirectoryNode" />
+              <item name="GoFit2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="GoFit2" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
               <item name="jsp" type="462c0819:PsiDirectoryNode" />
               <item name="pages" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="GoFit" type="b2602c69:ProjectViewProjectNode" />
-              <item name="GoFit" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="META-INF" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="GoFit" type="b2602c69:ProjectViewProjectNode" />
-              <item name="GoFit" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
       <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -574,7 +581,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Tomcat Server.GoFit">
+  <component name="RunManager" selected="Tomcat Server.GoFit2">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
@@ -688,7 +695,7 @@
       <properties />
       <listeners />
     </configuration>
-    <configuration name="GoFit" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.34" ALTERNATIVE_JRE_ENABLED="false">
+    <configuration name="GoFit2" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.34" ALTERNATIVE_JRE_ENABLED="false">
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
         <artifact name="GoFit:war exploded">
@@ -767,7 +774,7 @@
       <predefined_log_file id="idea.log" enabled="true" />
     </configuration>
     <list size="3">
-      <item index="0" class="java.lang.String" itemvalue="Tomcat Server.GoFit" />
+      <item index="0" class="java.lang.String" itemvalue="Tomcat Server.GoFit2" />
       <item index="1" class="java.lang.String" itemvalue="Application.Main" />
       <item index="2" class="java.lang.String" itemvalue="Application.UserDaoImpl" />
     </list>
@@ -809,6 +816,7 @@
       <workItem from="1554895512429" duration="17008000" />
       <workItem from="1554973195107" duration="27729000" />
       <workItem from="1555155609566" duration="4014000" />
+      <workItem from="1555255512572" duration="12938000" />
     </task>
     <task id="LOCAL-00001" summary="#1 Create entities from MySQL data base&#10;#2 Create DAO layer for entities&#10;#3 Create Connection Pool with Data Source&#10;#4 Create functional for ActivityItemDaoImpl&#10;#5 Create logging using Logj4">
       <created>1554323916492</created>
@@ -821,7 +829,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="161366000" />
+    <option name="totallyTimeSpent" value="174304000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -846,19 +854,18 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962178" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="top" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24914676" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25255972" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3088737" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24061434" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32764506" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22861843" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.9044369" sideWeight="0.4924357" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2542662" sideWeight="0.4924357" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32764506" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.34114978" sideWeight="0.48039216" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29500756" sideWeight="0.48039216" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26096824" sideWeight="0.51960784" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32935154" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25718608" sideWeight="0.50980395" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -869,6 +876,7 @@
       <window_info id="Coding Counter" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Compute Code Lines" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34210527" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32935154" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -923,60 +931,16 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/company/dao/impl/UserDaoImpl.java</url>
-          <line>147</line>
+          <url>file://$PROJECT_DIR$/src/main/java/com/company/service/command/commands/AddMealCommand.java</url>
+          <line>46</line>
           <properties />
-          <option name="timeStamp" value="11" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/company/dao/impl/UserDaoImpl.java</url>
-          <line>148</line>
-          <properties />
-          <option name="timeStamp" value="12" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/company/dao/impl/UserDaoImpl.java</url>
-          <line>149</line>
-          <properties />
-          <option name="timeStamp" value="13" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/company/dao/impl/UserDaoImpl.java</url>
-          <line>150</line>
-          <properties />
-          <option name="timeStamp" value="14" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/company/dao/impl/UserDaoImpl.java</url>
-          <line>151</line>
-          <properties />
-          <option name="timeStamp" value="15" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/company/service/command/commands/RegisterNewUserCommand.java</url>
-          <line>76</line>
-          <properties />
-          <option name="timeStamp" value="31" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/company/servlet/MainServlet.java</url>
-          <line>39</line>
-          <properties />
-          <option name="timeStamp" value="33" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/main/java/com/company/service/impl/MenuService.java</url>
-          <line>30</line>
-          <properties class="com.company.service.impl.MenuService" method="getUserMenu">
-            <option name="EMULATED" value="true" />
-          </properties>
-          <option name="timeStamp" value="30" />
+          <option name="timeStamp" value="77" />
         </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="34" />
+      <option name="time" value="78" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -985,242 +949,156 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/company/service/command/commands/ToRegistrationPageCommand.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/log4j/log4j/1.2.17/log4j-1.2.17.jar!/org/apache/log4j/helpers/AppenderAttachableImpl.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="177">
-          <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+        <state relative-caret-position="210">
+          <caret line="39" column="0" lean-forward="false" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/company/service/command/commands/ToPreviousPageCommand.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/log4j/log4j/1.2.17/log4j-1.2.17.jar!/org/apache/log4j/spi/LoggingEvent.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="56">
-          <caret line="14" column="13" lean-forward="false" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+        <state relative-caret-position="95">
+          <caret line="114" column="0" lean-forward="false" selection-start-line="114" selection-start-column="0" selection-end-line="114" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/company/service/command/commands/ToNPageCommand.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/log4j/log4j/1.2.17/log4j-1.2.17.jar!/org/apache/log4j/AppenderSkeleton.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="41">
-          <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        <state relative-caret-position="95">
+          <caret line="104" column="0" lean-forward="false" selection-start-line="104" selection-start-column="0" selection-end-line="104" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/company/service/command/commands/ToMainPageCommand.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/log4j/log4j/1.2.17/log4j-1.2.17.jar!/org/apache/log4j/WriterAppender.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="39">
-          <caret line="14" column="13" lean-forward="false" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+        <state relative-caret-position="95">
+          <caret line="141" column="0" lean-forward="false" selection-start-line="141" selection-start-column="0" selection-end-line="141" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/company/service/command/commands/ToLoginPageCommand.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/log4j/log4j/1.2.17/log4j-1.2.17.jar!/org/apache/log4j/helpers/PatternParser.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="449" column="0" lean-forward="false" selection-start-line="449" selection-start-column="0" selection-end-line="449" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/log4j/log4j/1.2.17/log4j-1.2.17.jar!/org/apache/log4j/helpers/PatternConverter.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="51" column="0" lean-forward="false" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/log4j/log4j/1.2.17/log4j-1.2.17.jar!/org/apache/log4j/PatternLayout.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="60" column="0" lean-forward="false" selection-start-line="60" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/company/dao/connection/ConnectionPool.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="128">
+          <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/log4j/log4j/1.2.17/log4j-1.2.17.jar!/org/apache/log4j/Category.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="255" column="0" lean-forward="false" selection-start-line="255" selection-start-column="0" selection-end-line="255" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/log4j/log4j/1.2.17/log4j-1.2.17.jar!/org/apache/log4j/Hierarchy.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="178" column="0" lean-forward="false" selection-start-line="178" selection-start-column="0" selection-end-line="178" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/company/dao/impl/MealTypeDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="30" column="5" lean-forward="false" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/company/model/MealType.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
-          <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-          <folding />
+          <caret line="14" column="8" lean-forward="false" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="13" />
+          <folding>
+            <element signature="e#382#383#0" expanded="false" />
+            <element signature="e#415#416#0" expanded="false" />
+            <element signature="e#543#544#0" expanded="false" />
+            <element signature="e#570#571#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/company/service/command/commands/ToAdminPageCommand.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/company/service/impl/UserService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="39">
-          <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/company/service/command/commands/ToAddProductPageCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="61">
-          <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/company/service/command/commands/ToAddActivityPageCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="61">
-          <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/company/service/command/commands/SetLocaleCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="39">
-          <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/company/service/command/commands/SelectDateCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="39">
-          <caret line="14" column="13" lean-forward="false" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/company/service/command/commands/LogoutCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/company/service/command/commands/LoginCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="39">
-          <caret line="16" column="13" lean-forward="false" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/company/service/command/commands/EmptyCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/company/service/command/commands/DeleteEntryFromFoodDiaryCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="39">
-          <caret line="16" column="13" lean-forward="false" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/company/service/command/commands/DeleteEntryFromActivityDiaryCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="39">
-          <caret line="16" column="13" lean-forward="false" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/company/service/command/commands/CancelCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/company/service/command/commands/BlockUnblockUserCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="39">
-          <caret line="16" column="13" lean-forward="false" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/company/service/command/commands/AddToActivityDiaryCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="39">
-          <caret line="19" column="13" lean-forward="false" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/company/service/command/commands/AddNewProductCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="111">
-          <caret line="20" column="50" lean-forward="false" selection-start-line="20" selection-start-column="43" selection-end-line="20" selection-end-column="50" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/company/service/command/commands/AddNewActivityCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="111">
-          <caret line="20" column="50" lean-forward="false" selection-start-line="20" selection-start-column="43" selection-end-line="20" selection-end-column="50" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/company/service/command/commands/AddMealCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="39">
-          <caret line="19" column="13" lean-forward="false" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/company/dao/impl/UserDaoImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2397">
-          <caret line="152" column="31" lean-forward="false" selection-start-line="152" selection-start-column="29" selection-end-line="152" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/company/model/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="15" column="30" lean-forward="false" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/company/service/command/commands/RegisterNewUserCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="28" column="68" lean-forward="false" selection-start-line="28" selection-start-column="68" selection-end-line="28" selection-end-column="68" />
+        <state relative-caret-position="-827">
+          <caret line="34" column="3" lean-forward="false" selection-start-line="34" selection-start-column="3" selection-end-line="34" selection-end-column="3" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/company/service/command/commands/UpdateUserInfoCommand.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="697">
-          <caret line="53" column="30" lean-forward="false" selection-start-line="53" selection-start-column="30" selection-end-line="53" selection-end-column="30" />
+        <state relative-caret-position="-368">
+          <caret line="16" column="13" lean-forward="false" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/company/service/impl/UserService.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/company/service/command/commands/RegisterNewUserCommand.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="22" column="25" lean-forward="false" selection-start-line="22" selection-start-column="25" selection-end-line="22" selection-end-column="25" />
-          <folding>
-            <element signature="e#1454#1455#0" expanded="false" />
-            <element signature="e#1498#1499#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/company/model/MealType.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="6" column="30" lean-forward="false" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="30" />
+        <state relative-caret-position="-748">
+          <caret line="17" column="13" lean-forward="false" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/company/model/MealItem.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/company/model/User.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="6" column="30" lean-forward="true" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="30" />
+        <state relative-caret-position="103">
+          <caret line="78" column="32" lean-forward="false" selection-start-line="78" selection-start-column="32" selection-end-line="78" selection-end-column="32" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/pages/addProduct.jsp">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/logging/log4j/log4j-web/2.8.1/log4j-web-2.8.1.jar!/org/apache/logging/log4j/web/Log4jWebInitializerImpl.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="82" column="0" lean-forward="true" selection-start-line="82" selection-start-column="0" selection-end-line="82" selection-end-column="0" />
+        <state relative-caret-position="120">
+          <caret line="222" column="0" lean-forward="false" selection-start-line="222" selection-start-column="0" selection-end-line="222" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/company/model/Activity.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/logging/log4j/log4j-web/2.8.1/log4j-web-2.8.1.jar!/org/apache/logging/log4j/web/Log4jServletFilter.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="212">
+          <caret line="44" column="0" lean-forward="false" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/company/model/Meal.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
@@ -1228,156 +1106,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/company/model/ActivityItem.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/company/model/MealItem.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="6" column="24" lean-forward="false" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="34" />
+        <state relative-caret-position="121">
+          <caret line="59" column="10" lean-forward="false" selection-start-line="59" selection-start-column="10" selection-end-line="59" selection-end-column="10" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/pages/addActivity.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/pages/error.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-375">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/logs/application.log">
-      <provider selected="true" editor-type-id="LogFileEditorProvider">
-        <state relative-caret-position="-42">
-          <caret line="280" column="20" lean-forward="true" selection-start-line="280" selection-start-column="20" selection-end-line="291" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/lang.properties">
-      <provider editor-type-id="ResourceBundle">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/config.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="30" lean-forward="true" selection-start-line="6" selection-start-column="30" selection-end-line="6" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/company/dao/impl/MealTypeDaoImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="37" column="32" lean-forward="false" selection-start-line="37" selection-start-column="32" selection-end-line="37" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/company/dao/impl/MealItemDaoImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
-          <caret line="143" column="32" lean-forward="false" selection-start-line="143" selection-start-column="32" selection-end-line="143" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mysqlQueries.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="177">
-          <caret line="13" column="162" lean-forward="false" selection-start-line="13" selection-start-column="162" selection-end-line="13" selection-end-column="162" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/company/dao/impl/MealDaoImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="14" column="22" lean-forward="true" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/registration.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="18" column="14" lean-forward="false" selection-start-line="18" selection-start-column="14" selection-end-line="18" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/login.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-29">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/pages/main.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="31" column="37" lean-forward="false" selection-start-line="31" selection-start-column="31" selection-end-line="31" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/pages/includeFoodTable.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-29">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/pages/includeAddFoodBlock.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="332">
-          <caret line="61" column="4" lean-forward="true" selection-start-line="61" selection-start-column="4" selection-end-line="61" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/pages/includeAddBodyStatsBlock.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="349">
-          <caret line="82" column="47" lean-forward="false" selection-start-line="82" selection-start-column="47" selection-end-line="82" selection-end-column="47" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/pages/includeAddActivityBlock.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="15" column="52" lean-forward="true" selection-start-line="15" selection-start-column="52" selection-end-line="15" selection-end-column="52" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/pages/includeActivityTable.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="158">
-          <caret line="20" column="67" lean-forward="false" selection-start-line="20" selection-start-column="67" selection-end-line="20" selection-end-column="67" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/pages/headerNavbar.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="46" lean-forward="false" selection-start-line="3" selection-start-column="40" selection-end-line="3" selection-end-column="46" />
+        <state relative-caret-position="-12">
+          <caret line="16" column="14" lean-forward="false" selection-start-line="16" selection-start-column="14" selection-end-line="16" selection-end-column="14" />
           <folding />
         </state>
       </provider>
@@ -1390,10 +1130,269 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/pages/error.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/pages/headerNavbar.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="16" column="14" lean-forward="false" selection-start-line="16" selection-start-column="14" selection-end-line="16" selection-end-column="14" />
+        <state relative-caret-position="125">
+          <caret line="10" column="39" lean-forward="false" selection-start-line="10" selection-start-column="39" selection-end-line="10" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/pages/includeActivityTable.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-12">
+          <caret line="23" column="47" lean-forward="true" selection-start-line="23" selection-start-column="47" selection-end-line="23" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/pages/includeAddBodyStatsBlock.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="65" column="19" lean-forward="false" selection-start-line="65" selection-start-column="12" selection-end-line="65" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/company/service/impl/PageService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="656">
+          <caret line="115" column="0" lean-forward="false" selection-start-line="115" selection-start-column="0" selection-end-line="115" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/company/service/IMenuService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="28" lean-forward="true" selection-start-line="0" selection-start-column="28" selection-end-line="0" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/company/service/impl/MenuService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="564">
+          <caret line="70" column="12" lean-forward="false" selection-start-line="70" selection-start-column="12" selection-end-line="70" selection-end-column="12" />
+          <folding>
+            <element signature="e#944#945#0" expanded="false" />
+            <element signature="e#991#992#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/messages.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/company/model/MealToDisplay.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2222">
+          <caret line="139" column="18" lean-forward="false" selection-start-line="139" selection-start-column="18" selection-end-line="139" selection-end-column="18" />
+          <folding>
+            <element signature="e#1385#1386#0" expanded="false" />
+            <element signature="e#1410#1411#0" expanded="false" />
+            <element signature="e#1447#1448#0" expanded="false" />
+            <element signature="e#1475#1476#0" expanded="false" />
+            <element signature="e#1510#1511#0" expanded="false" />
+            <element signature="e#1541#1542#0" expanded="false" />
+            <element signature="e#1589#1590#0" expanded="false" />
+            <element signature="e#1629#1630#0" expanded="false" />
+            <element signature="e#1664#1665#0" expanded="false" />
+            <element signature="e#1695#1696#0" expanded="false" />
+            <element signature="e#1743#1744#0" expanded="false" />
+            <element signature="e#1783#1784#0" expanded="false" />
+            <element signature="e#1817#1818#0" expanded="false" />
+            <element signature="e#1846#1847#0" expanded="false" />
+            <element signature="e#1891#1892#0" expanded="false" />
+            <element signature="e#1927#1928#0" expanded="false" />
+            <element signature="e#1963#1964#0" expanded="false" />
+            <element signature="e#1994#1995#0" expanded="false" />
+            <element signature="e#2043#2044#0" expanded="false" />
+            <element signature="e#2083#2084#0" expanded="false" />
+            <element signature="e#2119#2120#0" expanded="false" />
+            <element signature="e#2150#2151#0" expanded="false" />
+            <element signature="e#2199#2200#0" expanded="false" />
+            <element signature="e#2239#2240#0" expanded="false" />
+            <element signature="e#2271#2272#0" expanded="false" />
+            <element signature="e#2298#2299#0" expanded="false" />
+            <element signature="e#2339#2340#0" expanded="false" />
+            <element signature="e#2371#2372#0" expanded="false" />
+            <element signature="e#2404#2405#0" expanded="false" />
+            <element signature="e#2432#2433#0" expanded="false" />
+            <element signature="e#2475#2476#0" expanded="false" />
+            <element signature="e#2509#2510#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/company/dao/impl/MealItemDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="8">
+          <caret line="133" column="45" lean-forward="true" selection-start-line="133" selection-start-column="45" selection-end-line="133" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/company/service/command/commands/AddMealCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="24" column="102" lean-forward="false" selection-start-line="24" selection-start-column="102" selection-end-line="24" selection-end-column="102" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/company/utils/UtilManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/pages/includeAddActivityBlock.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="63">
+          <caret line="13" column="67" lean-forward="true" selection-start-line="13" selection-start-column="67" selection-end-line="13" selection-end-column="67" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/company/service/command/commands/AddToActivityDiaryCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="23" column="103" lean-forward="false" selection-start-line="23" selection-start-column="93" selection-end-line="23" selection-end-column="103" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/company/dao/impl/CrudDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="7" column="14" lean-forward="false" selection-start-line="7" selection-start-column="14" selection-end-line="7" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/company/dao/impl/LifestyleDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="16" column="13" lean-forward="false" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/utils.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="128">
+          <caret line="20" column="29" lean-forward="false" selection-start-line="20" selection-start-column="19" selection-end-line="20" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/config.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/logs/application.log">
+      <provider selected="true" editor-type-id="LogFileEditorProvider">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/company/service/command/commands/AddNewProductCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="22" column="54" lean-forward="false" selection-start-line="22" selection-start-column="50" selection-end-line="22" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/pages/addActivity.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="191">
+          <caret line="30" column="25" lean-forward="false" selection-start-line="30" selection-start-column="25" selection-end-line="30" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/pages/addProduct.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="786">
+          <caret line="47" column="37" lean-forward="false" selection-start-line="47" selection-start-column="37" selection-end-line="47" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/company/dao/impl/ActivityItemDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="38" column="95" lean-forward="false" selection-start-line="38" selection-start-column="95" selection-end-line="38" selection-end-column="95" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/pages/includeAddFoodBlock.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-314">
+          <caret line="15" column="63" lean-forward="false" selection-start-line="15" selection-start-column="63" selection-end-line="15" selection-end-column="63" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/pages/includeFoodTable.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="31" column="58" lean-forward="true" selection-start-line="31" selection-start-column="58" selection-end-line="31" selection-end-column="58" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/pages/main.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="160" column="0" lean-forward="true" selection-start-line="160" selection-start-column="0" selection-end-line="160" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/company/dao/impl/UserDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="15" column="13" lean-forward="false" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/company/dao/impl/MealDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="67" column="66" lean-forward="true" selection-start-line="67" selection-start-column="66" selection-end-line="67" selection-end-column="66" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/company/dao/impl/ActivityDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="59" column="57" lean-forward="false" selection-start-line="59" selection-start-column="57" selection-end-line="59" selection-end-column="57" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mysqlQueries.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="78" lean-forward="false" selection-start-line="1" selection-start-column="78" selection-end-line="1" selection-end-column="78" />
           <folding />
         </state>
       </provider>

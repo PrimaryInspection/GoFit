@@ -36,20 +36,20 @@ public class MealDaoImpl extends CrudDaoImpl<Meal> implements MealDao {
                 while (resultSet.next()) {
                     menu.add(new MealToDisplay(
                             resultSet.getInt("id"),
-                            resultSet.getString("name"),
-                            resultSet.getString("prod"),
+                            resultSet.getString("meal_type"),
+                            resultSet.getString("meal_item"),
                             resultSet.getInt("weight"),
                             resultSet.getInt("calories"),
-                            resultSet.getFloat("proteins"),
-                            resultSet.getFloat("fats"),
-                            resultSet.getFloat("carbs")
+                            resultSet.getInt("proteins"),
+                            resultSet.getInt("fats"),
+                            resultSet.getInt("carbs")
                     ));
                 }
                 logger.info("Executed Menu: " + menu.toString() + "was got");
             }
 
         } catch (SQLException e) {
-            logger.error("Error in getting 'menu' from DB, cause: " + e.getCause());
+            logger.error("Error in getting 'menu' from DB, cause: " + e.fillInStackTrace());
             e.printStackTrace();
         }
         return menu;
@@ -71,16 +71,16 @@ public class MealDaoImpl extends CrudDaoImpl<Meal> implements MealDao {
                     totalsMeal = new MealToDisplay(
                             resultSet.getInt("weight"),
                             resultSet.getInt("calories"),
-                            resultSet.getFloat("proteins"),
-                            resultSet.getFloat("fats"),
-                            resultSet.getFloat("carbs")
+                            resultSet.getInt("proteins"),
+                            resultSet.getInt("fats"),
+                            resultSet.getInt("carbs")
                     );
 
                 }
                 logger.info("Total Meals by type :" + totalsMeal + "was got");
             }
         } catch (SQLException e) {
-            logger.error("Error in getting 'total value by  meal type'  from DB, cause: ", e.getCause());
+            logger.error("Error in getting 'total value by  meal type'  from DB, cause: ", e.fillInStackTrace());
             e.printStackTrace();
         }
         return totalsMeal;
@@ -100,15 +100,15 @@ public class MealDaoImpl extends CrudDaoImpl<Meal> implements MealDao {
                     totalsMealDay = new MealToDisplay(
                             resultSet.getInt("weight"),
                             resultSet.getInt("calories"),
-                            resultSet.getFloat("proteins"),
-                            resultSet.getFloat("fats"),
-                            resultSet.getFloat("carbs")
+                            resultSet.getInt("proteins"),
+                            resultSet.getInt("fats"),
+                            resultSet.getInt("carbs")
                     );
                 }
                 logger.info("Get total day meal :" + resultSet.toString() + "was got");
             }
         } catch (SQLException e) {
-            logger.info("Error in getting 'totals day meal' from DB, cause: ", e.getCause());
+            logger.info("Error in getting 'totals day meal' from DB, cause: ", e.fillInStackTrace());
             e.printStackTrace();
         }
         return totalsMealDay;
@@ -128,7 +128,7 @@ public class MealDaoImpl extends CrudDaoImpl<Meal> implements MealDao {
             resultInsert = statement.executeUpdate();
             logger.info("Result set of adding :" + resultInsert);
         } catch (SQLException e) {
-            logger.error("Error in adding new meal to DB, cause: ", e.getCause());
+            logger.error("Error in adding new meal to DB, cause: ", e.fillInStackTrace());
             e.printStackTrace();
         }
         return resultInsert > 0;
@@ -144,7 +144,7 @@ public class MealDaoImpl extends CrudDaoImpl<Meal> implements MealDao {
             resultDelete = statement.executeUpdate();
             logger.info("Result set of adding = " + resultDelete);
         } catch (SQLException e) {
-            logger.error("Error in deleting 'Meal by id' from DB, cause", e.getCause());
+            logger.error("Error in deleting 'Meal by id' from DB, cause", e.fillInStackTrace());
             e.printStackTrace();
         }
         return resultDelete > 0;

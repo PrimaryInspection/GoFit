@@ -19,8 +19,8 @@ public class AddNewProductCommand implements ActionCommand {
 
     private static final String PARAM_NAME_NAME = "name";
     private static final String PARAM_NAME_CALORIES = "calories";
-    private static final String PARAM_NAME_PROTEIN = "protein";
-    private static final String PARAM_NAME_FAT = "fat";
+    private static final String PARAM_NAME_PROTEIN = "proteins";
+    private static final String PARAM_NAME_FAT = "fats";
     private static final String PARAM_NAME_CARBS = "carbs";
 
     private IPageService pageService = ServiceFactory.getPageService();
@@ -57,10 +57,10 @@ public class AddNewProductCommand implements ActionCommand {
     private MealItem getProductFromRequest(HttpServletRequest request) {
         MealItem product = new MealItem(
                 request.getParameter(PARAM_NAME_NAME),
-                Float.valueOf(request.getParameter(PARAM_NAME_FAT)),
-                Integer.valueOf(request.getParameter(PARAM_NAME_CALORIES)),
-                Float.valueOf(request.getParameter(PARAM_NAME_PROTEIN)),
-                Float.valueOf(request.getParameter(PARAM_NAME_CARBS))
+                Integer.parseInt(request.getParameter(PARAM_NAME_FAT)),
+                Integer.parseInt(request.getParameter(PARAM_NAME_CALORIES)),
+                Integer.parseInt(request.getParameter(PARAM_NAME_PROTEIN)),
+                Integer.parseInt(request.getParameter(PARAM_NAME_CARBS))
         );
         return product;
     }

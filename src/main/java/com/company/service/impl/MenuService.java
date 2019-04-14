@@ -8,7 +8,6 @@ import com.company.service.IMenuService;
 import org.apache.log4j.LogManager;
 import org.apache.log4j.Logger;
 
-import java.text.DecimalFormat;
 import java.time.LocalDate;
 import java.util.List;
 
@@ -42,42 +41,40 @@ public class MenuService implements IMenuService {
     }
 
     @Override
-    public String getTotalCalories(List<MealToDisplay> menu) {
-        float totalCalories=0.f;
+    public int getTotalCalories(List<MealToDisplay> menu) {
+        int totalCalories=0;
         for (MealToDisplay m: menu) {
             totalCalories += m.getCalories();
         }
-        logger.debug("CALORIES------->" + new DecimalFormat("###.###").format(totalCalories));
-        return new DecimalFormat("###.###").format(totalCalories);
+        return totalCalories;
     }
 
     @Override
-    public String getTotalProteins(List<MealToDisplay> menu) {
-        float totalProteins=0.f;
+    public int getTotalProteins(List<MealToDisplay> menu) {
+        int totalProteins=0;
         for (MealToDisplay m: menu) {
             totalProteins += m.getCalories();
         }
-        logger.debug("PROTEINS-------->" + new DecimalFormat(".##").format(totalProteins));
-        return new DecimalFormat(".##").format(totalProteins);
+        return totalProteins;
     }
 
     @Override
-    public String getTotalFat(List<MealToDisplay> menu) {
-        float totalFats=0.f;
-        for (MealToDisplay m: menu) {
+    public int getTotalFat(List<MealToDisplay> menu) {
+        int totalFats =0;
+        for (MealToDisplay m : menu) {
             totalFats += m.getCalories();
         }
-        logger.debug("FATS-------->" + new DecimalFormat(".##").format(totalFats));
-        return new DecimalFormat(".##").format(totalFats);    }
+        return totalFats;
+    }
 
     @Override
-    public String getTotalCarbs(List<MealToDisplay> menu) {
-        float totalCarbs=0.f;
-        for (MealToDisplay m: menu) {
+    public int getTotalCarbs(List<MealToDisplay> menu) {
+        int totalCarbs = 0;
+        for (MealToDisplay m : menu) {
             totalCarbs += m.getCalories();
         }
-        logger.debug("CARBS-------->" + new DecimalFormat(".#").format(totalCarbs));
-        return new DecimalFormat(".#").format(totalCarbs);    }
+        return totalCarbs;
+    }
 
     @Override
     public MealToDisplay getTotalsByMealType(Integer userId, LocalDate date, Integer mealTypeId) {

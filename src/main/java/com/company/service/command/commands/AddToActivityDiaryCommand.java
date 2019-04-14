@@ -34,9 +34,9 @@ public class AddToActivityDiaryCommand implements ActionCommand {
         String page = ConfigurationManager.getProperty("path.page.main");
 
         Activity activityEntry = new Activity(
-                Integer.valueOf(request.getParameter(REQUEST_PARAM_ACTIVITY_ID)),
+                Integer.parseInt(request.getParameter(REQUEST_PARAM_ACTIVITY_ID)),
                 ((User) session.getAttribute(SESSION_ATTR_NAME_USER)).getUserId(),
-                Integer.valueOf(request.getParameter(REQUEST_PARAM_TIME_SPENT)),
+                Integer.parseInt(request.getParameter(REQUEST_PARAM_TIME_SPENT)),
                 (LocalDate) session.getAttribute(SESSION_ATTR_NAME_DATE)
         );
         logger.info("Activity entry to add: " + activityEntry);

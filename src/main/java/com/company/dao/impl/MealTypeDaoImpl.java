@@ -34,7 +34,7 @@ public class MealTypeDaoImpl extends CrudDaoImpl<MealType> implements MealTypeDa
                         resultSet.getString("name")));
             }
         } catch (SQLException e) {
-            logger.error("Error in 'get all meal types' method", e.getCause());
+            logger.error("Error in 'get all meal types' method", e.fillInStackTrace());
             e.printStackTrace();
         }
         return mealTypes;

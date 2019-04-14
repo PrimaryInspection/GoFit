@@ -39,7 +39,7 @@ public class LifestyleDaoImpl extends CrudDaoImpl<Lifestyle> implements Lifestyl
                 }
             }
         } catch (SQLException e) {
-            logger.error("Error in 'get lifestyle' method", e.getCause());
+            logger.error("Error in 'get lifestyle' method", e.fillInStackTrace());
         }
         return lifestyle;
     }
@@ -59,7 +59,7 @@ public class LifestyleDaoImpl extends CrudDaoImpl<Lifestyle> implements Lifestyl
                         resultSet.getString("name")));
             }
         } catch (SQLException e) {
-            logger.error("Error in 'get all lifestyles' method", e.getCause());
+            logger.error("Error in 'get all lifestyles' method", e.fillInStackTrace());
         }
         return lifestyles;
     }

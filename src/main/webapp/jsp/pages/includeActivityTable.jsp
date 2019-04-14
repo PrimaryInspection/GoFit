@@ -20,7 +20,7 @@
             <form method="post" action="/controller">
                 <input type="hidden" name="activityId" value="${entry.id}">
                 <tr class="food-row-tr">
-                    <td class="food_table_first_col_width text-left">${entry.activity}</td>
+                    <td class="food_table_first_col_width text-left">${entry.activityItemId}</td>
                     <td>${entry.timeSpent}</td>
                     <td>${entry.calories}</td>
                     <td>

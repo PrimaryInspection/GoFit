@@ -7,14 +7,14 @@ public class MealItem implements Serializable {
     private Integer mealItemId;
     private String name;
     private Integer calories;
-    private Float fats;
-    private Float proteins;
-    private Float carbs;
+    private Integer fats;
+    private Integer proteins;
+    private Integer carbs;
 
     public MealItem() {
     }
 
-    public MealItem(String name, Float fats, Integer calories, Float proteins, Float carbs) {
+    public MealItem(String name, Integer fats, Integer calories, Integer proteins, Integer carbs) {
         this.name = name;
         this.fats = fats;
         this.calories = calories;
@@ -22,7 +22,7 @@ public class MealItem implements Serializable {
         this.carbs = carbs;
     }
 
-    public MealItem(Integer mealItemId, String name, Float fats, Integer calories, Float proteins, Float carbs) {
+    public MealItem(Integer mealItemId, String name, Integer fats, Integer calories, Integer proteins, Integer carbs) {
         this.mealItemId = mealItemId;
         this.name = name;
         this.fats = fats;
@@ -43,17 +43,17 @@ public class MealItem implements Serializable {
 
     public void setCalories(Integer calories) { this.calories = calories; }
 
-    public Float getFats() { return fats; }
+    public Integer getFats() { return fats; }
 
-    public void setFats(Float fats) { this.fats = fats; }
+    public void setFats(Integer fats) { this.fats = fats; }
 
-    public Float getProteins() { return proteins; }
+    public Integer getProteins() { return proteins; }
 
-    public void setProteins(Float proteins) { this.proteins = proteins; }
+    public void setProteins(Integer proteins) { this.proteins = proteins; }
 
-    public Float getCarbs() { return carbs; }
+    public Integer getCarbs() { return carbs; }
 
-    public void setCarbs(Float carbs) { this.carbs = carbs; }
+    public void setCarbs(Integer carbs) { this.carbs = carbs; }
 
     @Override
     public boolean equals(Object o) {

@@ -12,7 +12,7 @@ public class MealType implements Serializable {
 
     public MealType(Integer mealTypeId, String name) {
         this.mealTypeId = mealTypeId;
-        name = name;
+        this.name = name;
     }
 
     public Integer getMealTypeId() {

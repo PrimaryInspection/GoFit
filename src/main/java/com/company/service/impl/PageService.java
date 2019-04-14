@@ -50,6 +50,7 @@ public class PageService implements IPageService {
     updateFoodTab(session,userId, chosenDate);
     updateActivityTab(session,userId,chosenDate);
     updateBodyStatsTab(session);
+    updateFormulaAndGoals(session,userId,chosenDate);
 
     }
 
@@ -106,15 +107,18 @@ public class PageService implements IPageService {
     }
 
     private void updateFormulaAndGoals(HttpSession session, int userId, LocalDate chosenDate) {
+        try {
+
+
         User user = userService.getUser(userId);
         // FORMULA
         Integer remaining = user.getCalories_norm() - menuService.getUserMealTotal(userId, chosenDate).getCalories() +
                 activityService.getUserActivityTotals(user.getUserId(), chosenDate).getCalories();
         session.setAttribute("remaining", remaining);
-        Integer goal=user.getWeight() - user.getWeightGoal();
 
 //        GOALS
-        session.setAttribute("kgToGoal", goal);
+        session.setAttribute("kgToGoal", user.getWeight() - user.getWeightGoal());
+        }catch (NullPointerException e){e.printStackTrace();}
     }
 
 
@@ -129,6 +133,8 @@ public class PageService implements IPageService {
     }
 
     private void updateFoodTab(HttpSession session, int id, LocalDate date){
+try {
+
 
         List<MealToDisplay> userMealToDisplay = menuService.getUserMenu(id, date);
 
@@ -141,11 +147,11 @@ public class PageService implements IPageService {
          * gets list of current products from db and writes them into session
          */
 
-        Map<String , MealToDisplay> totalsByMealType = makeItemsMap(id,date,mealTypes);
-        Map<String , List<MealToDisplay>> mealsSplittedByType = makeMealMap(mealTypes,userMealToDisplay);
+    Map<String , List<MealToDisplay>> mealsSplittedByType =makeMap(mealTypes,userMealToDisplay);
+    Map<String , MealToDisplay> totalsByMealType =makeMap2(id,date,mealTypes);
 
         session.setAttribute("mealTypes", mealTypes);
-        session.setAttribute("products", mealItemService.getAll());
+        session.setAttribute("mealItems", mealItemService.getAll());
         session.setAttribute("meals", mealsSplittedByType);
         session.setAttribute("totalsByMealType", totalsByMealType);
         session.setAttribute("totalDayFoodWeight", menuService.getTotalWeight(userMealToDisplay));
@@ -153,7 +159,7 @@ public class PageService implements IPageService {
         session.setAttribute("totalDayProteins", menuService.getTotalProteins(userMealToDisplay));
         session.setAttribute("totalDayFat", menuService.getTotalFat(userMealToDisplay));
         session.setAttribute("totalDayCarbs", menuService.getTotalCarbs(userMealToDisplay));
-
+}catch (NullPointerException e){e.printStackTrace();}
     }
 
     private void updateBodyStatsTab(HttpSession session){
@@ -170,32 +176,25 @@ public class PageService implements IPageService {
         session.setAttribute("activitiesListTotals" , activityService.getUserActivityTotals(userId,date));
     }
 
-    private Map<String, MealToDisplay> makeItemsMap(int userId, LocalDate date, List<MealType> mealTypes) {
-        Map<String, MealToDisplay> map = new HashMap<>();
-        for (MealType types : mealTypes) {
-            map.put(types.getName(), menuService.getTotalsByMealType(userId, date, types.getMealTypeId()));
-        }
-        return map;
-    }
-
-    /**
-     * Makes map with key = MealType, value = list of meals within MealType
-     * to be displayed on jsp page.
-     *
-     * @param mealTypes
-     * @param meals - list of all meals of certain user on certain date
-     * @return
-     */
-
-    private Map<String, List<MealToDisplay>> makeMealMap(List<MealType> mealTypes, List<MealToDisplay> meals) {
+    private Map<String, List<MealToDisplay>> makeMap(List<MealType> mealTypes, List<MealToDisplay> meals) {
         Map<String, List<MealToDisplay>> map = new LinkedHashMap<>();
+
         for (MealType type : mealTypes
                 ) {
             map.put(type.getName(), new ArrayList<>());
         }
 
-        for (MealToDisplay meal : meals) {
+        for (MealToDisplay meal : meals
+                ) {
             map.get(meal.getMealType()).add(meal);
+        }
+        return map;
+    }
+
+    private Map<String, MealToDisplay> makeMap2(int userId, LocalDate chosenDate, List<MealType> mealTypes) {
+        Map<String, MealToDisplay> map = new HashMap<>();
+        for (MealType type : mealTypes) {
+            map.put(type.getName(), menuService.getTotalsByMealType(userId, chosenDate, type.getMealTypeId()));
         }
         return map;
     }

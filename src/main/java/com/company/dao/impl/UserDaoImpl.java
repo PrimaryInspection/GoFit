@@ -55,7 +55,7 @@ public class UserDaoImpl extends CrudDaoImpl<User> implements UserDao {
 
             }
         } catch (SQLException e) {
-            logger.error("Error in 'getting all users' from DB, cause: " , e.getCause());
+            logger.error("Error in 'getting all users' from DB, cause: " , e.fillInStackTrace());
         }
         return users;
     }
@@ -76,7 +76,7 @@ public class UserDaoImpl extends CrudDaoImpl<User> implements UserDao {
                 logger.info("User statusId was not updated.");
             }
         } catch (SQLException e) {
-            logger.error("Error in updating user statusId" , e.getCause());
+            logger.error("Error in updating user statusId" , e.fillInStackTrace());
         }
         return resultUpdate > 0;
     }
@@ -109,7 +109,7 @@ public class UserDaoImpl extends CrudDaoImpl<User> implements UserDao {
                 }
             }
         } catch (SQLException e) {
-            logger.error("Error in get 'user by id': " + id ,  e.getCause());
+            logger.error("Error in get 'user by id': " + id ,  e.fillInStackTrace());
 
         }
         return user;
@@ -128,7 +128,7 @@ public class UserDaoImpl extends CrudDaoImpl<User> implements UserDao {
 
             }
         } catch (SQLException e) {
-            logger.error("Error in deleting user by id=" + id , e.getCause());
+            logger.error("Error in deleting user by id=" + id , e.fillInStackTrace());
         }
         return resultDelete > 0;
     }
@@ -157,7 +157,7 @@ public class UserDaoImpl extends CrudDaoImpl<User> implements UserDao {
             logger.info((resultInsert < 1) ? "User was not added." : resultInsert + " user was successfully added.");
 
         } catch (SQLException e) {
-            logger.error("Error in adding user to DB" , e.getCause());
+            logger.error("Error in adding user to DB" , e.fillInStackTrace());
             e.printStackTrace();
         }
         return resultInsert > 0;
@@ -184,7 +184,7 @@ public class UserDaoImpl extends CrudDaoImpl<User> implements UserDao {
                 }
             }
         } catch (SQLException e) {
-            logger.error("Error in updating user " , e.getCause());
+            logger.error("Error in updating user " , e.fillInStackTrace());
         }
         return resultUpdate > 0;
     }
@@ -218,7 +218,7 @@ public class UserDaoImpl extends CrudDaoImpl<User> implements UserDao {
                 }
             }
         } catch (SQLException e) {
-            logger.error("Error in getting user by login: " + login  , e.getCause());
+            logger.error("Error in getting user by login: " + login  , e.fillInStackTrace());
 
         }
         return user;
@@ -256,7 +256,7 @@ public class UserDaoImpl extends CrudDaoImpl<User> implements UserDao {
                 }
             }
         } catch (SQLException e) {
-            logger.error("Error in getting  users limit:" + limit + " offsetting:" + offset , e.getCause());
+            logger.error("Error in getting  users limit:" + limit + " offsetting:" + offset , e.fillInStackTrace());
         }
         return users;
     }
@@ -274,7 +274,7 @@ public class UserDaoImpl extends CrudDaoImpl<User> implements UserDao {
                 result = resultSet.getInt("count");
             }
         } catch (SQLException e) {
-            logger.error("Error in obtaining 'number of users'" , e.getCause());
+            logger.error("Error in obtaining 'number of users'" , e.fillInStackTrace());
         }
         logger.info("Number of users is :" + result);
         return result;

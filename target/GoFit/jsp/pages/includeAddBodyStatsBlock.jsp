@@ -4,30 +4,12 @@
 <div class="container container-fluid table-bordered">
     <form action="/controller" method="post">
         <h5 class="text-center">You can update your body stats here</h5>
-        <br/>
-
-        <div class="row ">
-
-            <%--COLUMN 1--%>
-            <div class="col">
-
-                <%--GENDER--%>
-                <div class="main-caption">GENDER</div>
-                <select class="form-control" name="genderId">
-                    <c:forEach var="item" items="${genders}">
-                        <option value="${item.id}" <c:if test="${user.genderId == item.id}">selected</c:if>>
-                            <c:out value="${item.name}"/>
-                        </option>
-                    </c:forEach>
-                </select>
-
-                <br/>
 
                 <%--ACTIVITY--%>
                 <div class="main-caption">ACTIVITY</div>
                 <select class="form-control" name="lifestyleId">
                     <c:forEach var="item" items="${lifestyles}">
-                        <option value="${item.id}" <c:if test="${user.lifestyleId == item.id}">selected</c:if>>
+                        <option value="${item.id}" <c:if test="${user.lifestyle_id == item.id}">selected</c:if>>
                             <c:out value="${item.name}"/>
                         </option>
                     </c:forEach>
@@ -58,7 +40,7 @@
 
                 <%--WEIGHT--%>
                 <div class="main-caption">WEIGHT (in kilos)</div>
-                <input required class="form-control" type="number" name="weight" min="1" max="250" step="0.1"
+                <input required class="form-control" type="number" name="weight" min="1" max="250" step="1"
                        value="${user.weight}"
                        placeholder="Enter weight">
 

@@ -36,7 +36,7 @@ public class ActivityItemDaoImpl extends CrudDaoImpl<ActivityItem> implements Ac
                         resultSet.getInt("calories")));
             }
         } catch (SQLException e) {
-            logger.error("Error in 'get all Activities' from DB, cause: ", e.getCause());
+            logger.error("Error in 'get all Activities' from DB, cause: ", e.fillInStackTrace());
         }
         return activities;
     }
@@ -62,7 +62,7 @@ public class ActivityItemDaoImpl extends CrudDaoImpl<ActivityItem> implements Ac
                 }
             }
         } catch (SQLException e) {
-            logger.error("Error in getting 'activity item' with name=" + name, e.getCause());
+            logger.error("Error in getting 'activity item' with name=" + name, e.fillInStackTrace());
         }
         return activityItem;
     }
@@ -83,7 +83,7 @@ public class ActivityItemDaoImpl extends CrudDaoImpl<ActivityItem> implements Ac
                 logger.info("'Activity item was not added");
             }
         } catch (SQLException e) {
-            logger.error("Error in adding 'activity item' to DB, cause: ", e.getCause());
+            logger.error("Error in adding 'activity item' to DB, cause: ", e.fillInStackTrace());
         }
         return resultAdd > 0;
     }

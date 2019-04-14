@@ -29,10 +29,10 @@ public class UserService implements IUserService{
         logger.info("Getting user by login: " + login);
         return userDao.get(login);
     }
-
+//TODO UNCOMMENT LOGGER
     @Override
     public User getUser(int id) {
-        logger.info("Getting user by id: " + id);
+      logger.info("Getting user by id: " + id);
         return userDao.getItem(id);
     }
 

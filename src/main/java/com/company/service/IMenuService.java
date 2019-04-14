@@ -13,13 +13,13 @@ public interface IMenuService {
 
     int getTotalWeight(List<MealToDisplay> menu);
 
-    String getTotalCalories(List<MealToDisplay> menu);
+    int getTotalCalories(List<MealToDisplay> menu);
 
-    String getTotalProteins(List<MealToDisplay> menu);
+    int getTotalProteins(List<MealToDisplay> menu);
 
-    String getTotalFat(List<MealToDisplay> menu);
+    int getTotalFat(List<MealToDisplay> menu);
 
-    String getTotalCarbs(List<MealToDisplay> menu);
+    int getTotalCarbs(List<MealToDisplay> menu);
 
     MealToDisplay getTotalsByMealType(Integer userId , LocalDate date , Integer mealTypeId);
 

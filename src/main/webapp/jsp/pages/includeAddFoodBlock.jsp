@@ -13,8 +13,8 @@
                 <div class="main-caption">SELECT PRODUCT</div>
 
                 <%------------  Choose product ------------%>
-                <select class="form-control" name="product_id">
-                    <c:forEach var="product" items="${products}">
+                <select class="form-control" name="meal_item_id">
+                    <c:forEach var="product" items="${mealItems}">
                         <option value="${product.mealItemId}">
                             <c:out value="${product.name}"/>
                         </option>
