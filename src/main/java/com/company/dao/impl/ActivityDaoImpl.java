@@ -57,7 +57,7 @@ public class ActivityDaoImpl extends CrudDaoImpl<Activity> implements ActivityDa
                 while (resultSet.next()) {
                     listOfActivities.add(new ActivityToDisplay(
                             resultSet.getInt("id"),
-                            resultSet.getString("activity"),
+                            resultSet.getString("activityName"),
                             resultSet.getInt("time_spent"),
                             resultSet.getInt("calories")
                     ));
@@ -109,6 +109,6 @@ public class ActivityDaoImpl extends CrudDaoImpl<Activity> implements ActivityDa
         } catch (SQLException e) {
             logger.error("Error in deleting activity from DB, cause: " + e.fillInStackTrace());
         }
-        return resultDelete > 0;
+        return resultDelete < 0;
     }
 }

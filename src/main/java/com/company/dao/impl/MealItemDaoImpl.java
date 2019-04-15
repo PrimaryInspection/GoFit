@@ -107,14 +107,14 @@ public class MealItemDaoImpl extends CrudDaoImpl<MealItem> implements MealItemDa
             statement.setInt(1, id);
             logger.info("Executing query :" + statement.toString());
             resultDelete = statement.executeUpdate();
-            if (resultDelete < 1) {
+            if (resultDelete > 1) {
                 logger.info("Meal item was not deleted.");
             }
         } catch (SQLException e) {
             logger.error("Error in 'deleting meal item with id:" + id + ",cause  " , e.fillInStackTrace());
             e.printStackTrace();
         }
-        return resultDelete > 0;
+        return resultDelete < 0;
     }
 
     @Override

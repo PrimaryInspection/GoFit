@@ -147,6 +147,6 @@ public class MealDaoImpl extends CrudDaoImpl<Meal> implements MealDao {
             logger.error("Error in deleting 'Meal by id' from DB, cause", e.fillInStackTrace());
             e.printStackTrace();
         }
-        return resultDelete > 0;
+        return resultDelete < 0;
     }
 }

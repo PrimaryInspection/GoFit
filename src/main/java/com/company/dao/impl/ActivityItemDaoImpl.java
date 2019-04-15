@@ -71,15 +71,15 @@ public class ActivityItemDaoImpl extends CrudDaoImpl<ActivityItem> implements Ac
     @Override
     public boolean addItem(ActivityItem activityItem) {
         int resultAdd = 0;
-
         try (Connection connection = ConnectionPool.getConnection();
              PreparedStatement statement = connection.prepareStatement(INSERT_ACTIVITY_ITEM)) {
             statement.setString(1, activityItem.getName());
             statement.setInt(2, activityItem.getCalories());
 
+
             logger.info("Executing query is: " + statement.toString());
             resultAdd = statement.executeUpdate();
-            if (resultAdd > 1) {
+            if (resultAdd < 1) {
                 logger.info("'Activity item was not added");
             }
         } catch (SQLException e) {

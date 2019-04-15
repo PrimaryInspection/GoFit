@@ -30,15 +30,15 @@
                             <td class="food_table_first_col_width text-left">${mealEntry.mealItem}</td>
                             <td>${mealEntry.weight}</td>
                             <td>${mealEntry.calories}</td>
-                            <td>${mealEntry.proteins}</td>
-                            <td>${mealEntry.fats}</td>
+                            <td>${mealEntry.protein}</td>
+                            <td>${mealEntry.fat}</td>
                             <td>${mealEntry.carbs}</td>
-                            <td>
+                        <%--    <td>
                                 <button class="btn btn-link btn-block food-row-tr-btn btn-sm" type="submit"
                                         name="command"
                                         value="DELETE_ENTRY_FROM_FOOD_DIARY">Delete
                                 </button>
-                            </td>
+                            </td>--%>
                         </tr>
                     </form>
                 </c:forEach>
@@ -48,8 +48,8 @@
                     <td>Total:</td>
                     <td>${totalsByMealType[entry.key].weight}</td>
                     <td>${totalsByMealType[entry.key].calories}</td>
-                    <td>${totalsByMealType[entry.key].proteins}</td>
-                    <td>${totalsByMealType[entry.key].fats}</td>
+                    <td>${totalsByMealType[entry.key].protein}</td>
+                    <td>${totalsByMealType[entry.key].fat}</td>
                     <td>${totalsByMealType[entry.key].carbs}</td>
                     <td></td>
                 </tr>
@@ -69,7 +69,6 @@
         <th class="invisible" scope="col">PROTEINS</th>
         <th class="invisible" scope="col">FATS</th>
         <th class="invisible" scope="col">CARBS</th>
-        <th class="invisible" scope="col"></th>
         </thead>
 
         <tbody class="text-right">
@@ -81,11 +80,10 @@
             <th>${totalDayProteins}</th>
             <th>${totalDayFat}</th>
             <th>${totalDayCarbs}</th>
-            <%--TODO this is for table correct borders only. Buttons are invisible--%>
-            <td>
+<%--            <td>
                 <button class="btn btn-link btn-block invisible food-row-tr-btn btn-sm" type="button">Delete
                 </button>
-            </td>
+            </td>--%>
         </tr>
         </tbody>
     </table>

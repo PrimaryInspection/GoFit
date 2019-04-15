@@ -18,7 +18,7 @@
         <tbody class="text-right">
         <c:forEach var="entry" items="${activitiesList}">
             <form method="post" action="/controller">
-                <input type="hidden" name="activityId" value="${entry.id}">
+                <input type="hidden" name="activityId" value="${entry.activityItemId}">
                 <tr class="food-row-tr">
                     <td class="food_table_first_col_width text-left">${entry.activityItemId}</td>
                     <td>${entry.timeSpent}</td>

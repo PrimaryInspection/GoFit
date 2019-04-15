@@ -88,7 +88,7 @@
                         <th>+</th>
                         <th>${activitiesListTotals.calories}</th>
                         <th>=</th>
-                        <th${remaining}
+                        <th>${remaining}</th>
                         </th>
                     </tr>
                     </thead>
