@@ -36,8 +36,8 @@ public class MealDaoImpl extends CrudDaoImpl<Meal> implements MealDao {
                 while (resultSet.next()) {
                     menu.add(new MealToDisplay(
                             resultSet.getInt("id"),
-                            resultSet.getString("meal_type"),
-                            resultSet.getString("meal_item"),
+                            resultSet.getString("meal"),
+                            resultSet.getString("prod"),
                             resultSet.getInt("weight"),
                             resultSet.getInt("calories"),
                             resultSet.getInt("proteins"),

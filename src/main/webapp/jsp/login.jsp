@@ -18,6 +18,7 @@
 
 <html lang="UK">
 <head>
+
     <title>${loginTitle}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel='stylesheet' href='/bootstrap/css/bootstrap.min.css' type='text/css'>

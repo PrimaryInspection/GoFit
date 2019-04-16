@@ -120,7 +120,7 @@ input[type="submit"]:hover {
     padding: 20px 36px;
     font-weight: bold;
     text-align: left;
-    color: #19a9a9;
+    color: #e96800;
     display: flex;
     line-height: 33px;
     font-size: 40px;
@@ -251,7 +251,7 @@ input[type="submit"]:hover {
     font-size: 20px;
     text-align: center;
     color: white;
-    background-color: #19a9a9;
+    background-color: #e96800;
     border: none;
     cursor: pointer;
 }
@@ -277,7 +277,7 @@ input[type="submit"]:hover {
 }
 
 .login-form__questions_green {
-    color: #19a9a9;
+    color: #e96800;
 }
 
 /*_________________page____________________*/
@@ -325,7 +325,7 @@ input[type="submit"]:hover {
 }
 
 .p-page__link-green {
-    color: #19a9a9;
+    color: #e96800;
 }
 
 /*______________register-form__________*/

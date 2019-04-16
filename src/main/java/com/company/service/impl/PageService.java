@@ -144,7 +144,7 @@ try {
     /**
      * gets list of current products from db and writes them into session
      */
-    //TODO MEAL TO DISPLAY ARE NULL , FIIIIX ITT!!!!!
+
 
     Map<String, MealToDisplay> totalsByMealTypeMap = makeMap2(userId, chosenDate, mealTypes);
     Map<String, List<MealToDisplay>> mealsSplittedByType = makeMap(mealTypes, userMealToDisplay);

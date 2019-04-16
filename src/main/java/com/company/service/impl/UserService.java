@@ -97,7 +97,7 @@ public class UserService implements IUserService{
                 break;
             }
             case "lazy": {
-                caloriesNorm = (int) ((caloriesNorm * 1.2f) + + (10 * user.getWeight() +  (6.25f * user.getHeight()) - (5 * age) + 5));
+                caloriesNorm = (int) ((caloriesNorm * 1.2f)  + (10 * user.getWeight() +  (6.25f * user.getHeight()) - (5 * age) + 5));
                 break;
             }
             default: {

@@ -61,7 +61,7 @@ body {
     font-size: 24px;
     font-weight: 300;
     padding-bottom: 20px;
-    color: #05235B;
+    color: #e96800;
 }
 
 .still_to_go_text {
@@ -73,7 +73,7 @@ body {
 .still-to-go-number {
     font-size: 18px;
     font-weight: normal;
-    color: #19A9A9;
+    color: #e96800;
 }
 .still-to-go-number-minus {
     font-size: 18px;
@@ -85,7 +85,7 @@ body {
 .your-daily-summary {
     font-family: HelveticaNeue-Medium;
     font-size: 30px;
-    color: #19a9a9;
+    color: #e96800;
     margin-bottom: 20px;
 }
 
@@ -96,7 +96,7 @@ body {
 }
 
 .remaining {
-    color: #19a9a9;
+    color: #e96800;
 }
 .remaining-minus {
     color: #a90411;
@@ -114,7 +114,7 @@ table.borderless td, table.borderless th {
 }
 
 .nav-link:active {
-    background-color: #75cccb;
+    background-color: #e96800;
     color: #4d4d4d;
 }
 
@@ -124,24 +124,24 @@ table.borderless td, table.borderless th {
 }
 
 .btn-success {
-    background-color: #19a9a9;
-    border-color: #19a9a9;
+    background-color: #e96800;
+    border-color: #e96800;
 }
 
 .btn-success:hover {
-    background-color: #177177;
-    border-color: #177177;
+    background-color: #e96800;
+    border-color: #e96800;
 }
 
 .btn-success:active {
-    background-color: #177177 !important;
-    border-color: #177177;
+    background-color: #e96800 !important;
+    border-color: #e96800;
 }
 
 .btn-success:focus {
-    background-color: #177177 !important;
-    border-color: #177177;
-    box-shadow: 0 0 0 0.2rem #18858b !important;
+    background-color: #e96800 !important;
+    border-color: #e96800;
+    box-shadow: 0 0 0 0.2rem #e96800 !important;
 }
 
 .internal div {
@@ -159,7 +159,7 @@ table.borderless td, table.borderless th {
 }
 
 .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
-    background-color: #75cccb;
+    background-color: #e96800;
     border-top-right-radius: 15px;
     border-top-left-radius: 15px;
     border: 3px solid white;
@@ -182,7 +182,7 @@ a {
 
 .nav-tabs .nav-link:focus, .nav-tabs .nav-link:hover {
     color: #4d4d4d;
-    background-color: #75cccb;
+    background-color: #e96800;
     border-bottom: white;
     border-color: transparent;
 
@@ -227,7 +227,7 @@ a {
     font-size: 13px;
     color: #4d4d4d;
     font-weight: 600;
-    background-color: #c2e7e7;
+    background-color: #e96800;
     border: none;
 }
 
@@ -244,7 +244,7 @@ a {
 .color-success{
     font-size: 18px;
     font-weight: normal;
-    color: #19A9A9;
+    color: #e96800;
 }
 
 

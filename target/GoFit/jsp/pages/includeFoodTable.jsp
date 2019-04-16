@@ -30,8 +30,8 @@
                             <td class="food_table_first_col_width text-left">${mealEntry.mealItem}</td>
                             <td>${mealEntry.weight}</td>
                             <td>${mealEntry.calories}</td>
-                            <td>${mealEntry.protein}</td>
-                            <td>${mealEntry.fat}</td>
+                            <td>${mealEntry.proteins}</td>
+                            <td>${mealEntry.fats}</td>
                             <td>${mealEntry.carbs}</td>
                         <%--    <td>
                                 <button class="btn btn-link btn-block food-row-tr-btn btn-sm" type="submit"
@@ -48,8 +48,8 @@
                     <td>Total:</td>
                     <td>${totalsByMealType[entry.key].weight}</td>
                     <td>${totalsByMealType[entry.key].calories}</td>
-                    <td>${totalsByMealType[entry.key].protein}</td>
-                    <td>${totalsByMealType[entry.key].fat}</td>
+                    <td>${totalsByMealType[entry.key].proteins}</td>
+                    <td>${totalsByMealType[entry.key].fats}</td>
                     <td>${totalsByMealType[entry.key].carbs}</td>
                     <td></td>
                 </tr>
