@@ -245,7 +245,7 @@ public class UserDaoImpl extends CrudDaoImpl<User> implements UserDao {
                             resultSet.getString("email"),
                             resultSet.getDate("birthday").toLocalDate(),
                             resultSet.getInt("weight"),
-                            resultSet.getInt("goal_weight"),
+                            resultSet.getInt("weight_goal"),
                             resultSet.getInt("height"),
                             resultSet.getInt("calories_norm"),
                             resultSet.getInt("lifestyle_id"),

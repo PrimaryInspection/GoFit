@@ -67,7 +67,7 @@ http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
     </filter-mapping>
     <filter-mapping>
         <filter-name>AuthFilter</filter-name>
-        <url-pattern>/jsp/admin/*</url-pattern>
+        <url-pattern>/jsp/pages/*</url-pattern>
     </filter-mapping>
     <filter-mapping>
         <filter-name>LoginFilter</filter-name>

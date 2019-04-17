@@ -29,7 +29,7 @@ public class AuthFilter implements Filter {
 
         User user = (User) request.getSession().getAttribute("user");
 
-        if(user !=null && UtilManager.getProperty("role.admin").equalsIgnoreCase(user.getRoleId().toString())){
+        if(user !=null && UtilManager.getProperty("role.admin").equalsIgnoreCase(String.valueOf(user.getRoleId()))){
             chain.doFilter(servletRequest,servletResponse);
         }
 

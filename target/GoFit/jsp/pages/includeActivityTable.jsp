@@ -2,7 +2,7 @@
 
 <div class="">
     <nav class="admin navbar justify-content-center">
-        <span class="navbar-brand">Activity Diary</span>
+        <span class="navbar-brand">Activity Tracking</span>
     </nav>
     <br/>
 

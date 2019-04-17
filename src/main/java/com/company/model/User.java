@@ -1,5 +1,7 @@
 package com.company.model;
 
+import com.company.utils.UtilManager;
+
 import java.io.Serializable;
 import java.time.LocalDate;
 import java.util.Objects;
@@ -123,6 +125,9 @@ public class User implements Serializable {
     public Integer getLifestyle_id() { return lifestyle_id; }
 
     public void setLifestyle_id(Integer lifestyle_id) { this.lifestyle_id = lifestyle_id; }
+
+    public boolean isAdmin() { return UtilManager.getProperty("role.admin").equalsIgnoreCase(String.valueOf(roleId)); }
+
 
     @Override
     public boolean equals(Object o) {

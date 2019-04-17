@@ -37,7 +37,7 @@ public class BlockUnblockUserCommand implements ActionCommand {
         logger.debug("User status id =" + userBlocked.getStatus());
 
 
-        userBlocked.setStatus((userBlocked.getStatus() == 1) ? 2 : 1);
+        userBlocked.setStatus((userBlocked.getStatus() == 1) ? 9 : 1);
         logger.debug("New user status id:" + userBlocked.getStatus());
 
 

@@ -35,8 +35,8 @@
             <form class="form-inline form-no-margin-bottom" method="post" action="/controller">
 
 
-                <c:if test ="${not empty users}">
-                    <c:if test="${users.admin}">
+                <c:if test="${not empty user}">
+                    <c:if test="${user.admin}">
                         <button type="submit" class="btn btn-link" name="command" value="TO_ADMIN_PAGE">Admin</button>
                     </c:if>
                     <button type="submit" class="btn btn-link" name="command" value="LOGOUT">Logout</button>
@@ -52,7 +52,7 @@
             <div class="col-4 jumbotron jumbotron1">
                 <div class="hello">Hello, ${user.firstName}!</div>
                 <div class="on_track">
-                    ${remaining > 0 ? 'You are on track today!' : ''}</div>
+                    ${remaining > 0 ? 'Nice results!' : ''}</div>
                 <div class="still_to_go_text">
                     <c:choose>
                         <c:when test="${kgToGoal > 0}">

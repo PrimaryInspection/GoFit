@@ -3,7 +3,7 @@
 
 <div class="">
     <nav class="admin navbar justify-content-center">
-        <span class="navbar-brand">Food Diary</span>
+        <span class="navbar-brand">Food Tracking</span>
     </nav>
     <br/>
     <c:forEach var="entry" items="${meals}">

@@ -47,17 +47,17 @@
         <tbody>
         <c:forEach var="user" items="${users}">
             <form method="post" action="/controller">
-                <input type="hidden" name="userId" value="${user.id}">
+                <input type="hidden" name="userId" value="${user.userId}">
                 <tr>
                     <th scope="row"><input type="checkbox" class="checkthis"/></th>
                     <td>${user.firstName}</td>
-                    <td>${user.lastName}</td>
+                    <td>${user.secondName}</td>
                     <td>${user.login}</td>
                     <td>${user.roleId}</td>
-                    <td>${user.statusId}</td>
+                    <td>${user.status}</td>
                     <td class="align-right">
                         <c:choose>
-                            <c:when test="${user.statusId == 1}">
+                            <c:when test="${user.status == 1}">
                                 <button class="btn btn-outline-info btn-block"
                                         type="submit"
                                         name="command"
