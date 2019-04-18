@@ -1,5 +1,6 @@
 package com.company.service.impl;
 
+import com.company.dao.transaction.TransactionManager;
 import com.company.model.MealToDisplay;
 import com.company.model.MealType;
 import com.company.model.User;
@@ -10,6 +11,7 @@ import org.apache.logging.log4j.Logger;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
+import java.sql.SQLException;
 import java.time.LocalDate;
 import java.util.*;
 
@@ -132,34 +134,39 @@ public class PageService implements IPageService {
         return chosenDate;
     }
 
-    private void updateFoodTab(HttpSession session, int userId, LocalDate chosenDate){
-try {
+    private void updateFoodTab(HttpSession session, int userId, LocalDate chosenDate) {
+        TransactionManager tm = new TransactionManager();
+        if (userService.getUser(userId) != null) {
+            try {
+                tm.begin();
+                List<MealToDisplay> userMealToDisplay = menuService.getUserMenu(userId, chosenDate);
+                List<MealType> mealTypes = mealTypeService.getAll();
+                if (!userMealToDisplay.isEmpty()) {
+                    Map<String, MealToDisplay> totalsByMealTypeMap = makeMap2(userId, chosenDate, mealTypes);
+                    Map<String, List<MealToDisplay>> mealsSplittedByType = makeMap(mealTypes, userMealToDisplay);
 
-    List<MealToDisplay> userMealToDisplay = menuService.getUserMenu(userId, chosenDate);
-    /**
-     * gets list of current meal types from db and writes them into session
-     */
-    List<MealType> mealTypes = mealTypeService.getAll();
-
-    /**
-     * gets list of current products from db and writes them into session
-     */
-
-
-    Map<String, MealToDisplay> totalsByMealTypeMap = makeMap2(userId, chosenDate, mealTypes);
-    Map<String, List<MealToDisplay>> mealsSplittedByType = makeMap(mealTypes, userMealToDisplay);
-
-    session.setAttribute("mealTypes", mealTypes);
-    session.setAttribute("mealItems", mealItemService.getAll());
-    session.setAttribute("meals", mealsSplittedByType);
-    session.setAttribute("totalsByMealType", totalsByMealTypeMap);
-    session.setAttribute("totalDayFoodWeight", menuService.getTotalWeight(userMealToDisplay));
-    session.setAttribute("totalDayCalories", menuService.getTotalCalories(userMealToDisplay));
-    session.setAttribute("totalDayProteins", menuService.getTotalProteins(userMealToDisplay));
-    session.setAttribute("totalDayFat", menuService.getTotalFat(userMealToDisplay));
-    session.setAttribute("totalDayCarbs", menuService.getTotalCarbs(userMealToDisplay));
-}catch (NullPointerException e){e.printStackTrace();}
+                    session.setAttribute("mealTypes", mealTypes);
+                    session.setAttribute("mealItems", mealItemService.getAll());
+                    session.setAttribute("meals", mealsSplittedByType);
+                    session.setAttribute("totalsByMealType", totalsByMealTypeMap);
+                    session.setAttribute("totalDayFoodWeight", menuService.getTotalWeight(userMealToDisplay));
+                    session.setAttribute("totalDayCalories", menuService.getTotalCalories(userMealToDisplay));
+                    session.setAttribute("totalDayProteins", menuService.getTotalProteins(userMealToDisplay));
+                    session.setAttribute("totalDayFat", menuService.getTotalFat(userMealToDisplay));
+                    session.setAttribute("totalDayCarbs", menuService.getTotalCarbs(userMealToDisplay));
+                    tm.commit();
+                    }
+                }catch (SQLException e){
+                tm.rollback();
+                logger.info("Error during updating user's food table");
+                e.printStackTrace();
+            }finally {
+                tm.close();
+            }
+        }
     }
+
+
 
     private void updateBodyStatsTab(HttpSession session){
         //        BODY STATS tab
