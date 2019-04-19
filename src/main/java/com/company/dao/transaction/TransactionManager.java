@@ -1,12 +1,12 @@
 package com.company.dao.transaction;
 
-
 import com.company.dao.connection.ConnectionPool;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 import java.sql.Connection;
 import java.sql.SQLException;
+
 
 public class TransactionManager {
     private static final Logger LOGGER = LogManager.getLogger(TransactionManager.class);

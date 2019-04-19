@@ -15,7 +15,9 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 import java.io.IOException;
+import java.util.Enumeration;
 
 
 public class MainServlet extends HttpServlet {
@@ -33,12 +35,17 @@ public class MainServlet extends HttpServlet {
     }
 
     private void processRequest(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+
         String page = null;
         ActionFactory client = new ActionFactory();
         ActionCommand command = client.defineCommand(request , response);
         logger.info("Obtained command is :" + command.getClass().getSimpleName());
-        page = command.execute(request , response);
 
+        page = command.execute(request , response);
+        Enumeration<String> sessionEnumeration = request.getSession().getAttributeNames();
+        while (sessionEnumeration.hasMoreElements()){
+            System.out.println(sessionEnumeration.nextElement().toString());
+            }
         if (page != null){
             if(pageService.isRedirect()){
                 logger.info("Request redirected to page: " + page.toString());

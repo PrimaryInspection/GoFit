@@ -13,18 +13,20 @@
 
 <div class="row">
     <nav class="navbar container-fluid navbar-header">
-        <form class="form-no-margin-bottom" action="/controller" method="post">
+        <form class="form-no-margin-bottom" action="${pageContext.request.contextPath}/controller?command=TO_MAIN_PAGE" method="post">
             <button class="navbar-brand fitness-buddy btn btn-link" name="command" value="TO_MAIN_PAGE"><span class="fitness">Fitness</span>Buddy
             </button>
         </form>
-        <form class="form-inline form-no-margin-bottom" method="post" action="/controller">
+        <form class="form-inline form-no-margin-bottom" method="post" action="${pageContext.request.contextPath}/controller?command=TO_MAIN_PAGEZ">
             <c:if test="${not empty user}">
                 <c:if test="${user.admin}">
-                    <button type="submit" class="btn btn-link" name="command" value="TO_MAIN_PAGE">Main</button>
-                </c:if>
-                <button type="submit" class="btn btn-link" name="command" value="LOGOUT">Logout</button>
-            </c:if>
+                    <button type="submit" class="btn btn-link" name="command" >Main</button>
         </form>
+        <form class="form-inline form-no-margin-bottom" method="post" action="${pageContext.request.contextPath}/controller?command=LOGOUT">
+        </c:if>
+                <button type="submit" class="btn btn-link" name="command" >Logout</button>
+            </c:if>
+       </form>
     </nav>
 </div>
 <br/>
@@ -46,7 +48,7 @@
 
         <tbody>
         <c:forEach var="user" items="${users}">
-            <form method="post" action="/controller">
+            <form method="post"action="${pageContext.request.contextPath}/controller?command=block_unblock_user">
                 <input type="hidden" name="userId" value="${user.userId}">
                 <tr>
                     <th scope="row"><input type="checkbox" class="checkthis"/></th>
@@ -84,7 +86,7 @@
         <ul class="pagination pagination-sm justify-content-center">
             <%--<li class="page-item"><a class="page-link" href="#">Previous</a></li>--%>
             <c:forEach begin="1" end="${pages}" step="1" var="page">
-                <form action="/controller" method="post">
+                <form action="${pageContext.request.contextPath}/controller?command=TO_N_PAGE" method="post">
                     <input type="hidden" name="pageNumber" value="${page}">
                     <li
                             class="page-item

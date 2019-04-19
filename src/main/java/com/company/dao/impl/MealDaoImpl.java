@@ -2,6 +2,7 @@ package com.company.dao.impl;
 
 import com.company.dao.connection.ConnectionPool;
 import com.company.dao.interfaces.MealDao;
+import com.company.exceptions.DataBaseException;
 import com.company.model.Meal;
 import com.company.model.MealToDisplay;
 import com.company.utils.QueryManager;
@@ -50,10 +51,13 @@ public class MealDaoImpl extends CrudDaoImpl<Meal> implements MealDao {
 
         } catch (SQLException e) {
             logger.error("Error in getting 'menu' from DB, cause: " + e.fillInStackTrace());
-            e.printStackTrace();
+            try {
+                throw new DataBaseException("Error during getting food menu from data base");
+            } catch (DataBaseException e1) {
+                e1.printStackTrace();
+            }
         }
         return menu;
-
     }
 
     @Override

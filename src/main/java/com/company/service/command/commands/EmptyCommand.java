@@ -1,5 +1,6 @@
 package com.company.service.command.commands;
 
+import com.company.exceptions.PageNotFoundException;
 import com.company.service.command.ActionCommand;
 import com.company.servlet.MainServlet;
 import org.apache.logging.log4j.LogManager;
@@ -16,6 +17,6 @@ public class EmptyCommand implements ActionCommand {
 
     @Override
     public String execute(HttpServletRequest request, HttpServletResponse response) {
-        logger.error("Empty command");
-        return null;    }
+        throw new PageNotFoundException("An empty command");
+    }
 }

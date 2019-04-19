@@ -141,7 +141,7 @@ public class PageService implements IPageService {
                 tm.begin();
                 List<MealToDisplay> userMealToDisplay = menuService.getUserMenu(userId, chosenDate);
                 List<MealType> mealTypes = mealTypeService.getAll();
-                if (!userMealToDisplay.isEmpty()) {
+                if (!mealTypes.isEmpty()) {
                     Map<String, MealToDisplay> totalsByMealTypeMap = makeMap2(userId, chosenDate, mealTypes);
                     Map<String, List<MealToDisplay>> mealsSplittedByType = makeMap(mealTypes, userMealToDisplay);
 

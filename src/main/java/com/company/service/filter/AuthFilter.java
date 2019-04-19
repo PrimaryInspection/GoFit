@@ -36,7 +36,7 @@ public class AuthFilter implements Filter {
         else {
             logger.info("User tried to reach \" + request.getRequestURI() + " +
                     "\" without being logged in as administrator! Redirected to error page!");
-            response.sendRedirect(ConfigurationManager.getProperty("path.page.error"));
+            response.sendRedirect(ConfigurationManager.getProperty("path.page.main"));
         }
 
     }
