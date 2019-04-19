@@ -34,7 +34,7 @@ public class MainServlet extends HttpServlet {
     processRequest(request,response);
     }
 
-    private void processRequest(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+    protected  void processRequest(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
         String page = null;
         ActionFactory client = new ActionFactory();
@@ -42,10 +42,7 @@ public class MainServlet extends HttpServlet {
         logger.info("Obtained command is :" + command.getClass().getSimpleName());
 
         page = command.execute(request , response);
-        Enumeration<String> sessionEnumeration = request.getSession().getAttributeNames();
-        while (sessionEnumeration.hasMoreElements()){
-            System.out.println(sessionEnumeration.nextElement().toString());
-            }
+
         if (page != null){
             if(pageService.isRedirect()){
                 logger.info("Request redirected to page: " + page.toString());

@@ -9,6 +9,7 @@ import com.company.utils.UtilManager;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
+import javax.sql.DataSource;
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
@@ -25,6 +26,7 @@ public class UserDaoImpl extends CrudDaoImpl<User> implements UserDao {
     private static final String SELECT_COUNT_USERS = QueryManager.getProperty("userSelectCount");
     private static final String DELETE_USER = QueryManager.getProperty("userDeleteById");
     private static final String UPDATE_STATUS_ID = QueryManager.getProperty("userUpdateStatusId");
+
 
 
     @Override

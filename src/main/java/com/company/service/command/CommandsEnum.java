@@ -84,11 +84,7 @@ public enum CommandsEnum {
             this.command = new UpdateUserInfoCommand();
         }
     },
-    CANCEL{
-        {
-            this.command = new CancelCommand();
-        }
-    },
+
     BLOCK_UNBLOCK_USER{
         {
             this.command = new BlockUnblockUserCommand();

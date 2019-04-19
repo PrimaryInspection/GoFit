@@ -11,13 +11,8 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
-//TODO I think I need a Factory here.
 public class ToPreviousPageCommand implements ActionCommand {
     private static final Logger logger = LogManager.getLogger(SelectDateCommand.class);
-
-    private IUserService userService = ServiceFactory.getUserService();
-    private IPageService pageService = ServiceFactory.getPageService();
-
 
     /**
      * checks session for 'previous page' attribute and returns its value

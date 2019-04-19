@@ -18,7 +18,7 @@
     <dependency>
         <groupId>junit</groupId>
         <artifactId>junit</artifactId>
-        <version>3.8.1</version>
+        <version>4.4</version>
         <scope>test</scope>
     </dependency>
     <dependency>
@@ -26,6 +26,15 @@
         <artifactId>javax.servlet-api</artifactId>
         <version>3.1.0</version>
     </dependency>
+
+    <!-- https://mvnrepository.com/artifact/org.mockito/mockito-all -->
+    <dependency>
+        <groupId>org.mockito</groupId>
+        <artifactId>mockito-all</artifactId>
+        <version>1.8.5</version>
+        <scope>test</scope>
+    </dependency>
+
 
     <dependency>
         <groupId>jstl</groupId>
@@ -70,6 +79,11 @@
         <groupId>mysql</groupId>
         <artifactId>mysql-connector-java</artifactId>
         <version>8.0.13</version>
+    </dependency>
+    <dependency>
+        <groupId>junit</groupId>
+        <artifactId>junit</artifactId>
+        <version>4.0</version>
     </dependency>
 
 </dependencies>
