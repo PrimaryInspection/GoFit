@@ -7,41 +7,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9dad994f-f91b-4bfe-b233-9303dc09bd41" name="Default" comment="#1 Create entities from MySQL data base&#10;#2 Create DAO layer for entities&#10;#3 Create Connection Pool with Data Source&#10;#4 Create functional for ActivityItemDaoImpl&#10;#5 Create logging using Logj4">
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/company/exceptions/DataBaseException.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/company/exceptions/PageNotFoundException.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/company/exceptions/PermissionErrorException.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/company/service/filter/AuthorizationFilter.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/company/utils/UserAuthorization.java" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/dao/impl/MealDaoImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/company/dao/impl/MealDaoImpl.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/dao/transaction/TransactionManager.java" afterPath="$PROJECT_DIR$/src/main/java/com/company/dao/transaction/TransactionManager.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/service/command/commands/EmptyCommand.java" afterPath="$PROJECT_DIR$/src/main/java/com/company/service/command/commands/EmptyCommand.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/service/command/commands/LogoutCommand.java" afterPath="$PROJECT_DIR$/src/main/java/com/company/service/command/commands/LogoutCommand.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/service/filter/AuthFilter.java" afterPath="$PROJECT_DIR$/src/main/java/com/company/service/filter/AuthFilter.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/service/impl/PageService.java" afterPath="$PROJECT_DIR$/src/main/java/com/company/service/impl/PageService.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/service/listeners/SessionListener.java" afterPath="$PROJECT_DIR$/src/main/java/com/company/service/listeners/SessionListener.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/servlet/MainServlet.java" afterPath="$PROJECT_DIR$/src/main/java/com/company/servlet/MainServlet.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/utils.properties" afterPath="$PROJECT_DIR$/src/main/resources/utils.properties" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/jsp/pages/admin/adminPage.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/pages/admin/adminPage.jsp" />
-      <change beforePath="$PROJECT_DIR$/target/GoFit/WEB-INF/classes/com/company/dao/impl/MealDaoImpl.class" afterPath="$PROJECT_DIR$/target/GoFit/WEB-INF/classes/com/company/dao/impl/MealDaoImpl.class" />
-      <change beforePath="$PROJECT_DIR$/target/GoFit/WEB-INF/classes/com/company/service/command/commands/EmptyCommand.class" afterPath="$PROJECT_DIR$/target/GoFit/WEB-INF/classes/com/company/service/command/commands/EmptyCommand.class" />
-      <change beforePath="$PROJECT_DIR$/target/GoFit/WEB-INF/classes/com/company/service/command/commands/LogoutCommand.class" afterPath="$PROJECT_DIR$/target/GoFit/WEB-INF/classes/com/company/service/command/commands/LogoutCommand.class" />
-      <change beforePath="$PROJECT_DIR$/target/GoFit/WEB-INF/classes/com/company/service/filter/AuthFilter.class" afterPath="$PROJECT_DIR$/target/GoFit/WEB-INF/classes/com/company/service/filter/AuthFilter.class" />
-      <change beforePath="$PROJECT_DIR$/target/GoFit/WEB-INF/classes/com/company/service/impl/PageService.class" afterPath="$PROJECT_DIR$/target/GoFit/WEB-INF/classes/com/company/service/impl/PageService.class" />
-      <change beforePath="$PROJECT_DIR$/target/GoFit/WEB-INF/classes/com/company/service/listeners/SessionListener.class" afterPath="$PROJECT_DIR$/target/GoFit/WEB-INF/classes/com/company/service/listeners/SessionListener.class" />
-      <change beforePath="$PROJECT_DIR$/target/GoFit/WEB-INF/classes/com/company/servlet/MainServlet.class" afterPath="$PROJECT_DIR$/target/GoFit/WEB-INF/classes/com/company/servlet/MainServlet.class" />
-      <change beforePath="$PROJECT_DIR$/target/GoFit/WEB-INF/classes/utils.properties" afterPath="$PROJECT_DIR$/target/GoFit/WEB-INF/classes/utils.properties" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/service/filter/AuthorizationFilter.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/utils/UserAuthorization.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/GoFit/WEB-INF/classes/com/company/utils/UserAuthorization.class" afterPath="" />
       <change beforePath="$PROJECT_DIR$/target/GoFit/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/target/GoFit/WEB-INF/web.xml" />
-      <change beforePath="$PROJECT_DIR$/target/GoFit/jsp/pages/admin/adminPage.jsp" afterPath="$PROJECT_DIR$/target/GoFit/jsp/pages/admin/adminPage.jsp" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/company/dao/impl/MealDaoImpl.class" afterPath="$PROJECT_DIR$/target/classes/com/company/dao/impl/MealDaoImpl.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/company/service/command/commands/EmptyCommand.class" afterPath="$PROJECT_DIR$/target/classes/com/company/service/command/commands/EmptyCommand.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/company/service/command/commands/LogoutCommand.class" afterPath="$PROJECT_DIR$/target/classes/com/company/service/command/commands/LogoutCommand.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/company/service/filter/AuthFilter.class" afterPath="$PROJECT_DIR$/target/classes/com/company/service/filter/AuthFilter.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/company/service/impl/PageService.class" afterPath="$PROJECT_DIR$/target/classes/com/company/service/impl/PageService.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/company/service/listeners/SessionListener.class" afterPath="$PROJECT_DIR$/target/classes/com/company/service/listeners/SessionListener.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/company/servlet/MainServlet.class" afterPath="$PROJECT_DIR$/target/classes/com/company/servlet/MainServlet.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/utils.properties" afterPath="$PROJECT_DIR$/target/classes/utils.properties" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/company/utils/UserAuthorization.class" afterPath="" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -76,11 +47,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="User.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/company/model/User.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="AuthFilter.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/company/service/filter/AuthFilter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="328">
-              <caret line="38" column="82" lean-forward="false" selection-start-line="38" selection-start-column="82" selection-end-line="38" selection-end-column="82" />
+            <state relative-caret-position="697">
+              <caret line="41" column="5" lean-forward="false" selection-start-line="41" selection-start-column="5" selection-end-line="41" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -88,51 +69,31 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LoginFilter.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/company/service/filter/LoginFilter.java">
+      <file leaf-file-name="web.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+            <state relative-caret-position="136">
+              <caret line="51" column="0" lean-forward="true" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SessionListener.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/company/service/listeners/SessionListener.java">
+      <file leaf-file-name="utils.properties" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/utils.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+            <state relative-caret-position="17">
+              <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LogoutCommand.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/company/service/command/commands/LogoutCommand.java">
+      <file leaf-file-name="BlockUserFilter.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/company/service/filter/BlockUserFilter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UserAuthorization.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/company/utils/UserAuthorization.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-102">
-              <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AuthorizationFilter.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/company/service/filter/AuthorizationFilter.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="21" column="9" lean-forward="false" selection-start-line="21" selection-start-column="9" selection-end-line="21" selection-end-column="9" />
+            <state relative-caret-position="51">
+              <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -151,7 +112,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>registerBtn</find>
       <find>block</find>
       <find>update</find>
       <find>you</find>
@@ -181,6 +141,7 @@
       <find>LOGOUT</find>
       <find>HOME</find>
       <find>command=TO_ADMIN_PAGE</find>
+      <find>Role</find>
     </findStrings>
     <dirStrings>
       <dir>E:\JAVA Projects\GoFit</dir>
@@ -203,8 +164,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/resources/mysqlQueries.properties" />
-        <option value="$PROJECT_DIR$/src/main/java/com/company/dao/impl/ActivityDaoImpl.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/jsp/pages/includeAddActivityBlock.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/company/model/ActivityToDisplay.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/bootstrap/css/header.css" />
@@ -239,21 +198,23 @@
         <option value="$PROJECT_DIR$/src/main/java/com/company/service/impl/PageService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/company/dao/transaction/TransactionManager.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/company/service/command/commands/EmptyCommand.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/company/utils/UserAuthorization.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/company/service/filter/AuthFilter.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/company/service/command/commands/ToMainPageCommand.java" />
         <option value="$PROJECT_DIR$/src/main/resources/utils.properties" />
         <option value="$PROJECT_DIR$/src/main/java/com/company/servlet/MainServlet.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/company/service/command/commands/LogoutCommand.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/company/service/filter/CacheControlFilter.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/company/service/listeners/SessionListener.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/src/main/webapp/jsp/pages/main.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/jsp/pages/admin/adminPage.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/jsp/pages/headerNavbar.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/jsp/login.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/jsp/registration.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/company/utils/UserLoginConverter.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/company/utils/UserAuthorization.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/company/service/filter/AuthorizationFilter.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/company/service/filter/BlockUserFilter.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/company/service/filter/AuthFilter.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
       </list>
     </option>
   </component>
@@ -787,7 +748,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="235359000" />
+    <option name="totallyTimeSpent" value="237294000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -955,24 +916,6 @@
           <properties />
           <option name="timeStamp" value="163" />
         </line-breakpoint>
-        <line-breakpoint type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/company/service/filter/LoginFilter.java</url>
-          <line>28</line>
-          <properties />
-          <option name="timeStamp" value="171" />
-        </line-breakpoint>
-        <line-breakpoint type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/company/service/filter/LoginFilter.java</url>
-          <line>27</line>
-          <properties />
-          <option name="timeStamp" value="172" />
-        </line-breakpoint>
-        <line-breakpoint type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/company/service/filter/LoginFilter.java</url>
-          <line>33</line>
-          <properties />
-          <option name="timeStamp" value="174" />
-        </line-breakpoint>
         <line-breakpoint type="java-method">
           <url>file://$PROJECT_DIR$/src/main/java/com/company/service/command/commands/DeleteEntryFromActivityDiaryCommand.java</url>
           <line>24</line>
@@ -1034,29 +977,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/company/service/command/commands/ToRegistrationPageCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/company/service/command/commands/ToPreviousPageCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="14" column="13" lean-forward="false" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/company/service/command/commands/ToNPageCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/company/service/command/commands/ToAddProductPageCommand.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -1180,7 +1100,7 @@
         <state relative-caret-position="-442">
           <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1252,20 +1172,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/utils.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/company/service/filter/CacheControlFilter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="13" column="30" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1274,14 +1186,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="47" column="12" lean-forward="false" selection-start-line="47" selection-start-column="12" selection-end-line="47" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="317">
-          <caret line="20" column="34" lean-forward="false" selection-start-line="20" selection-start-column="34" selection-end-line="20" selection-end-column="34" />
           <folding />
         </state>
       </provider>
@@ -1422,36 +1326,76 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/company/service/filter/LoginFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/company/model/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/company/utils/UserAuthorization.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-102">
-          <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        <state relative-caret-position="17">
+          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/company/service/filter/BlockUserFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/utils.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/company/service/filter/AuthFilter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="328">
-          <caret line="38" column="82" lean-forward="false" selection-start-line="38" selection-start-column="82" selection-end-line="38" selection-end-column="82" />
+        <state relative-caret-position="697">
+          <caret line="41" column="5" lean-forward="false" selection-start-line="41" selection-start-column="5" selection-end-line="41" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/company/service/filter/LoginFilter.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/company/utils/UserLoginConverter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+        <state relative-caret-position="119">
+          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/company/service/filter/AuthorizationFilter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="9" lean-forward="false" selection-start-line="21" selection-start-column="9" selection-end-line="21" selection-end-column="9" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="51" column="0" lean-forward="true" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
           <folding />
         </state>
       </provider>
