@@ -67,15 +67,19 @@ http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
         <url-pattern>/jsp/pages/*</url-pattern>
     </filter-mapping>
 
+    <error-page>
+        <error-code>404</error-code>
+        <location>/jsp/error.jsp</location>
+    </error-page>
+    <error-page>
+        <exception-type>java.lang.RuntimeException</exception-type>
+        <location>/jsp/error.jsp</location>
+    </error-page>
+
     <listener>
         <listener-class>com.company.service.listeners.SessionListener</listener-class>
     </listener>
-
-
-    <session-config>
-        <tracking-mode>COOKIE</tracking-mode>
-    </session-config>
-
+    
     <resource-ref>
         <description>Db</description>
         <res-ref-name>jdbc/gofit</res-ref-name>

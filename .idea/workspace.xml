@@ -7,59 +7,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9dad994f-f91b-4bfe-b233-9303dc09bd41" name="Default" comment="#1 Create entities from MySQL data base&#10;#2 Create DAO layer for entities&#10;#3 Create Connection Pool with Data Source&#10;#4 Create functional for ActivityItemDaoImpl&#10;#5 Create logging using Logj4">
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/error.jsp" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/service/command/CommandsEnum.java" afterPath="$PROJECT_DIR$/src/main/java/com/company/service/command/CommandsEnum.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/jsp/login.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/login.jsp" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/jsp/pages/main.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/pages/main.jsp" />
-      <change beforePath="$PROJECT_DIR$/target/GoFit.war" afterPath="$PROJECT_DIR$/target/GoFit.war" />
-      <change beforePath="$PROJECT_DIR$/target/GoFit/WEB-INF/classes/com/company/service/command/CommandsEnum$10.class" afterPath="$PROJECT_DIR$/target/GoFit/WEB-INF/classes/com/company/service/command/CommandsEnum$10.class" />
-      <change beforePath="$PROJECT_DIR$/target/GoFit/WEB-INF/classes/com/company/service/command/CommandsEnum$11.class" afterPath="$PROJECT_DIR$/target/GoFit/WEB-INF/classes/com/company/service/command/CommandsEnum$11.class" />
-      <change beforePath="$PROJECT_DIR$/target/GoFit/WEB-INF/classes/com/company/service/command/CommandsEnum$12.class" afterPath="$PROJECT_DIR$/target/GoFit/WEB-INF/classes/com/company/service/command/CommandsEnum$12.class" />
-      <change beforePath="$PROJECT_DIR$/target/GoFit/WEB-INF/classes/com/company/service/command/CommandsEnum$13.class" afterPath="$PROJECT_DIR$/target/GoFit/WEB-INF/classes/com/company/service/command/CommandsEnum$13.class" />
-      <change beforePath="$PROJECT_DIR$/target/GoFit/WEB-INF/classes/com/company/service/command/CommandsEnum$14.class" afterPath="$PROJECT_DIR$/target/GoFit/WEB-INF/classes/com/company/service/command/CommandsEnum$14.class" />
-      <change beforePath="$PROJECT_DIR$/target/GoFit/WEB-INF/classes/com/company/service/command/CommandsEnum$15.class" afterPath="$PROJECT_DIR$/target/GoFit/WEB-INF/classes/com/company/service/command/CommandsEnum$15.class" />
-      <change beforePath="$PROJECT_DIR$/target/GoFit/WEB-INF/classes/com/company/service/command/CommandsEnum$16.class" afterPath="$PROJECT_DIR$/target/GoFit/WEB-INF/classes/com/company/service/command/CommandsEnum$16.class" />
-      <change beforePath="$PROJECT_DIR$/target/GoFit/WEB-INF/classes/com/company/service/command/CommandsEnum$17.class" afterPath="$PROJECT_DIR$/target/GoFit/WEB-INF/classes/com/company/service/command/CommandsEnum$17.class" />
-      <change beforePath="$PROJECT_DIR$/target/GoFit/WEB-INF/classes/com/company/service/command/CommandsEnum$18.class" afterPath="$PROJECT_DIR$/target/GoFit/WEB-INF/classes/com/company/service/command/CommandsEnum$18.class" />
-      <change beforePath="$PROJECT_DIR$/target/GoFit/WEB-INF/classes/com/company/service/command/CommandsEnum$19.class" afterPath="$PROJECT_DIR$/target/GoFit/WEB-INF/classes/com/company/service/command/CommandsEnum$19.class" />
-      <change beforePath="$PROJECT_DIR$/target/GoFit/WEB-INF/classes/com/company/service/command/CommandsEnum$2.class" afterPath="$PROJECT_DIR$/target/GoFit/WEB-INF/classes/com/company/service/command/CommandsEnum$2.class" />
-      <change beforePath="$PROJECT_DIR$/target/GoFit/WEB-INF/classes/com/company/service/command/CommandsEnum$20.class" afterPath="$PROJECT_DIR$/target/GoFit/WEB-INF/classes/com/company/service/command/CommandsEnum$20.class" />
-      <change beforePath="$PROJECT_DIR$/target/GoFit/WEB-INF/classes/com/company/service/command/CommandsEnum$21.class" afterPath="$PROJECT_DIR$/target/GoFit/WEB-INF/classes/com/company/service/command/CommandsEnum$21.class" />
-      <change beforePath="$PROJECT_DIR$/target/GoFit/WEB-INF/classes/com/company/service/command/CommandsEnum$22.class" afterPath="$PROJECT_DIR$/target/GoFit/WEB-INF/classes/com/company/service/command/CommandsEnum$22.class" />
-      <change beforePath="$PROJECT_DIR$/target/GoFit/WEB-INF/classes/com/company/service/command/CommandsEnum$3.class" afterPath="$PROJECT_DIR$/target/GoFit/WEB-INF/classes/com/company/service/command/CommandsEnum$3.class" />
-      <change beforePath="$PROJECT_DIR$/target/GoFit/WEB-INF/classes/com/company/service/command/CommandsEnum$4.class" afterPath="$PROJECT_DIR$/target/GoFit/WEB-INF/classes/com/company/service/command/CommandsEnum$4.class" />
-      <change beforePath="$PROJECT_DIR$/target/GoFit/WEB-INF/classes/com/company/service/command/CommandsEnum$5.class" afterPath="$PROJECT_DIR$/target/GoFit/WEB-INF/classes/com/company/service/command/CommandsEnum$5.class" />
-      <change beforePath="$PROJECT_DIR$/target/GoFit/WEB-INF/classes/com/company/service/command/CommandsEnum$6.class" afterPath="$PROJECT_DIR$/target/GoFit/WEB-INF/classes/com/company/service/command/CommandsEnum$6.class" />
-      <change beforePath="$PROJECT_DIR$/target/GoFit/WEB-INF/classes/com/company/service/command/CommandsEnum$7.class" afterPath="$PROJECT_DIR$/target/GoFit/WEB-INF/classes/com/company/service/command/CommandsEnum$7.class" />
-      <change beforePath="$PROJECT_DIR$/target/GoFit/WEB-INF/classes/com/company/service/command/CommandsEnum$8.class" afterPath="$PROJECT_DIR$/target/GoFit/WEB-INF/classes/com/company/service/command/CommandsEnum$8.class" />
-      <change beforePath="$PROJECT_DIR$/target/GoFit/WEB-INF/classes/com/company/service/command/CommandsEnum$9.class" afterPath="$PROJECT_DIR$/target/GoFit/WEB-INF/classes/com/company/service/command/CommandsEnum$9.class" />
-      <change beforePath="$PROJECT_DIR$/target/GoFit/WEB-INF/classes/com/company/service/command/CommandsEnum.class" afterPath="$PROJECT_DIR$/target/GoFit/WEB-INF/classes/com/company/service/command/CommandsEnum.class" />
-      <change beforePath="$PROJECT_DIR$/target/GoFit/jsp/login.jsp" afterPath="$PROJECT_DIR$/target/GoFit/jsp/login.jsp" />
-      <change beforePath="$PROJECT_DIR$/target/GoFit/jsp/pages/main.jsp" afterPath="$PROJECT_DIR$/target/GoFit/jsp/pages/main.jsp" />
-      <change beforePath="$PROJECT_DIR$/target/GoFit/jsp/pages/pageBackup/includeActivityTable.jsp" afterPath="$PROJECT_DIR$/target/GoFit/jsp/pages/pageBackup/includeActivityTable.jsp" />
-      <change beforePath="$PROJECT_DIR$/target/GoFit/jsp/pages/pageBackup/includeFoodTable.jsp" afterPath="$PROJECT_DIR$/target/GoFit/jsp/pages/pageBackup/includeFoodTable.jsp" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/company/service/command/CommandsEnum$10.class" afterPath="$PROJECT_DIR$/target/classes/com/company/service/command/CommandsEnum$10.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/company/service/command/CommandsEnum$11.class" afterPath="$PROJECT_DIR$/target/classes/com/company/service/command/CommandsEnum$11.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/company/service/command/CommandsEnum$12.class" afterPath="$PROJECT_DIR$/target/classes/com/company/service/command/CommandsEnum$12.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/company/service/command/CommandsEnum$13.class" afterPath="$PROJECT_DIR$/target/classes/com/company/service/command/CommandsEnum$13.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/company/service/command/CommandsEnum$14.class" afterPath="$PROJECT_DIR$/target/classes/com/company/service/command/CommandsEnum$14.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/company/service/command/CommandsEnum$15.class" afterPath="$PROJECT_DIR$/target/classes/com/company/service/command/CommandsEnum$15.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/company/service/command/CommandsEnum$16.class" afterPath="$PROJECT_DIR$/target/classes/com/company/service/command/CommandsEnum$16.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/company/service/command/CommandsEnum$17.class" afterPath="$PROJECT_DIR$/target/classes/com/company/service/command/CommandsEnum$17.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/company/service/command/CommandsEnum$18.class" afterPath="$PROJECT_DIR$/target/classes/com/company/service/command/CommandsEnum$18.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/company/service/command/CommandsEnum$19.class" afterPath="$PROJECT_DIR$/target/classes/com/company/service/command/CommandsEnum$19.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/company/service/command/CommandsEnum$2.class" afterPath="$PROJECT_DIR$/target/classes/com/company/service/command/CommandsEnum$2.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/company/service/command/CommandsEnum$20.class" afterPath="$PROJECT_DIR$/target/classes/com/company/service/command/CommandsEnum$20.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/company/service/command/CommandsEnum$21.class" afterPath="$PROJECT_DIR$/target/classes/com/company/service/command/CommandsEnum$21.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/company/service/command/CommandsEnum$22.class" afterPath="$PROJECT_DIR$/target/classes/com/company/service/command/CommandsEnum$22.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/company/service/command/CommandsEnum$3.class" afterPath="$PROJECT_DIR$/target/classes/com/company/service/command/CommandsEnum$3.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/company/service/command/CommandsEnum$4.class" afterPath="$PROJECT_DIR$/target/classes/com/company/service/command/CommandsEnum$4.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/company/service/command/CommandsEnum$5.class" afterPath="$PROJECT_DIR$/target/classes/com/company/service/command/CommandsEnum$5.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/company/service/command/CommandsEnum$6.class" afterPath="$PROJECT_DIR$/target/classes/com/company/service/command/CommandsEnum$6.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/company/service/command/CommandsEnum$7.class" afterPath="$PROJECT_DIR$/target/classes/com/company/service/command/CommandsEnum$7.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/company/service/command/CommandsEnum$8.class" afterPath="$PROJECT_DIR$/target/classes/com/company/service/command/CommandsEnum$8.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/company/service/command/CommandsEnum$9.class" afterPath="$PROJECT_DIR$/target/classes/com/company/service/command/CommandsEnum$9.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/company/service/command/CommandsEnum.class" afterPath="$PROJECT_DIR$/target/classes/com/company/service/command/CommandsEnum.class" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/exceptions/PageNotFoundException.java" afterPath="$PROJECT_DIR$/src/main/java/com/company/exceptions/PageNotFoundException.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -94,60 +45,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="main.jsp" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/pages/main.jsp">
+      <file leaf-file-name="MainServlet.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/company/servlet/MainServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-202">
-              <caret line="67" column="26" lean-forward="true" selection-start-line="67" selection-start-column="26" selection-end-line="67" selection-end-column="26" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="lang.properties" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/lang.properties">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="284">
-              <caret line="61" column="49" lean-forward="false" selection-start-line="61" selection-start-column="49" selection-end-line="61" selection-end-column="49" />
-              <folding />
-            </state>
-          </provider>
-          <provider editor-type-id="ResourceBundle">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="lang_en_US.properties" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/lang_en_US.properties">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="61" column="19" lean-forward="false" selection-start-line="61" selection-start-column="19" selection-end-line="61" selection-end-column="19" />
-              <folding />
-            </state>
-          </provider>
-          <provider editor-type-id="ResourceBundle">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="lang_uk_UA.properties" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/lang_uk_UA.properties">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="61" column="43" lean-forward="false" selection-start-line="61" selection-start-column="43" selection-end-line="61" selection-end-column="43" />
-              <folding />
-            </state>
-          </provider>
-          <provider editor-type-id="ResourceBundle">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CommandsEnum.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/company/service/command/CommandsEnum.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="121">
-              <caret line="57" column="7" lean-forward="false" selection-start-line="57" selection-start-column="4" selection-end-line="57" selection-end-column="7" />
+            <state relative-caret-position="-340">
+              <caret line="22" column="13" lean-forward="false" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -195,8 +97,8 @@
       <find>set_loca</find>
       <find>main</find>
       <find>set_</find>
-      <find>set</find>
       <find>log</find>
+      <find>set</find>
     </findStrings>
     <dirStrings>
       <dir>E:\JAVA Projects\GoFit</dir>
@@ -219,9 +121,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/company/service/filter/AuthFilter.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/company/service/listeners/SessionListener.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/company/service/command/commands/AddMealCommand.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/company/service/command/commands/LoginCommandTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/company/servlet/MainServlet.java" />
@@ -270,6 +169,9 @@
         <option value="$PROJECT_DIR$/src/main/webapp/jsp/pages/includeActivityTable.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/company/service/command/CommandsEnum.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/jsp/pages/main.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/jsp/error.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/company/exceptions/PageNotFoundException.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
       </list>
     </option>
   </component>
@@ -390,6 +292,15 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="company" type="462c0819:PsiDirectoryNode" />
+              <item name="exceptions" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="GoFit3" type="b2602c69:ProjectViewProjectNode" />
+              <item name="GoFit3" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="company" type="462c0819:PsiDirectoryNode" />
               <item name="service" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -440,6 +351,15 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="company" type="462c0819:PsiDirectoryNode" />
+              <item name="servlet" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="GoFit3" type="b2602c69:ProjectViewProjectNode" />
+              <item name="GoFit3" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="company" type="462c0819:PsiDirectoryNode" />
               <item name="utils" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -448,14 +368,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="GoFit3" type="b2602c69:ProjectViewProjectNode" />
-              <item name="GoFit3" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="Resource Bundle 'lang'" type="a6c14932:ResourceBundleNode" />
             </path>
             <path>
               <item name="GoFit3" type="b2602c69:ProjectViewProjectNode" />
@@ -571,11 +483,11 @@
       <recent name="com.company.service.listeners" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Chrome_Downloads\GoFit3\src\main\webapp\jsp" />
       <recent name="E:\Chrome_Downloads\GoFit3\src\main\webapp\jsp\pages\pageBackup" />
       <recent name="E:\Chrome_Downloads\GoFit3\src\main\java\com\company" />
       <recent name="E:\Chrome_Downloads\GoFit2\src\main\resources" />
       <recent name="E:\JAVA Projects\GoFit\src\main\webapp" />
-      <recent name="E:\JAVA Projects\GoFit\src\main\java\com\company\service\command\commands" />
     </key>
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.company.service.command.commands" />
@@ -976,7 +888,7 @@
       <workItem from="1555586244402" duration="14803000" />
       <workItem from="1555759214115" duration="11683000" />
       <workItem from="1555773938591" duration="2985000" />
-      <workItem from="1555777144672" duration="2901000" />
+      <workItem from="1555777144672" duration="3950000" />
     </task>
     <task id="LOCAL-00001" summary="#1 Create entities from MySQL data base&#10;#2 Create DAO layer for entities&#10;#3 Create Connection Pool with Data Source&#10;#4 Create functional for ActivityItemDaoImpl&#10;#5 Create logging using Logj4">
       <created>1554323916492</created>
@@ -1021,7 +933,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="270315000" />
+    <option name="totallyTimeSpent" value="271364000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1251,15 +1163,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/company/dao/connection/ConnectionPoolTest.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/company/dao/factory/DaoFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="7" column="16" lean-forward="false" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/company/dao/factory/DaoFactoryTest.java" />
     <entry file="file://$PROJECT_DIR$/src/test/java/com/company/service/command/commands/ToAdminPageCommandTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
@@ -1475,14 +1378,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/config.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="26" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/mysqlQueries.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1511,14 +1406,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="14" column="13" lean-forward="false" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="21" lean-forward="false" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="21" />
           <folding />
         </state>
       </provider>
@@ -1597,7 +1484,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/lang_uk_UA.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
+        <state relative-caret-position="284">
           <caret line="61" column="43" lean-forward="false" selection-start-line="61" selection-start-column="43" selection-end-line="61" selection-end-column="43" />
           <folding />
         </state>
@@ -1639,7 +1526,49 @@
     <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/pages/main.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-202">
-          <caret line="67" column="26" lean-forward="true" selection-start-line="67" selection-start-column="26" selection-end-line="67" selection-end-column="26" />
+          <caret line="67" column="26" lean-forward="false" selection-start-line="67" selection-start-column="26" selection-end-line="67" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/error.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="25" lean-forward="false" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/config.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="26" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/company/exceptions/PageNotFoundException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="81" column="4" lean-forward="false" selection-start-line="81" selection-start-column="4" selection-end-line="81" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/company/servlet/MainServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-340">
+          <caret line="22" column="13" lean-forward="false" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
           <folding />
         </state>
       </provider>
