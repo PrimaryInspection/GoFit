@@ -30,6 +30,7 @@
     <form method="post" action="/controller">
         <input type="hidden" name="command" value="SET_LOCALE">
         <div class="row">
+
             <div class="col logo">
             <span class="logo__first-word">
           Go

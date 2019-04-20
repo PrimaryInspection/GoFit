@@ -60,6 +60,11 @@ public enum CommandsEnum {
             this.command = new SetLocaleCommand();
         }
     },
+    SET_LOCALE_MAIN {
+        {
+            this.command = new SetLocaleMainCommand();
+        }
+    },
     ADD_NEW_PRODUCT{
         {
             this.command = new AddNewProductCommand();

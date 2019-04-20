@@ -9,6 +9,8 @@
 <fmt:message key="main.durationmin" var="durationmin"/>
 <fmt:message key="main.burnt" var="burnt"/>
 <fmt:message key="main.delete" var="delete"/>
+<fmt:message key="main.totalofday" var="totalofday"/>
+
 
 <div class="">
     <nav class="admin navbar justify-content-center">
@@ -43,7 +45,7 @@
         </c:forEach>
 
         <tr class="food-row-tr-bottom-final">
-            <td>Total:</td>
+            <td>${totalofday}</td>
             <td>${activitiesListTotals.timeSpent}</td>
             <td>${activitiesListTotals.calories}</td>
             <td></td>

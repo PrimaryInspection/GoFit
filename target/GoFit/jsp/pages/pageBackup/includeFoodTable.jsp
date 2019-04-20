@@ -5,8 +5,8 @@
 <fmt:setLocale value="${locale}" scope="session"/>
 <fmt:setBundle basename="lang"/>
 
-<fmt:message key="main.total" var = "total"/>
-<fmt:message key="main.totalday" var="totalday"/>
+<fmt:message key="main.totall" var = "totall"/>
+<fmt:message key="main.totallday" var="totallday"/>
 <fmt:message key="main.uweight" var="uweight"/>
 <fmt:message key="main.ucalories" var="ucalories"/>
 <fmt:message key="main.uproteins" var="uproteins"/>
@@ -63,7 +63,7 @@
 
                     <%--Meal totals--%>
                 <tr class="food-row-tr-bottom">
-                    <td>${total}</td>
+                    <td>${totall}</td>
                     <td>${totalsByMealType[entry.key].weight}</td>
                     <td>${totalsByMealType[entry.key].calories}</td>
                     <td>${totalsByMealType[entry.key].proteins}</td>
@@ -92,7 +92,7 @@
         <tbody class="text-right">
 
         <tr class="food-row-tr-bottom-final">
-            <th>${totalday}</th>
+            <th>${totallday}</th>
             <th>${totalDayFoodWeight}</th>
             <th>${totalDayCalories}</th>
             <th>${totalDayProteins}</th>

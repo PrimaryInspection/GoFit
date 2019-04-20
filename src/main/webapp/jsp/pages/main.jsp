@@ -20,6 +20,7 @@
 <fmt:message key="main.remain" var ="remain"/>
 <fmt:message key="main.datesel" var="datesel"/>
 <fmt:message key="main.daysum" var = "daysummary"/>
+<fmt:message key="main.ulogout" var = "ulogout"/>
 
 
 
@@ -58,30 +59,27 @@
             </form>
 
 
+            <form method="post" action="/controller">
+                <input type="hidden" name="command" value="SET_LOCALE_MAIN">
+                <div class="row">
+                    <div class="col py-4 text-center">
+                        <button type="submit" class="btn btn-link" name="locale" value="EN">en</button>
+                        <button type="submit" class="btn btn-link" name="locale" value="UA">укр</button>
+                    </div>
+                </div>
+            </form>
 
             <form class="form-inline form-no-margin-bottom" method="post" action="/controller">
+                <c:if test="${not empty user}">
+                    <c:if test="${user.admin}">
+                        <button type="submit" class="btn btn-link" name="command" value="TO_ADMIN_PAGE">Admin</button>
+                    </c:if>
+                    <button type="submit" class="btn btn-link" name="command" value="LOGOUT">${ulogout}</button>
+                </c:if>
+            </form>
 
-                <form method="post" action="/controller">
-                    <input type="hidden" name="command" value="SET_LOCALE_MAIN">
-                    <div class="row">
 
-                        <div class="col py-4 text-center">
-                            <button type="submit" class="btn btn-link" name="locale" value="EN">en</button>
-                            <button type="submit" class="btn btn-link" name="locale" value="UA">укр</button>
-                        </div>
-                    </div>
-                </form>
 
-                    <form class="form-inline form-no-margin-bottom" method="post" action="/controller">
-
-                        <c:if test="${not empty user}">
-                            <c:if test="${user.admin}">
-                                <button type="submit" class="btn btn-link" name="command" value="TO_ADMIN_PAGE">Admin</button>
-                            </c:if>
-                            <button type="submit" class="btn btn-link" name="command" value="LOGOUT">Logout</button>
-                        </c:if>
-                    </form>
-                </form>
         </nav>
     </div>
     <br/>
