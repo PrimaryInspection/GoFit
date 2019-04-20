@@ -13,16 +13,16 @@
 
 <div class="row">
     <nav class="navbar container-fluid navbar-header">
-        <form class="form-no-margin-bottom" action="${pageContext.request.contextPath}/controller?command=TO_MAIN_PAGE" method="post">
+        <form class="form-no-margin-bottom" action="/controller" method="post">
             <button class="navbar-brand fitness-buddy btn btn-link" name="command" value="TO_MAIN_PAGE"><span class="fitness">Fitness</span>Buddy
             </button>
         </form>
-        <form class="form-inline form-no-margin-bottom" method="post" action="${pageContext.request.contextPath}/controller?command=TO_MAIN_PAGEZ">
+        <form class="form-inline form-no-margin-bottom" method="post" action="/controller">
             <c:if test="${not empty user}">
                 <c:if test="${user.admin}">
                     <button type="submit" class="btn btn-link" name="command" >Main</button>
         </form>
-        <form class="form-inline form-no-margin-bottom" method="post" action="${pageContext.request.contextPath}/controller?command=LOGOUT">
+        <form class="form-inline form-no-margin-bottom" method="post" action="/controller">
         </c:if>
                 <button type="submit" class="btn btn-link" name="command" >Logout</button>
             </c:if>

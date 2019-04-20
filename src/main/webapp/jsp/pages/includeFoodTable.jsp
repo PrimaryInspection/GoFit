@@ -1,9 +1,27 @@
+<%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-<%@ taglib uri="http://java.sun.com/jsp/jstl/functions" prefix="fn" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt" %>
+
+<fmt:setLocale value="${locale}" scope="session"/>
+<fmt:setBundle basename="lang"/>
+
+<fmt:message key="main.total" var = "total"/>
+<fmt:message key="main.totalday" var="totalday"/>
+<fmt:message key="main.uweight" var="uweight"/>
+<fmt:message key="main.ucalories" var="ucalories"/>
+<fmt:message key="main.uproteins" var="uproteins"/>
+<fmt:message key="main.ufats" var="ufats"/>
+<fmt:message key="main.ucarbs" var="ucarbs"/>
+<fmt:message key="main.foodtracking" var="foodtracking"/>
+
+
+
+
+
 
 <div class="">
     <nav class="admin navbar justify-content-center">
-        <span class="navbar-brand">Food Tracking</span>
+        <span class="navbar-brand">${foodtracking}</span>
     </nav>
     <br/>
     <c:forEach var="entry" items="${meals}">
@@ -13,11 +31,11 @@
                 <div class="col-12 bg-light food-row-meal-title">${entry.key}</div>
                 <thead class="text-right food-row-thead">
                 <th scope="col"></th>
-                <th scope="col">WEIGHT</th>
-                <th scope="col">CALORIES</th>
-                <th scope="col">PROTEINS</th>
-                <th scope="col">FATS</th>
-                <th scope="col">CARBS</th>
+                <th scope="col">${uweight}</th>
+                <th scope="col">${ucalories}</th>
+                <th scope="col">${uproteins}</th>
+                <th scope="col">${ufats}</th>
+                <th scope="col">${ucarbs}</th>
                 <th scope="col"></th>
                 </thead>
 
@@ -45,7 +63,7 @@
 
                     <%--Meal totals--%>
                 <tr class="food-row-tr-bottom">
-                    <td>Total:</td>
+                    <td>${total}</td>
                     <td>${totalsByMealType[entry.key].weight}</td>
                     <td>${totalsByMealType[entry.key].calories}</td>
                     <td>${totalsByMealType[entry.key].proteins}</td>
@@ -74,7 +92,7 @@
         <tbody class="text-right">
 
         <tr class="food-row-tr-bottom-final">
-            <th>Total for the day:</th>
+            <th>${totalday}</th>
             <th>${totalDayFoodWeight}</th>
             <th>${totalDayCalories}</th>
             <th>${totalDayProteins}</th>

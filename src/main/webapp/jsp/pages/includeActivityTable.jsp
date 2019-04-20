@@ -1,8 +1,18 @@
+<%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt" %>
+
+<fmt:setLocale value="${locale}" scope="session"/>
+<fmt:setBundle basename="lang"/>
+
+<fmt:message key="main.activitydiary" var="activitydiary"/>
+<fmt:message key="main.durationmin" var="durationmin"/>
+<fmt:message key="main.burnt" var="burnt"/>
+<fmt:message key="main.delete" var="delete"/>
 
 <div class="">
     <nav class="admin navbar justify-content-center">
-        <span class="navbar-brand">Activity Tracking</span>
+        <span class="navbar-brand">${activitydiary}</span>
     </nav>
     <br/>
 
@@ -10,8 +20,8 @@
         <div class="col-12 bg-light food-row-meal-title">${chosenDateSession}</div>
         <thead class="text-right food-row-thead">
         <th scope="col"></th>
-        <th scope="col">DURATION (MINS)</th>
-        <th scope="col">CALORIES BURNT</th>
+        <th scope="col">${durationmin}</th>
+        <th scope="col">${burnt}</th>
         <th scope="col"></th>
         </thead>
 
@@ -25,7 +35,7 @@
                     <td>${entry.calories}</td>
                     <td>
                         <button class="btn btn-link btn-block food-row-tr-btn btn-sm" type="submit" name="command"
-                                value="DELETE_ENTRY_FROM_ACTIVITY_DIARY">Delete
+                                value="DELETE_ENTRY_FROM_ACTIVITY_DIARY">${delete}
                         </button>
                     </td>
                 </tr>

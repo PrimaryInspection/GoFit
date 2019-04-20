@@ -53,7 +53,7 @@ public class MenuService implements IMenuService {
     public int getTotalProteins(List<MealToDisplay> menu) {
         int totalProteins=0;
         for (MealToDisplay m: menu) {
-            totalProteins += m.getCalories();
+            totalProteins += m.getProteins();
         }
         return totalProteins;
     }
@@ -62,7 +62,7 @@ public class MenuService implements IMenuService {
     public int getTotalFat(List<MealToDisplay> menu) {
         int totalFats =0;
         for (MealToDisplay m : menu) {
-            totalFats += m.getCalories();
+            totalFats += m.getFats();
         }
         return totalFats;
     }
@@ -71,7 +71,7 @@ public class MenuService implements IMenuService {
     public int getTotalCarbs(List<MealToDisplay> menu) {
         int totalCarbs = 0;
         for (MealToDisplay m : menu) {
-            totalCarbs += m.getCalories();
+            totalCarbs += m.getCarbs();
         }
         return totalCarbs;
     }

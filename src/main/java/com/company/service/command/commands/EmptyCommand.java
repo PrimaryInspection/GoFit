@@ -17,6 +17,7 @@ public class EmptyCommand implements ActionCommand {
 
     @Override
     public String execute(HttpServletRequest request, HttpServletResponse response) {
-        throw new PageNotFoundException("An empty command");
+        logger.error("Empty command");
+        return null;
     }
 }

@@ -1,12 +1,33 @@
+<%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt" %>
+
+<fmt:setLocale value="${locale}" scope="session"/>
+<fmt:setBundle basename="lang"/>
+
+<fmt:message key="main.save" var="save"/>
+<fmt:message key="main.cancel" var = "canel"/>
+<fmt:message key="main.bottomcal" var = "bottomcal"/>
+<fmt:message key="main.dailynormbottom" var="dailynormbottom"/>
+<fmt:message key="main.update" var="update"/>
+<fmt:message key="main.ulifestyle" var="ulifestyle"/>
+<fmt:message key="main.uheight" var="uheight"/>
+<fmt:message key="main.birth" var="births"/>
+<fmt:message key="main.statweight" var="statweight"/>
+<fmt:message key="main.statgoalweight" var="statgoalweight"/>
+
+
+
+
+
 
 <%---------- Body stats -----------%>
 <div class="container container-fluid table-bordered">
     <form action="/controller" method="post">
-        <h5 class="text-center">You can update your body stats here</h5>
+        <h5 class="text-center">${update}</h5>
 
                 <%--ACTIVITY--%>
-                <div class="main-caption">ACTIVITY</div>
+                <div class="main-caption">${ulifestyle}</div>
                 <select class="form-control" name="lifestyleId">
                     <c:forEach var="item" items="${lifestyles}">
                         <option value="${item.id}" <c:if test="${user.lifestyle_id == item.id}">selected</c:if>>
@@ -22,7 +43,7 @@
             <div class="col">
 
                 <%--HEIGHT--%>
-                <div class="main-caption">HEIGHT (in santimeters)</div>
+                <div class="main-caption">${uheight}</div>
                 <input required class="form-control" type="number" name="height" min="50" max="250" step="1"
                        value="${user.height}"
                        placeholder="Enter height">
@@ -30,7 +51,7 @@
                 <br/>
 
                 <%--BIRTHDAY--%>
-                <div class="main-caption">BIRTHDAY</div>
+                <div class="main-caption">${births}</div>
                 <input required class="form-control" type="date" name="birthday" value="${user.birthday}"
                        max="${currentDate}">
             </div>
@@ -39,7 +60,7 @@
             <div class="col">
 
                 <%--WEIGHT--%>
-                <div class="main-caption">WEIGHT (in kilos)</div>
+                <div class="main-caption">${statweight}</div>
                 <input required class="form-control" type="number" name="weight" min="1" max="250" step="1"
                        value="${user.weight}"
                        placeholder="Enter weight">
@@ -50,7 +71,7 @@
             <div class="col">
 
                 <%--GOAL WEIGHT--%>
-                <div class="main-caption">ENTER GOAL WEIGHT</div>
+                <div class="main-caption">${statgoalweight}</div>
                 <input required class="form-control" type="number" name="weightGoal" min="1" max="250" step="1"
                        value="${user.weightGoal}"
                        placeholder="Enter goal weight">
@@ -60,11 +81,8 @@
         </div>
 
         <br/><br/>
-        <h6 class="text-center">Your daily calorie requirement is <span class="color-success">${user.calories_norm} calories.</span>
+        <h6 class="text-center">${dailynormbottom}<span class="color-success">${user.calories_norm} ${bottomcal}</span>
         </h6>
-        <%--<h6 class="text-center">To reach your goal, we suggest you to consume a maximum amount of 1700 calories, 112 g--%>
-        <%--proteins, 88 g fats, and--%>
-        <%--174 g carbs per day.</h6>--%>
         <br/>
         <div class="text-center color-success">
             <c:if test="${not empty updateUserSuccessMessage}">${updateUserSuccessMessage}</c:if>
@@ -73,9 +91,9 @@
         <br/>
         <%------------  BUTTON: add to diary  ---------%>
         <div class="text-center">
-            <button type="submit" class="btn btn-success" name="command" value="UPDATE_USER_INFO">Save changes
+            <button type="submit" class="btn btn-success" name="command" value="UPDATE_USER_INFO">${save}
             </button>
-            <button type="submit" formnovalidate class="btn btn-secondary" name="command" value="CANCEL">Cancel
+            <button type="submit" formnovalidate class="btn btn-secondary" name="command" value="CANCEL">${canel}
             </button>
         </div>
     </form>

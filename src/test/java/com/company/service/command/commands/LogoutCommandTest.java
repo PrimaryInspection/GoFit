@@ -2,12 +2,9 @@ package com.company.service.command.commands;
 
 import org.junit.Test;
 
-import javax.servlet.ServletContext;
 import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
-import static org.junit.Assert.*;
 import static org.mockito.Mockito.*;
 
 public class LogoutCommandTest {

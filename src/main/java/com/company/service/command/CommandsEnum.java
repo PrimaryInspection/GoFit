@@ -9,6 +9,7 @@ public enum CommandsEnum {
             this.command = new LoginCommand();
         }
     },
+
     TO_LOGIN_PAGE{
         {
             this.command = new ToLoginPageCommand();
@@ -47,6 +48,11 @@ public enum CommandsEnum {
     REGISTER_NEW_USER{
         {
             this.command = new RegisterNewUserCommand();
+        }
+    },
+    CANCEL {
+        {
+            this.command = new CancelCommand();
         }
     },
     SET_LOCALE {
@@ -96,7 +102,7 @@ public enum CommandsEnum {
         }
     },
 
-    LOGOUT {
+    LOGOUT{
         {
             this.command = new LogoutCommand();
         }

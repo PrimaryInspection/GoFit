@@ -15,6 +15,7 @@
 <fmt:message key="login.userblocked" var="userBlocked"/>
 <fmt:message key="login.registrsuccess" var="registrSuccess"/>
 <fmt:message key="login.usernull" var="userNull"/>
+<fmt:message key="login.gaslo" var="gaslo"/>
 
 <html lang="UK">
 <head>
@@ -63,7 +64,7 @@
 
 
     <h2 class="h2-index h2-index_grey">
-        Be healthy. Stay strong.
+        ${gaslo}
     </h2>
     <form class="login-form" method="post" action="/controller">
         <div class="wrapper">
