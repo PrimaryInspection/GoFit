@@ -11,26 +11,20 @@ import org.apache.logging.log4j.Logger;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import javax.servlet.http.HttpSession;
 
 public class BlockUnblockUserCommand implements ActionCommand {
     private static final Logger logger = LogManager.getLogger(BlockUnblockUserCommand.class);
-
-
     private static final String PARAM_NAME_USER_ID = "userId";
-
-
     private IUserService userService = ServiceFactory.getUserService();
     private IPageService pageService = ServiceFactory.getPageService();
 
-    private HttpSession session;
-
     /**
      * Method that doing blocking/unblocking users'es permission to website
+     *
      * @return page path
-     * */
+     */
     @Override
-    public String execute(HttpServletRequest request , HttpServletResponse response) {
+    public String execute(HttpServletRequest request, HttpServletResponse response) {
         String page = ConfigurationManager.getProperty("path.page.admin");
 
         int userId = Integer.valueOf(request.getParameter(PARAM_NAME_USER_ID));

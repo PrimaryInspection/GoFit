@@ -2,23 +2,36 @@ package com.company.model.dao.mapper;
 
 
 import com.company.model.dao.impl.*;
-import com.company.model.dao.mapper.*;
 
 
 public abstract class DaoFactory {
 
-    public static ActivityDao getActivityMethods(){ return new ActivityDaoImpl(); }
+    public static ActivityDao getActivityMethods() {
+        return new ActivityDaoImpl();
+    }
 
-    public static ActivityItemDao getActivityItemMethods(){return new ActivityItemDaoImpl();}
+    public static ActivityItemDao getActivityItemMethods() {
+        return new ActivityItemDaoImpl();
+    }
 
-    public static MealDao getMealMethods(){return new MealDaoImpl();}
+    public static MealDao getMealMethods() {
+        return new MealDaoImpl();
+    }
 
-    public static MealItemDao getMealItemMethods(){return new MealItemDaoImpl();}
+    public static MealItemDao getMealItemMethods() {
+        return new MealItemDaoImpl();
+    }
 
-    public static MealTypeDao getMealTypeMethods(){return new MealTypeDaoImpl();}
+    public static MealTypeDao getMealTypeMethods() {
+        return new MealTypeDaoImpl();
+    }
 
-    public static UserDao getUserMethods(){return new UserDaoImpl();}
+    public static UserDao getUserMethods() {
+        return new UserDaoImpl();
+    }
 
-    public static LifestyleDao getLifestyleMethods(){return new LifestyleDaoImpl();}
+    public static LifestyleDao getLifestyleMethods() {
+        return new LifestyleDaoImpl();
+    }
 
 }

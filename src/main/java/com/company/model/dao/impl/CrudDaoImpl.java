@@ -4,7 +4,7 @@ import com.company.model.dao.mapper.CrudDao;
 
 import java.util.List;
 
-public  class CrudDaoImpl<T> implements CrudDao<T> {
+public class CrudDaoImpl<T> implements CrudDao<T> {
 
 
     @Override

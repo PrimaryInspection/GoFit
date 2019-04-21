@@ -13,8 +13,10 @@ public class EmptyCommand implements ActionCommand {
 
     public EmptyCommand() {
     }
+
     /**
      * Returning null page if command is unknown
+     *
      * @return null
      */
     @Override

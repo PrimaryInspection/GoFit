@@ -13,7 +13,6 @@ import java.util.List;
 
 public class UserDaoImpl extends CrudDaoImpl<User> implements UserDao {
     private static final Logger logger = LogManager.getLogger(UserDaoImpl.class);
-
     private static final String SELECT_ALL_USERS = QueryManager.getProperty("userSelectAll");
     private static final String SELECT_ALL_USERS_LIMIT_OFFSET = QueryManager.getProperty("userSelectAllLimitOffset");
     private static final String SELECT_USER_BY_ID = QueryManager.getProperty("userSelectById");
@@ -23,7 +22,6 @@ public class UserDaoImpl extends CrudDaoImpl<User> implements UserDao {
     private static final String SELECT_COUNT_USERS = QueryManager.getProperty("userSelectCount");
     private static final String DELETE_USER = QueryManager.getProperty("userDeleteById");
     private static final String UPDATE_STATUS_ID = QueryManager.getProperty("userUpdateStatusId");
-
 
 
     @Override
@@ -49,12 +47,11 @@ public class UserDaoImpl extends CrudDaoImpl<User> implements UserDao {
                         resultSet.getInt("lifestyle_id"),
                         resultSet.getInt("status"),
                         resultSet.getInt("role_id")
-
                 ));
 
             }
         } catch (SQLException e) {
-            logger.error("Error in 'getting all users' from DB, cause: " , e.fillInStackTrace());
+            logger.error("Error in 'getting all users' from DB, cause: ", e.fillInStackTrace());
         }
         return users;
     }
@@ -68,14 +65,13 @@ public class UserDaoImpl extends CrudDaoImpl<User> implements UserDao {
             statement.setInt(1, user.getStatus());
             statement.setInt(2, user.getUserId());
 
-
             logger.info("Executing query: " + statement.toString());
             resultUpdate = statement.executeUpdate();
             if (resultUpdate < 1) {
                 logger.info("User statusId was not updated.");
             }
         } catch (SQLException e) {
-            logger.error("Error in updating user statusId" , e.fillInStackTrace());
+            logger.error("Error in updating user statusId", e.fillInStackTrace());
         }
         return resultUpdate > 0;
     }
@@ -108,7 +104,7 @@ public class UserDaoImpl extends CrudDaoImpl<User> implements UserDao {
                 }
             }
         } catch (SQLException e) {
-            logger.error("Error in get 'user by id': " + id ,  e.fillInStackTrace());
+            logger.error("Error in get 'user by id': " + id, e.fillInStackTrace());
 
         }
         return user;
@@ -124,10 +120,9 @@ public class UserDaoImpl extends CrudDaoImpl<User> implements UserDao {
             resultDelete = statement.executeUpdate();
             if (resultDelete < 1) {
                 logger.info("User by id :" + id + " was not deleted");
-
             }
         } catch (SQLException e) {
-            logger.error("Error in deleting user by id=" + id , e.fillInStackTrace());
+            logger.error("Error in deleting user by id=" + id, e.fillInStackTrace());
         }
         return resultDelete > 0;
     }
@@ -136,8 +131,7 @@ public class UserDaoImpl extends CrudDaoImpl<User> implements UserDao {
     public boolean addItem(User newEntity) {
         int resultInsert = 0;
         try (Connection connection = ConnectionPool.getConnection();
-             PreparedStatement statement = connection.prepareStatement(INSERT_USER)
-        ) {
+             PreparedStatement statement = connection.prepareStatement(INSERT_USER)){
             statement.setString(1, newEntity.getFirstName());
             statement.setString(2, newEntity.getSecondName());
             statement.setString(3, newEntity.getLogin());
@@ -156,7 +150,7 @@ public class UserDaoImpl extends CrudDaoImpl<User> implements UserDao {
             logger.info((resultInsert < 1) ? "User was not added." : resultInsert + " user was successfully added.");
 
         } catch (SQLException e) {
-            logger.error("Error in adding user to DB" , e.fillInStackTrace());
+            logger.error("Error in adding user to DB", e.fillInStackTrace());
             e.printStackTrace();
         }
         return resultInsert > 0;
@@ -183,7 +177,7 @@ public class UserDaoImpl extends CrudDaoImpl<User> implements UserDao {
                 }
             }
         } catch (SQLException e) {
-            logger.error("Error in updating user " , e.fillInStackTrace());
+            logger.error("Error in updating user ", e.fillInStackTrace());
         }
         return resultUpdate > 0;
     }
@@ -217,12 +211,11 @@ public class UserDaoImpl extends CrudDaoImpl<User> implements UserDao {
                 }
             }
         } catch (SQLException e) {
-            logger.error("Error in getting user by login: " + login  , e.fillInStackTrace());
+            logger.error("Error in getting user by login: " + login, e.fillInStackTrace());
 
         }
         return user;
     }
-
 
 
     @Override
@@ -255,7 +248,7 @@ public class UserDaoImpl extends CrudDaoImpl<User> implements UserDao {
                 }
             }
         } catch (SQLException e) {
-            logger.error("Error in getting  users limit:" + limit + " offsetting:" + offset , e.fillInStackTrace());
+            logger.error("Error in getting  users limit:" + limit + " offsetting:" + offset, e.fillInStackTrace());
         }
         return users;
     }
@@ -273,7 +266,7 @@ public class UserDaoImpl extends CrudDaoImpl<User> implements UserDao {
                 result = resultSet.getInt("count");
             }
         } catch (SQLException e) {
-            logger.error("Error in obtaining 'number of users'" , e.fillInStackTrace());
+            logger.error("Error in obtaining 'number of users'", e.fillInStackTrace());
         }
         logger.info("Number of users is :" + result);
         return result;

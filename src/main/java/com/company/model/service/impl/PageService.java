@@ -1,11 +1,11 @@
 package com.company.model.service.impl;
 
-import com.company.model.transaction.TransactionManager;
 import com.company.model.entity.MealToDisplay;
 import com.company.model.entity.MealType;
 import com.company.model.entity.User;
 import com.company.model.service.*;
 import com.company.model.service.factory.ServiceFactory;
+import com.company.model.transaction.TransactionManager;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -46,20 +46,19 @@ public class PageService implements IPageService {
 
     @Override
     public void updateMainPageData(HttpSession session, int userId) {
-    LocalDate chosenDate = getChosenDate(session);
+        LocalDate chosenDate = getChosenDate(session);
 
-    updateUserData(session,userId);
-    updateFoodTab(session,userId, chosenDate);
-    updateActivityTab(session,userId,chosenDate);
-    updateBodyStatsTab(session);
-    updateFormulaAndGoals(session,userId,chosenDate);
+        updateUserData(session, userId);
+        updateFoodTab(session, userId, chosenDate);
+        updateActivityTab(session, userId, chosenDate);
+        updateBodyStatsTab(session);
+        updateFormulaAndGoals(session, userId, chosenDate);
 
     }
 
     @Override
     public void updateRegistrationPageData(HttpServletRequest request) {
         HttpSession session = request.getSession();
-
         session.setAttribute("lifestyles", userService.getLifestyles());
         session.setAttribute("maxBirth", LocalDate.now());
         session.setAttribute("minBirth", LocalDate.parse("1900-01-01"));
@@ -80,8 +79,6 @@ public class PageService implements IPageService {
             List<User> users = userService.getUsers(limit, offset);
             request.setAttribute("users", users);
         }
-
-
 
         /**
          * finding out how many pagination buttons (pages) shall be shown based on number of users (size) and
@@ -110,26 +107,23 @@ public class PageService implements IPageService {
 
     private void updateFormulaAndGoals(HttpSession session, int userId, LocalDate chosenDate) {
         try {
-
-
-        User user = userService.getUser(userId);
-        // FORMULA
-        Integer remaining = user.getCalories_norm() - menuService.getUserMealTotal(userId, chosenDate).getCalories() +
-                activityService.getUserActivityTotals(user.getUserId(), chosenDate).getCalories();
-        session.setAttribute("remaining", remaining);
-
-//        GOALS
-        session.setAttribute("kgToGoal", user.getWeight() - user.getWeightGoal());
-        }catch (NullPointerException e){e.printStackTrace();}
+            User user = userService.getUser(userId);
+            Integer remaining = user.getCalories_norm() - menuService.getUserMealTotal(userId, chosenDate).getCalories() +
+                    activityService.getUserActivityTotals(user.getUserId(), chosenDate).getCalories();
+            session.setAttribute("remaining", remaining);
+            session.setAttribute("kgToGoal", user.getWeight() - user.getWeightGoal());
+        } catch (NullPointerException e) {
+            e.printStackTrace();
+        }
     }
 
 
-    private LocalDate getChosenDate(HttpSession session){
+    private LocalDate getChosenDate(HttpSession session) {
         LocalDate chosenDate = (LocalDate) session.getAttribute("chosenDateSession");
-        if(chosenDate == null) {
-            chosenDate=LocalDate.now();
-            session.setAttribute("chosenDateSession" , chosenDate);
-                logger.info("Setting chosenDate to session: " + session.getAttribute("chosenDateSession"));
+        if (chosenDate == null) {
+            chosenDate = LocalDate.now();
+            session.setAttribute("chosenDateSession", chosenDate);
+            logger.info("Setting chosenDate to session: " + session.getAttribute("chosenDateSession"));
         }
         return chosenDate;
     }
@@ -144,7 +138,6 @@ public class PageService implements IPageService {
                 if (!mealTypes.isEmpty()) {
                     Map<String, MealToDisplay> totalsByMealTypeMap = makeMap2(userId, chosenDate, mealTypes);
                     Map<String, List<MealToDisplay>> mealsSplittedByType = makeMap(mealTypes, userMealToDisplay);
-
                     session.setAttribute("mealTypes", mealTypes);
                     session.setAttribute("mealItems", mealItemService.getAll());
                     session.setAttribute("meals", mealsSplittedByType);
@@ -155,31 +148,28 @@ public class PageService implements IPageService {
                     session.setAttribute("totalDayFat", menuService.getTotalFat(userMealToDisplay));
                     session.setAttribute("totalDayCarbs", menuService.getTotalCarbs(userMealToDisplay));
                     tm.commit();
-                    }
-                }catch (SQLException e){
+                }
+            } catch (SQLException e) {
                 tm.rollback();
                 logger.info("Error during updating user's food table");
                 e.printStackTrace();
-            }finally {
+            } finally {
                 tm.close();
             }
         }
     }
 
 
-
-    private void updateBodyStatsTab(HttpSession session){
-        //        BODY STATS tab
+    private void updateBodyStatsTab(HttpSession session) {
         session.setAttribute("lifestyles", userService.getLifestyles());
-        // will be used in jsp to check that birthday is not in future
         session.setAttribute("currentDate", LocalDate.now());
 
     }
 
-    private void  updateActivityTab(HttpSession session , int userId , LocalDate date){
-        session.setAttribute("activities" , activityItemService.getAll());
-        session.setAttribute("activitiesList" , activityService.getUserActivityPage(userId,date));
-        session.setAttribute("activitiesListTotals" , activityService.getUserActivityTotals(userId,date));
+    private void updateActivityTab(HttpSession session, int userId, LocalDate date) {
+        session.setAttribute("activities", activityItemService.getAll());
+        session.setAttribute("activitiesList", activityService.getUserActivityPage(userId, date));
+        session.setAttribute("activitiesListTotals", activityService.getUserActivityTotals(userId, date));
     }
 
     /**
@@ -211,7 +201,7 @@ public class PageService implements IPageService {
      * to be displayed on jsp page.
      *
      * @param userId
-     * @param mealTypes     - list of all meal types of certain user on certain date
+     * @param mealTypes - list of all meal types of certain user on certain date
      * @return HashMap map
      */
     private Map<String, MealToDisplay> makeMap2(int userId, LocalDate chosenDate, List<MealType> mealTypes) {

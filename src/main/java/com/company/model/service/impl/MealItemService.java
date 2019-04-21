@@ -14,16 +14,21 @@ public class MealItemService implements IMealItemService {
     private static MealItemDao mealItemDao = DaoFactory.getMealItemMethods();
     private static MealItemService instance = new MealItemService();
 
-    private MealItemService() {}
+    private MealItemService() {
+    }
 
     /**
      * Getting singletone instance of MealItemService
+     *
      * @return MealItemService
      */
-    public static MealItemService getInstance(){return instance;}
+    public static MealItemService getInstance() {
+        return instance;
+    }
 
     /**
      * Getting all Mealitems from database
+     *
      * @return List<MealItem>
      */
     @Override
@@ -33,21 +38,24 @@ public class MealItemService implements IMealItemService {
 
     /**
      * Adding new meal item to database
-     * @return boolean(true  if addition is done)
+     *
+     * @return boolean(true if addition is done)
      */
     @Override
     public boolean addMealItem(MealItem mealItem) {
         logger.info("Getting meal item :" + mealItem.toString());
-        return mealItemDao.addItem(mealItem);    }
+        return mealItemDao.addItem(mealItem);
+    }
 
     /**
      * Checking is meal item does not existing in database
+     *
      * @return boolean(true if does not exist)
      */
     @Override
     public boolean checkIsMealItemExist(String name) {
-    logger.info("Checking is meal item by name" + name + " exist ");
-    return mealItemDao.getItem(name) !=null;
+        logger.info("Checking is meal item by name" + name + " exist ");
+        return mealItemDao.getItem(name) != null;
     }
 
 

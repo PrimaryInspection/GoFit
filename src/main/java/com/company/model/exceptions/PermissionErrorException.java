@@ -1,7 +1,6 @@
 package com.company.model.exceptions;
 
 import com.company.model.utils.*;
-
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 

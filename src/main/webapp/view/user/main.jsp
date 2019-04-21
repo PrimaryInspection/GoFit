@@ -17,13 +17,10 @@
 <fmt:message key="main.goal" var="goal"/>
 <fmt:message key="main.calspend" var="calspend"/>
 <fmt:message key="main.activspend" var="activityspend"/>
-<fmt:message key="main.remain" var ="remain"/>
+<fmt:message key="main.remain" var="remain"/>
 <fmt:message key="main.datesel" var="datesel"/>
-<fmt:message key="main.daysum" var = "daysummary"/>
-<fmt:message key="main.ulogout" var = "ulogout"/>
-
-
-
+<fmt:message key="main.daysum" var="daysummary"/>
+<fmt:message key="main.ulogout" var="ulogout"/>
 
 
 <html>
@@ -77,7 +74,6 @@
                     <button type="submit" class="btn btn-link" name="command" value="LOGOUT">${ulogout}</button>
                 </c:if>
             </form>
-
 
 
         </nav>

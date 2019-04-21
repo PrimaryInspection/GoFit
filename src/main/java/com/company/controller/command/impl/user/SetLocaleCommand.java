@@ -16,6 +16,7 @@ public class SetLocaleCommand implements ActionCommand {
      * Setting locale properties for login page
      * @return page path
      */
+    @SuppressWarnings("all")
     @Override
     public String execute(HttpServletRequest request , HttpServletResponse response) {
         String page = (ConfigurationManager.getProperty("path.page.login"));

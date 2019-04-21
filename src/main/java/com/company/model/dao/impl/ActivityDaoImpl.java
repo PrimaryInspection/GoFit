@@ -15,7 +15,6 @@ import java.util.List;
 
 public class ActivityDaoImpl extends CrudDaoImpl<Activity> implements ActivityDao {
     private static final Logger logger = LogManager.getLogger(ActivityDaoImpl.class);
-
     private final String INSERT_ACTIVITY = QueryManager.getProperty("activityInsert");
     private final String SELECT_ALL_ACTIVITIES_BY_ID = QueryManager.getProperty("activitySelectAllById");
     private final String SELECT_TOTAL_ACTIVITIES = QueryManager.getProperty("activitySelectTotal");
@@ -39,20 +38,14 @@ public class ActivityDaoImpl extends CrudDaoImpl<Activity> implements ActivityDa
         return resultInsert > 0;
     }
 
-    /**
-     * IF EXCEPTION - DELETE ActivityToDisplay and try to do smth with Activity
-     */
     @Override
     public List<ActivityToDisplay> getAll(Integer userId, LocalDate date) {
         List<ActivityToDisplay> listOfActivities = new ArrayList<>();
-
         try (Connection connection = ConnectionPool.getConnection();
              PreparedStatement statement = connection.prepareStatement(SELECT_ALL_ACTIVITIES_BY_ID)) {
             statement.setInt(1, userId);
             statement.setDate(2, Date.valueOf(date));
-
             logger.info("Executing statement: " + statement.toString());
-
             try (ResultSet resultSet = statement.executeQuery()) {
                 while (resultSet.next()) {
                     listOfActivities.add(new ActivityToDisplay(
@@ -62,12 +55,6 @@ public class ActivityDaoImpl extends CrudDaoImpl<Activity> implements ActivityDa
                             resultSet.getInt("calories")
                     ));
                 }
-            }
-            logger.debug("@@@@@@@@@@@@@@@@@@" + listOfActivities);
-
-            for (ActivityToDisplay a : listOfActivities
-                    ) {
-                logger.debug("@@@@@@@@@@@@@@@@@@" + a);
             }
         } catch (SQLException e) {
             logger.error("Error in getting 'list of activities' DB, cause: ", e.fillInStackTrace());

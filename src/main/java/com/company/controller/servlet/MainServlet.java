@@ -1,11 +1,12 @@
 package com.company.controller.servlet;
 
 
-import com.company.model.service.IPageService;
-import com.company.controller.command.impl.ActionCommand;
 import com.company.controller.command.factory.ActionFactory;
+import com.company.controller.command.impl.ActionCommand;
+import com.company.model.service.IPageService;
 import com.company.model.service.factory.ServiceFactory;
-import com.company.model.utils.*;
+import com.company.model.utils.ConfigurationManager;
+import com.company.model.utils.MessageManager;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -23,37 +24,36 @@ public class MainServlet extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-    processRequest(request,response);
+        processRequest(request, response);
     }
 
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-    processRequest(request,response);
+        processRequest(request, response);
     }
 
-    protected  void processRequest(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+    protected void processRequest(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
         String page = null;
         ActionFactory client = new ActionFactory();
-        ActionCommand command = client.defineCommand(request , response);
+        ActionCommand command = client.defineCommand(request, response);
         logger.info("Obtained command is :" + command.getClass().getSimpleName());
 
-        page = command.execute(request , response);
+        page = command.execute(request, response);
 
-        if (page != null){
-            if(pageService.isRedirect()){
+        if (page != null) {
+            if (pageService.isRedirect()) {
                 logger.info("Request redirected to page: " + page.toString());
                 pageService.setRedirect(false);
                 response.sendRedirect(page);
-            }else {
-                logger.info("Request will be forwarded to " + page );
+            } else {
+                logger.info("Request will be forwarded to " + page);
                 RequestDispatcher dispatcher = getServletContext().getRequestDispatcher(page);
-                    dispatcher.forward(request,response);
+                dispatcher.forward(request, response);
             }
-        }
-        else {
+        } else {
             page = ConfigurationManager.getProperty("path.page.error");
-            request.getSession().setAttribute("nullPage" , MessageManager.getProperty("message.nullpage"));
+            request.getSession().setAttribute("nullPage", MessageManager.getProperty("message.nullpage"));
             response.sendRedirect(request.getContextPath() + page);
         }
     }

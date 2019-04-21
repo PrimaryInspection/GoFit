@@ -11,24 +11,20 @@ public class EncodingFilter implements Filter {
     private String code;
 
     @Override
-    public void init(FilterConfig filterConfig){
+    public void init(FilterConfig filterConfig) {
         code = filterConfig.getInitParameter("encoding");
     }
 
     /**
-     * Filter that encode text to right format
+     * Filter that getting current encoding and setting right encoding (if not set) from filter parameter
      */
     @Override
     public void doFilter(ServletRequest servletRequest, ServletResponse servletResponse, FilterChain filterChain) throws IOException, ServletException {
-        // getting current encoding
         String codeRequest = servletRequest.getCharacterEncoding();
-
-        // setting encoding (if not set) from filter parameter
         if (code != null && !code.equalsIgnoreCase(codeRequest)) {
             servletRequest.setCharacterEncoding(code);
             servletResponse.setCharacterEncoding(code);
         }
-
         filterChain.doFilter(servletRequest, servletResponse);
     }
 

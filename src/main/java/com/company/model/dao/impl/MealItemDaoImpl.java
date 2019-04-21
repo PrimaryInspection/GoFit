@@ -54,7 +54,6 @@ public class MealItemDaoImpl extends CrudDaoImpl<MealItem> implements MealItemDa
         try (Connection connection = ConnectionPool.getConnection();
              PreparedStatement statement = connection.prepareStatement(SELECT_MEAL_ITEM_BY_ID)) {
             statement.setInt(1, id);
-
             try (ResultSet resultSet = statement.executeQuery()) {
                 logger.info("Executing query: " + statement.toString());
                 if (resultSet.next()) {
@@ -111,7 +110,7 @@ public class MealItemDaoImpl extends CrudDaoImpl<MealItem> implements MealItemDa
                 logger.info("Meal item was not deleted.");
             }
         } catch (SQLException e) {
-            logger.error("Error in 'deleting meal item with id:" + id + ",cause  " , e.fillInStackTrace());
+            logger.error("Error in 'deleting meal item with id:" + id + ",cause  ", e.fillInStackTrace());
             e.printStackTrace();
         }
         return resultDelete < 0;
@@ -123,7 +122,6 @@ public class MealItemDaoImpl extends CrudDaoImpl<MealItem> implements MealItemDa
         try (Connection connection = ConnectionPool.getConnection();
              PreparedStatement statement = connection.prepareStatement(SELECT_MEAL_ITEM_BY_NAME)) {
             statement.setString(1, name);
-
             try (ResultSet resultSet = statement.executeQuery()) {
                 logger.info("Executing query: " + statement.toString());
                 if (resultSet.next()) {
@@ -134,7 +132,6 @@ public class MealItemDaoImpl extends CrudDaoImpl<MealItem> implements MealItemDa
                             resultSet.getInt("calories"),
                             resultSet.getInt("proteins"),
                             resultSet.getInt("carbs")
-
                     );
                     logger.info("No meal item with name: " + name + "was founded");
                 }

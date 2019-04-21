@@ -6,7 +6,7 @@
 <head>
     <title>Title</title>
 </head>
-<body >
+<body>
 <jsp:forward page="/view/common/login.jsp"/>
 </body>
 </html>

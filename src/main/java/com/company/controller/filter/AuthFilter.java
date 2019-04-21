@@ -18,6 +18,7 @@ public class AuthFilter implements Filter {
     public void init(FilterConfig filterConfig) throws ServletException {
 
     }
+
     /**
      * Filter for user authorization, also checks if the user is admin
      */
@@ -31,11 +32,9 @@ public class AuthFilter implements Filter {
 
         User user = (User) request.getSession().getAttribute("user");
 
-        if(user !=null && UtilManager.getProperty("role.admin").equalsIgnoreCase(String.valueOf(user.getRoleId()))){
-            chain.doFilter(servletRequest,servletResponse);
-        }
-
-        else {
+        if (user != null && UtilManager.getProperty("role.admin").equalsIgnoreCase(String.valueOf(user.getRoleId()))) {
+            chain.doFilter(servletRequest, servletResponse);
+        } else {
             logger.info("User tried to reach \" + request.getRequestURI() + " +
                     "\" without being logged in as administrator! Redirected to error page!");
             response.sendRedirect(ConfigurationManager.getProperty("path.page.main"));

@@ -5,7 +5,7 @@
 <fmt:setLocale value="${locale}" scope="session"/>
 <fmt:setBundle basename="lang"/>
 
-<fmt:message key="main.total" var = "total"/>
+<fmt:message key="main.total" var="total"/>
 <fmt:message key="main.totalday" var="totalday"/>
 <fmt:message key="main.uweight" var="uweight"/>
 <fmt:message key="main.ucalories" var="ucalories"/>
@@ -13,9 +13,7 @@
 <fmt:message key="main.ufats" var="ufats"/>
 <fmt:message key="main.ucarbs" var="ucarbs"/>
 <fmt:message key="main.foodtracking" var="foodtracking"/>
-
-
-
+<fmt:message key="main.delete" var="delete"/>
 
 
 
@@ -51,12 +49,12 @@
                             <td>${mealEntry.proteins}</td>
                             <td>${mealEntry.fats}</td>
                             <td>${mealEntry.carbs}</td>
-                        <%--    <td>
-                                <button class="btn btn-link btn-block food-row-tr-btn btn-sm" type="submit"
-                                        name="command"
-                                        value="DELETE_ENTRY_FROM_FOOD_DIARY">Delete
-                                </button>
-                            </td>--%>
+                                    <td>
+                                        <button class="btn btn-link btn-block food-row-tr-btn btn-sm" type="submit"
+                                                name="command"
+                                                value="DELETE_ENTRY_FROM_FOOD_DIARY">${delete}
+                                        </button>
+                                    </td>
                         </tr>
                     </form>
                 </c:forEach>
@@ -98,10 +96,10 @@
             <th>${totalDayProteins}</th>
             <th>${totalDayFat}</th>
             <th>${totalDayCarbs}</th>
-<%--            <td>
-                <button class="btn btn-link btn-block invisible food-row-tr-btn btn-sm" type="button">Delete
-                </button>
-            </td>--%>
+            <%--            <td>
+                            <button class="btn btn-link btn-block invisible food-row-tr-btn btn-sm" type="button">Delete
+                            </button>
+                        </td>--%>
         </tr>
         </tbody>
     </table>

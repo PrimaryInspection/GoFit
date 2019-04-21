@@ -14,10 +14,11 @@ public class ToPreviousPageCommand implements ActionCommand {
 
     /**
      * checks session for 'previous page' attribute and returns its value
+     *
      * @return previous page path
      */
     @Override
-    public String execute(HttpServletRequest request , HttpServletResponse response) {
+    public String execute(HttpServletRequest request, HttpServletResponse response) {
         HttpSession session = request.getSession();
 
         String page = session.getAttribute("previousPage").toString();

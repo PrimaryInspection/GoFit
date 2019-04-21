@@ -13,8 +13,6 @@
 <fmt:message key="main.addtofooddiary" var="addtofooddiary"/>
 
 
-
-
 <%---------- FOOD -----------%>
 <div class="container container-fluid table-bordered">
     <form action="/controller" method="post">

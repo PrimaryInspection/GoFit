@@ -14,9 +14,12 @@ public class MealTypeService implements IMealTypeService {
     private static MealTypeDao mealTypeDao = DaoFactory.getMealTypeMethods();
     private static MealTypeService instance = new MealTypeService();
 
-    private MealTypeService () {}
+    private MealTypeService() {
+    }
 
-    public  static MealTypeService getInstance(){return  instance;}
+    public static MealTypeService getInstance() {
+        return instance;
+    }
 
     @Override
     public List<MealType> getAll() {

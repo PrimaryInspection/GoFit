@@ -16,10 +16,8 @@ import java.util.List;
 
 public class LifestyleDaoImpl extends CrudDaoImpl<Lifestyle> implements LifestyleDao {
     private static final Logger logger = LogManager.getLogger(LifestyleDaoImpl.class);
-
     private static final String SELECT_ALL = QueryManager.getProperty("lifestyleSelectAll");
     private static final String SELECT = QueryManager.getProperty("lifestyleSelect");
-
 
     @Override
     public Lifestyle getItem(int id) {
@@ -28,13 +26,13 @@ public class LifestyleDaoImpl extends CrudDaoImpl<Lifestyle> implements Lifestyl
              PreparedStatement statement = connection.prepareStatement(SELECT);
         ) {
             statement.setInt(1, id);
-            try(ResultSet resultSet = statement.executeQuery()) {
+            try (ResultSet resultSet = statement.executeQuery()) {
                 logger.info("Query: " + statement.toString());
                 if (resultSet.next()) {
                     lifestyle = new Lifestyle(
                             resultSet.getInt("id"),
                             resultSet.getString("name"));
-                }else {
+                } else {
                     logger.info("No lifestyle with id=" + id + " found");
                 }
             }
@@ -63,6 +61,5 @@ public class LifestyleDaoImpl extends CrudDaoImpl<Lifestyle> implements Lifestyl
         }
         return lifestyles;
     }
-
 
 }

@@ -1,277 +1,136 @@
-2019-04-21 15:03:33 INFO   This is checkLogin service ,Geting user from DB with login = lizz
-2019-04-21 15:03:34 INFO  We was got user by login : lizz
-2019-04-21 15:03:34 INFO  Checking user password...
-2019-04-21 15:03:34 INFO  Password is ok
-2019-04-21 15:03:34 INFO  Getting user by login: lizz
-2019-04-21 15:03:34 INFO  Getting user by id: 1
-2019-04-21 15:03:34 INFO  Getting user by id: 1
-2019-04-21 15:03:34 INFO  Query: com.mysql.cj.jdbc.ClientPreparedStatement: SELECT * FROM meal_type ;
-2019-04-21 15:03:34 INFO  Getting total by MEAL type id: 1
-2019-04-21 15:03:34 INFO  Getting total by MEAL type id: 2
-2019-04-21 15:03:34 INFO  Getting total by MEAL type id: 3
-2019-04-21 15:03:34 INFO  Getting total by MEAL type id: 4
-2019-04-21 15:03:34 INFO  Getting total by MEAL type id: 5
-2019-04-21 15:03:34 INFO  Executing query: com.mysql.cj.jdbc.ClientPreparedStatement: SELECT * FROM meal_item ORDER BY name ASC;
-2019-04-21 15:03:34 INFO  Executing query: com.mysql.cj.jdbc.ClientPreparedStatement: SELECT * FROM activity_item ;
-2019-04-21 15:03:34 INFO  Executing statement: com.mysql.cj.jdbc.ClientPreparedStatement: SELECT activity.id as id, activity_item.name as activityName, time_spent, activity_item.calories*time_spent/60 as calories FROM activity inner join activity_item ON activity_item_id = activity_item.id where user_id = 1 AND date = '2019-04-20';
-2019-04-21 15:03:34 INFO  Getting total user's activities by user id: 1
-2019-04-21 15:03:34 INFO  Executing statement: com.mysql.cj.jdbc.ClientPreparedStatement: SELECT SUM(time_spent) as time_spent, SUM(activity_item.calories*time_spent/60) as calories FROM activity inner join activity_item ON activity_item_id = activity_item.id where user_id = 1 AND date='2019-04-20';
-2019-04-21 15:03:34 INFO  Getting user by id: 1
-2019-04-21 15:03:34 INFO  Getting user meal total by user ID : 1
-2019-04-21 15:03:34 INFO  Getting total user's activities by user id: 1
-2019-04-21 15:03:34 INFO  Executing statement: com.mysql.cj.jdbc.ClientPreparedStatement: SELECT SUM(time_spent) as time_spent, SUM(activity_item.calories*time_spent/60) as calories FROM activity inner join activity_item ON activity_item_id = activity_item.id where user_id = 1 AND date='2019-04-20';
-2019-04-21 15:03:44 INFO  Getting user by id: 1
-2019-04-21 15:03:44 INFO  Getting user by id: 1
-2019-04-21 15:03:44 INFO  Query: com.mysql.cj.jdbc.ClientPreparedStatement: SELECT * FROM meal_type ;
-2019-04-21 15:03:44 INFO  Getting total by MEAL type id: 1
-2019-04-21 15:03:44 INFO  Getting total by MEAL type id: 2
-2019-04-21 15:03:44 INFO  Getting total by MEAL type id: 3
-2019-04-21 15:03:44 INFO  Getting total by MEAL type id: 4
-2019-04-21 15:03:44 INFO  Getting total by MEAL type id: 5
-2019-04-21 15:03:44 INFO  Executing query: com.mysql.cj.jdbc.ClientPreparedStatement: SELECT * FROM meal_item ORDER BY name ASC;
-2019-04-21 15:03:44 INFO  Executing query: com.mysql.cj.jdbc.ClientPreparedStatement: SELECT * FROM activity_item ;
-2019-04-21 15:03:44 INFO  Executing statement: com.mysql.cj.jdbc.ClientPreparedStatement: SELECT activity.id as id, activity_item.name as activityName, time_spent, activity_item.calories*time_spent/60 as calories FROM activity inner join activity_item ON activity_item_id = activity_item.id where user_id = 1 AND date = '2019-04-20';
-2019-04-21 15:03:44 INFO  Getting total user's activities by user id: 1
-2019-04-21 15:03:44 INFO  Executing statement: com.mysql.cj.jdbc.ClientPreparedStatement: SELECT SUM(time_spent) as time_spent, SUM(activity_item.calories*time_spent/60) as calories FROM activity inner join activity_item ON activity_item_id = activity_item.id where user_id = 1 AND date='2019-04-20';
-2019-04-21 15:03:44 INFO  Getting user by id: 1
-2019-04-21 15:03:44 INFO  Getting user meal total by user ID : 1
-2019-04-21 15:03:44 INFO  Getting total user's activities by user id: 1
-2019-04-21 15:03:44 INFO  Executing statement: com.mysql.cj.jdbc.ClientPreparedStatement: SELECT SUM(time_spent) as time_spent, SUM(activity_item.calories*time_spent/60) as calories FROM activity inner join activity_item ON activity_item_id = activity_item.id where user_id = 1 AND date='2019-04-20';
-2019-04-21 16:04:00 INFO   This is checkLogin service ,Geting user from DB with login = lizz
-2019-04-21 16:04:01 INFO  We was got user by login : lizz
-2019-04-21 16:04:01 INFO  Checking user password...
-2019-04-21 16:04:01 INFO  Password is ok
-2019-04-21 16:04:01 INFO  Getting user by login: lizz
-2019-04-21 16:04:01 INFO  Getting user by id: 1
-2019-04-21 16:04:01 INFO  Getting user by id: 1
-2019-04-21 16:04:01 INFO  Executing query: com.mysql.cj.jdbc.ClientPreparedStatement: SELECT * FROM activity_item ;
-2019-04-21 16:04:01 INFO  Executing statement: com.mysql.cj.jdbc.ClientPreparedStatement: SELECT activity.id as id, activity_item.name as activityName, time_spent, activity_item.calories*time_spent/60 as calories FROM activity inner join activity_item ON activity_item_id = activity_item.id where user_id = 1 AND date = '2019-04-20';
-2019-04-21 16:04:01 INFO  Getting total user's activities by user id: 1
-2019-04-21 16:04:01 INFO  Executing statement: com.mysql.cj.jdbc.ClientPreparedStatement: SELECT SUM(time_spent) as time_spent, SUM(activity_item.calories*time_spent/60) as calories FROM activity inner join activity_item ON activity_item_id = activity_item.id where user_id = 1 AND date='2019-04-20';
-2019-04-21 16:04:01 INFO  Getting user by id: 1
-2019-04-21 16:04:20 INFO   This is checkLogin service ,Geting user from DB with login = lizz
-2019-04-21 16:04:21 INFO  We was got user by login : lizz
-2019-04-21 16:04:21 INFO  Checking user password...
-2019-04-21 16:04:21 INFO  Password is ok
-2019-04-21 16:04:21 INFO  Getting user by login: lizz
-2019-04-21 16:04:21 INFO  Getting user by id: 1
-2019-04-21 16:04:21 INFO  Getting user by id: 1
-2019-04-21 16:04:21 INFO  Query: com.mysql.cj.jdbc.ClientPreparedStatement: SELECT * FROM meal_type ;
-2019-04-21 16:04:21 INFO  Getting total by MEAL type id: 1
-2019-04-21 16:04:21 INFO  Getting total by MEAL type id: 2
-2019-04-21 16:04:21 INFO  Getting total by MEAL type id: 3
-2019-04-21 16:04:21 INFO  Getting total by MEAL type id: 4
-2019-04-21 16:04:21 INFO  Getting total by MEAL type id: 5
-2019-04-21 16:04:21 INFO  Executing query: com.mysql.cj.jdbc.ClientPreparedStatement: SELECT * FROM meal_item ORDER BY name ASC;
-2019-04-21 16:04:21 INFO  Executing query: com.mysql.cj.jdbc.ClientPreparedStatement: SELECT * FROM activity_item ;
-2019-04-21 16:04:21 INFO  Executing statement: com.mysql.cj.jdbc.ClientPreparedStatement: SELECT activity.id as id, activity_item.name as activityName, time_spent, activity_item.calories*time_spent/60 as calories FROM activity inner join activity_item ON activity_item_id = activity_item.id where user_id = 1 AND date = '2019-04-20';
-2019-04-21 16:04:21 INFO  Getting total user's activities by user id: 1
-2019-04-21 16:04:21 INFO  Executing statement: com.mysql.cj.jdbc.ClientPreparedStatement: SELECT SUM(time_spent) as time_spent, SUM(activity_item.calories*time_spent/60) as calories FROM activity inner join activity_item ON activity_item_id = activity_item.id where user_id = 1 AND date='2019-04-20';
-2019-04-21 16:04:21 INFO  Getting user by id: 1
-2019-04-21 16:04:21 INFO  Getting user meal total by user ID : 1
-2019-04-21 16:04:21 INFO  Getting total user's activities by user id: 1
-2019-04-21 16:04:21 INFO  Executing statement: com.mysql.cj.jdbc.ClientPreparedStatement: SELECT SUM(time_spent) as time_spent, SUM(activity_item.calories*time_spent/60) as calories FROM activity inner join activity_item ON activity_item_id = activity_item.id where user_id = 1 AND date='2019-04-20';
 2019-04-21 17:05:18 INFO   This is checkLogin service ,Geting user from DB with login = lizz
 2019-04-21 17:05:19 INFO  We was got user by login : lizz
 2019-04-21 17:05:19 INFO  Checking user password...
-2019-04-21 17:05:26 INFO   This is checkLogin service ,Geting user from DB with login = lizz
-2019-04-21 17:05:26 INFO  We was got user by login : lizz
-2019-04-21 17:05:26 INFO  Checking user password...
-2019-04-21 17:05:26 INFO  Password is ok
-2019-04-21 17:05:26 INFO  Getting user by login: lizz
-2019-04-21 17:05:26 INFO  Getting user by id: 1
-2019-04-21 17:05:26 INFO  Getting user by id: 1
-2019-04-21 17:05:26 INFO  Query: com.mysql.cj.jdbc.ClientPreparedStatement: SELECT * FROM meal_type ;
-2019-04-21 17:05:26 INFO  Getting total by MEAL type id: 1
-2019-04-21 17:05:26 INFO  Getting total by MEAL type id: 2
-2019-04-21 17:05:26 INFO  Getting total by MEAL type id: 3
-2019-04-21 17:05:26 INFO  Getting total by MEAL type id: 4
-2019-04-21 17:05:26 INFO  Getting total by MEAL type id: 5
-2019-04-21 17:05:26 INFO  Executing query: com.mysql.cj.jdbc.ClientPreparedStatement: SELECT * FROM meal_item ORDER BY name ASC;
-2019-04-21 17:05:26 INFO  Executing query: com.mysql.cj.jdbc.ClientPreparedStatement: SELECT * FROM activity_item ;
-2019-04-21 17:05:26 INFO  Executing statement: com.mysql.cj.jdbc.ClientPreparedStatement: SELECT activity.id as id, activity_item.name as activityName, time_spent, activity_item.calories*time_spent/60 as calories FROM activity inner join activity_item ON activity_item_id = activity_item.id where user_id = 1 AND date = '2019-04-20';
-2019-04-21 17:05:26 INFO  Getting total user's activities by user id: 1
-2019-04-21 17:05:26 INFO  Executing statement: com.mysql.cj.jdbc.ClientPreparedStatement: SELECT SUM(time_spent) as time_spent, SUM(activity_item.calories*time_spent/60) as calories FROM activity inner join activity_item ON activity_item_id = activity_item.id where user_id = 1 AND date='2019-04-20';
-2019-04-21 17:05:26 INFO  Getting user by id: 1
-2019-04-21 17:05:26 INFO  Getting user meal total by user ID : 1
-2019-04-21 17:05:26 INFO  Getting total user's activities by user id: 1
-2019-04-21 17:05:26 INFO  Executing statement: com.mysql.cj.jdbc.ClientPreparedStatement: SELECT SUM(time_spent) as time_spent, SUM(activity_item.calories*time_spent/60) as calories FROM activity inner join activity_item ON activity_item_id = activity_item.id where user_id = 1 AND date='2019-04-20';
-2019-04-21 17:05:28 INFO  Checking password confirmation...
-2019-04-21 17:05:28 INFO  Confirm password OK
-2019-04-21 17:05:28 INFO  check if login exists
-2019-04-21 17:05:34 INFO   This is checkLogin service ,Geting user from DB with login = samm
-2019-04-21 17:05:34 INFO  We was got user by login : samm
-2019-04-21 17:05:34 INFO  Checking user password...
-2019-04-21 17:05:34 INFO  Password is ok
-2019-04-21 17:05:34 INFO  Getting user by login: samm
-2019-04-21 17:05:34 INFO  Getting user by id: 27
-2019-04-21 17:05:34 INFO  Getting user by id: 27
-2019-04-21 17:05:34 INFO  Query: com.mysql.cj.jdbc.ClientPreparedStatement: SELECT * FROM meal_type ;
-2019-04-21 17:05:34 INFO  Getting total by MEAL type id: 1
-2019-04-21 17:05:34 INFO  Getting total by MEAL type id: 2
-2019-04-21 17:05:34 INFO  Getting total by MEAL type id: 3
-2019-04-21 17:05:34 INFO  Getting total by MEAL type id: 4
-2019-04-21 17:05:34 INFO  Getting total by MEAL type id: 5
-2019-04-21 17:05:34 INFO  Executing query: com.mysql.cj.jdbc.ClientPreparedStatement: SELECT * FROM meal_item ORDER BY name ASC;
-2019-04-21 17:05:34 INFO  Executing query: com.mysql.cj.jdbc.ClientPreparedStatement: SELECT * FROM activity_item ;
-2019-04-21 17:05:34 INFO  Executing statement: com.mysql.cj.jdbc.ClientPreparedStatement: SELECT activity.id as id, activity_item.name as activityName, time_spent, activity_item.calories*time_spent/60 as calories FROM activity inner join activity_item ON activity_item_id = activity_item.id where user_id = 27 AND date = '2019-04-20';
-2019-04-21 17:05:34 INFO  Getting total user's activities by user id: 27
-2019-04-21 17:05:34 INFO  Executing statement: com.mysql.cj.jdbc.ClientPreparedStatement: SELECT SUM(time_spent) as time_spent, SUM(activity_item.calories*time_spent/60) as calories FROM activity inner join activity_item ON activity_item_id = activity_item.id where user_id = 27 AND date='2019-04-20';
-2019-04-21 17:05:34 INFO  Getting user by id: 27
-2019-04-21 17:05:34 INFO  Getting user meal total by user ID : 27
-2019-04-21 17:05:34 INFO  Getting total user's activities by user id: 27
-2019-04-21 17:05:34 INFO  Executing statement: com.mysql.cj.jdbc.ClientPreparedStatement: SELECT SUM(time_spent) as time_spent, SUM(activity_item.calories*time_spent/60) as calories FROM activity inner join activity_item ON activity_item_id = activity_item.id where user_id = 27 AND date='2019-04-20';
-2019-04-21 17:05:38 INFO   This is checkLogin service ,Geting user from DB with login = lizz
-2019-04-21 17:05:39 INFO  We was got user by login : lizz
-2019-04-21 17:05:39 INFO  Checking user password...
-2019-04-21 17:05:39 INFO  Password is ok
-2019-04-21 17:05:39 INFO  Getting user by login: lizz
-2019-04-21 17:05:39 INFO  Getting user by id: 1
-2019-04-21 17:05:39 INFO  Getting user by id: 1
-2019-04-21 17:05:39 INFO  Query: com.mysql.cj.jdbc.ClientPreparedStatement: SELECT * FROM meal_type ;
-2019-04-21 17:05:39 INFO  Getting total by MEAL type id: 1
-2019-04-21 17:05:39 INFO  Getting total by MEAL type id: 2
-2019-04-21 17:05:39 INFO  Getting total by MEAL type id: 3
-2019-04-21 17:05:39 INFO  Getting total by MEAL type id: 4
-2019-04-21 17:05:39 INFO  Getting total by MEAL type id: 5
-2019-04-21 17:05:39 INFO  Executing query: com.mysql.cj.jdbc.ClientPreparedStatement: SELECT * FROM meal_item ORDER BY name ASC;
-2019-04-21 17:05:39 INFO  Executing query: com.mysql.cj.jdbc.ClientPreparedStatement: SELECT * FROM activity_item ;
-2019-04-21 17:05:39 INFO  Executing statement: com.mysql.cj.jdbc.ClientPreparedStatement: SELECT activity.id as id, activity_item.name as activityName, time_spent, activity_item.calories*time_spent/60 as calories FROM activity inner join activity_item ON activity_item_id = activity_item.id where user_id = 1 AND date = '2019-04-20';
-2019-04-21 17:05:39 INFO  Getting total user's activities by user id: 1
-2019-04-21 17:05:39 INFO  Executing statement: com.mysql.cj.jdbc.ClientPreparedStatement: SELECT SUM(time_spent) as time_spent, SUM(activity_item.calories*time_spent/60) as calories FROM activity inner join activity_item ON activity_item_id = activity_item.id where user_id = 1 AND date='2019-04-20';
-2019-04-21 17:05:39 INFO  Getting user by id: 1
-2019-04-21 17:05:39 INFO  Getting user meal total by user ID : 1
-2019-04-21 17:05:39 INFO  Getting total user's activities by user id: 1
-2019-04-21 17:05:39 INFO  Executing statement: com.mysql.cj.jdbc.ClientPreparedStatement: SELECT SUM(time_spent) as time_spent, SUM(activity_item.calories*time_spent/60) as calories FROM activity inner join activity_item ON activity_item_id = activity_item.id where user_id = 1 AND date='2019-04-20';
-2019-04-21 17:05:43 INFO   This is checkLogin service ,Geting user from DB with login = lizz
-2019-04-21 17:05:44 INFO  We was got user by login : lizz
-2019-04-21 17:05:44 INFO  Checking user password...
-2019-04-21 17:05:44 INFO  Password is ok
-2019-04-21 17:05:44 INFO  Getting user by login: lizz
-2019-04-21 17:05:44 INFO  Getting user by id: 1
-2019-04-21 17:05:44 INFO  Getting user by id: 1
-2019-04-21 17:05:44 INFO  Query: com.mysql.cj.jdbc.ClientPreparedStatement: SELECT * FROM meal_type ;
-2019-04-21 17:05:44 INFO  Getting total by MEAL type id: 1
-2019-04-21 17:05:44 INFO  Getting total by MEAL type id: 2
-2019-04-21 17:05:44 INFO  Getting total by MEAL type id: 3
-2019-04-21 17:05:44 INFO  Getting total by MEAL type id: 4
-2019-04-21 17:05:44 INFO  Getting total by MEAL type id: 5
-2019-04-21 17:05:44 INFO  Executing query: com.mysql.cj.jdbc.ClientPreparedStatement: SELECT * FROM meal_item ORDER BY name ASC;
-2019-04-21 17:05:44 INFO  Executing query: com.mysql.cj.jdbc.ClientPreparedStatement: SELECT * FROM activity_item ;
-2019-04-21 17:05:44 INFO  Executing statement: com.mysql.cj.jdbc.ClientPreparedStatement: SELECT activity.id as id, activity_item.name as activityName, time_spent, activity_item.calories*time_spent/60 as calories FROM activity inner join activity_item ON activity_item_id = activity_item.id where user_id = 1 AND date = '2019-04-20';
-2019-04-21 17:05:44 INFO  Getting total user's activities by user id: 1
-2019-04-21 17:05:44 INFO  Executing statement: com.mysql.cj.jdbc.ClientPreparedStatement: SELECT SUM(time_spent) as time_spent, SUM(activity_item.calories*time_spent/60) as calories FROM activity inner join activity_item ON activity_item_id = activity_item.id where user_id = 1 AND date='2019-04-20';
-2019-04-21 17:05:44 INFO  Getting user by id: 1
-2019-04-21 17:05:44 INFO  Getting user meal total by user ID : 1
-2019-04-21 17:05:44 INFO  Getting total user's activities by user id: 1
-2019-04-21 17:05:44 INFO  Executing statement: com.mysql.cj.jdbc.ClientPreparedStatement: SELECT SUM(time_spent) as time_spent, SUM(activity_item.calories*time_spent/60) as calories FROM activity inner join activity_item ON activity_item_id = activity_item.id where user_id = 1 AND date='2019-04-20';
-2019-04-21 17:05:48 INFO   This is checkLogin service ,Geting user from DB with login = lizz
-2019-04-21 17:05:49 INFO  We was got user by login : lizz
-2019-04-21 17:05:49 INFO  Checking user password...
-2019-04-21 17:05:49 INFO  Password is ok
-2019-04-21 17:05:49 INFO  Getting user by login: lizz
-2019-04-21 17:05:49 INFO  Getting user by id: 1
-2019-04-21 17:05:49 INFO  Getting user by id: 1
-2019-04-21 17:05:49 INFO  Query: com.mysql.cj.jdbc.ClientPreparedStatement: SELECT * FROM meal_type ;
-2019-04-21 17:05:49 INFO  Getting total by MEAL type id: 1
-2019-04-21 17:05:49 INFO  Getting total by MEAL type id: 2
-2019-04-21 17:05:49 INFO  Getting total by MEAL type id: 3
-2019-04-21 17:05:49 INFO  Getting total by MEAL type id: 4
-2019-04-21 17:05:49 INFO  Getting total by MEAL type id: 5
-2019-04-21 17:05:49 INFO  Executing query: com.mysql.cj.jdbc.ClientPreparedStatement: SELECT * FROM meal_item ORDER BY name ASC;
-2019-04-21 17:05:49 INFO  Executing query: com.mysql.cj.jdbc.ClientPreparedStatement: SELECT * FROM activity_item ;
-2019-04-21 17:05:49 INFO  Executing statement: com.mysql.cj.jdbc.ClientPreparedStatement: SELECT activity.id as id, activity_item.name as activityName, time_spent, activity_item.calories*time_spent/60 as calories FROM activity inner join activity_item ON activity_item_id = activity_item.id where user_id = 1 AND date = '2019-04-20';
-2019-04-21 17:05:49 INFO  Getting total user's activities by user id: 1
-2019-04-21 17:05:49 INFO  Executing statement: com.mysql.cj.jdbc.ClientPreparedStatement: SELECT SUM(time_spent) as time_spent, SUM(activity_item.calories*time_spent/60) as calories FROM activity inner join activity_item ON activity_item_id = activity_item.id where user_id = 1 AND date='2019-04-20';
-2019-04-21 17:05:49 INFO  Getting user by id: 1
-2019-04-21 17:05:49 INFO  Getting user meal total by user ID : 1
-2019-04-21 17:05:49 INFO  Getting total user's activities by user id: 1
-2019-04-21 17:05:49 INFO  Executing statement: com.mysql.cj.jdbc.ClientPreparedStatement: SELECT SUM(time_spent) as time_spent, SUM(activity_item.calories*time_spent/60) as calories FROM activity inner join activity_item ON activity_item_id = activity_item.id where user_id = 1 AND date='2019-04-20';
-2019-04-21 17:05:35 INFO   This is checkLogin service ,Geting user from DB with login = lizz
-2019-04-21 17:05:36 INFO  We was got user by login : lizz
-2019-04-21 17:05:36 INFO  Checking user password...
-2019-04-21 17:05:36 INFO  Password is ok
-2019-04-21 17:05:36 INFO  Getting user by login: lizz
-2019-04-21 17:05:36 INFO  Getting user by id: 1
-2019-04-21 17:05:36 INFO  Getting user by id: 1
-2019-04-21 17:05:36 INFO  Query: com.mysql.cj.jdbc.ClientPreparedStatement: SELECT * FROM meal_type ;
-2019-04-21 17:05:36 INFO  Getting total by MEAL type id: 1
-2019-04-21 17:05:36 INFO  Getting total by MEAL type id: 2
-2019-04-21 17:05:36 INFO  Getting total by MEAL type id: 3
-2019-04-21 17:05:36 INFO  Getting total by MEAL type id: 4
-2019-04-21 17:05:36 INFO  Getting total by MEAL type id: 5
-2019-04-21 17:05:36 INFO  Executing query: com.mysql.cj.jdbc.ClientPreparedStatement: SELECT * FROM meal_item ORDER BY name ASC;
-2019-04-21 17:05:36 INFO  Executing query: com.mysql.cj.jdbc.ClientPreparedStatement: SELECT * FROM activity_item ;
-2019-04-21 17:05:36 INFO  Executing statement: com.mysql.cj.jdbc.ClientPreparedStatement: SELECT activity.id as id, activity_item.name as activityName, time_spent, activity_item.calories*time_spent/60 as calories FROM activity inner join activity_item ON activity_item_id = activity_item.id where user_id = 1 AND date = '2019-04-20';
-2019-04-21 17:05:36 INFO  Getting total user's activities by user id: 1
-2019-04-21 17:05:36 INFO  Executing statement: com.mysql.cj.jdbc.ClientPreparedStatement: SELECT SUM(time_spent) as time_spent, SUM(activity_item.calories*time_spent/60) as calories FROM activity inner join activity_item ON activity_item_id = activity_item.id where user_id = 1 AND date='2019-04-20';
-2019-04-21 17:05:36 INFO  Getting user by id: 1
-2019-04-21 17:05:36 INFO  Getting user meal total by user ID : 1
-2019-04-21 17:05:36 INFO  Getting total user's activities by user id: 1
-2019-04-21 17:05:36 INFO  Executing statement: com.mysql.cj.jdbc.ClientPreparedStatement: SELECT SUM(time_spent) as time_spent, SUM(activity_item.calories*time_spent/60) as calories FROM activity inner join activity_item ON activity_item_id = activity_item.id where user_id = 1 AND date='2019-04-20';
-2019-04-21 17:05:12 INFO   This is checkLogin service ,Geting user from DB with login = lizz
-2019-04-21 17:05:13 INFO  We was got user by login : lizz
-2019-04-21 17:05:13 INFO  Checking user password...
-2019-04-21 17:05:13 INFO  Password is ok
-2019-04-21 17:05:13 INFO  Getting user by login: lizz
-2019-04-21 17:05:13 INFO  Getting user by id: 1
-2019-04-21 17:05:13 INFO  Getting user by id: 1
-2019-04-21 17:05:13 INFO  Query: com.mysql.cj.jdbc.ClientPreparedStatement: SELECT * FROM meal_type ;
-2019-04-21 17:05:13 INFO  Getting total by MEAL type id: 1
-2019-04-21 17:05:13 INFO  Getting total by MEAL type id: 2
-2019-04-21 17:05:13 INFO  Getting total by MEAL type id: 3
-2019-04-21 17:05:13 INFO  Getting total by MEAL type id: 4
-2019-04-21 17:05:13 INFO  Getting total by MEAL type id: 5
-2019-04-21 17:05:13 INFO  Executing query: com.mysql.cj.jdbc.ClientPreparedStatement: SELECT * FROM meal_item ORDER BY name ASC;
-2019-04-21 17:05:13 INFO  Executing query: com.mysql.cj.jdbc.ClientPreparedStatement: SELECT * FROM activity_item ;
-2019-04-21 17:05:13 INFO  Executing statement: com.mysql.cj.jdbc.ClientPreparedStatement: SELECT activity.id as id, activity_item.name as activityName, time_spent, activity_item.calories*time_spent/60 as calories FROM activity inner join activity_item ON activity_item_id = activity_item.id where user_id = 1 AND date = '2019-04-20';
-2019-04-21 17:05:14 INFO  Getting total user's activities by user id: 1
-2019-04-21 17:05:14 INFO  Executing statement: com.mysql.cj.jdbc.ClientPreparedStatement: SELECT SUM(time_spent) as time_spent, SUM(activity_item.calories*time_spent/60) as calories FROM activity inner join activity_item ON activity_item_id = activity_item.id where user_id = 1 AND date='2019-04-20';
-2019-04-21 17:05:14 INFO  Getting user by id: 1
-2019-04-21 17:05:14 INFO  Getting user meal total by user ID : 1
-2019-04-21 17:05:14 INFO  Getting total user's activities by user id: 1
-2019-04-21 17:05:14 INFO  Executing statement: com.mysql.cj.jdbc.ClientPreparedStatement: SELECT SUM(time_spent) as time_spent, SUM(activity_item.calories*time_spent/60) as calories FROM activity inner join activity_item ON activity_item_id = activity_item.id where user_id = 1 AND date='2019-04-20';
-2019-04-21 17:05:43 INFO   This is checkLogin service ,Geting user from DB with login = lizz
-2019-04-21 17:05:43 INFO  We was got user by login : lizz
-2019-04-21 17:05:43 INFO  Checking user password...
-2019-04-21 17:05:43 INFO  Password is ok
-2019-04-21 17:05:43 INFO  Getting user by login: lizz
-2019-04-21 17:05:44 INFO  Getting user by id: 1
-2019-04-21 17:05:44 INFO  Getting user by id: 1
-2019-04-21 17:05:44 INFO  Query: com.mysql.cj.jdbc.ClientPreparedStatement: SELECT * FROM meal_type ;
-2019-04-21 17:05:44 INFO  Getting total by MEAL type id: 1
-2019-04-21 17:05:44 INFO  Getting total by MEAL type id: 2
-2019-04-21 17:05:44 INFO  Getting total by MEAL type id: 3
-2019-04-21 17:05:44 INFO  Getting total by MEAL type id: 4
-2019-04-21 17:05:44 INFO  Getting total by MEAL type id: 5
-2019-04-21 17:05:44 INFO  Executing query: com.mysql.cj.jdbc.ClientPreparedStatement: SELECT * FROM meal_item ORDER BY name ASC;
-2019-04-21 17:05:44 INFO  Executing query: com.mysql.cj.jdbc.ClientPreparedStatement: SELECT * FROM activity_item ;
-2019-04-21 17:05:44 INFO  Executing statement: com.mysql.cj.jdbc.ClientPreparedStatement: SELECT activity.id as id, activity_item.name as activityName, time_spent, activity_item.calories*time_spent/60 as calories FROM activity inner join activity_item ON activity_item_id = activity_item.id where user_id = 1 AND date = '2019-04-20';
-2019-04-21 17:05:44 INFO  Getting total user's activities by user id: 1
-2019-04-21 17:05:44 INFO  Executing statement: com.mysql.cj.jdbc.ClientPreparedStatement: SELECT SUM(time_spent) as time_spent, SUM(activity_item.calories*time_spent/60) as calories FROM activity inner join activity_item ON activity_item_id = activity_item.id where user_id = 1 AND date='2019-04-20';
-2019-04-21 17:05:44 INFO  Getting user by id: 1
-2019-04-21 17:05:44 INFO  Getting user meal total by user ID : 1
-2019-04-21 17:05:44 INFO  Getting total user's activities by user id: 1
-2019-04-21 17:05:44 INFO  Executing statement: com.mysql.cj.jdbc.ClientPreparedStatement: SELECT SUM(time_spent) as time_spent, SUM(activity_item.calories*time_spent/60) as calories FROM activity inner join activity_item ON activity_item_id = activity_item.id where user_id = 1 AND date='2019-04-20';
-2019-04-21 17:05:45 INFO   This is checkLogin service ,Geting user from DB with login = lizz
-2019-04-21 17:05:46 INFO  We was got user by login : lizz
-2019-04-21 17:05:46 INFO  Checking user password...
-2019-04-21 17:05:46 INFO  Password is ok
-2019-04-21 17:05:46 INFO  Getting user by login: lizz
-2019-04-21 17:05:46 INFO  Getting user by id: 1
-2019-04-21 17:05:46 INFO  Getting user by id: 1
-2019-04-21 17:05:46 INFO  Query: com.mysql.cj.jdbc.ClientPreparedStatement: SELECT * FROM meal_type ;
-2019-04-21 17:05:46 INFO  Getting total by MEAL type id: 1
-2019-04-21 17:05:46 INFO  Getting total by MEAL type id: 2
-2019-04-21 17:05:46 INFO  Getting total by MEAL type id: 3
-2019-04-21 17:05:46 INFO  Getting total by MEAL type id: 4
-2019-04-21 17:05:46 INFO  Getting total by MEAL type id: 5
-2019-04-21 17:05:46 INFO  Executing query: com.mysql.cj.jdbc.ClientPreparedStatement: SELECT * FROM meal_item ORDER BY name ASC;
-2019-04-21 17:05:46 INFO  Executing query: com.mysql.cj.jdbc.ClientPreparedStatement: SELECT * FROM activity_item ;
-2019-04-21 17:05:46 INFO  Executing statement: com.mysql.cj.jdbc.ClientPreparedStatement: SELECT activity.id as id, activity_item.name as activityName, time_spent, activity_item.calories*time_spent/60 as calories FROM activity inner join activity_item ON activity_item_id = activity_item.id where user_id = 1 AND date = '2019-04-20';
-2019-04-21 17:05:46 INFO  Getting total user's activities by user id: 1
-2019-04-21 17:05:46 INFO  Executing statement: com.mysql.cj.jdbc.ClientPreparedStatement: SELECT SUM(time_spent) as time_spent, SUM(activity_item.calories*time_spent/60) as calories FROM activity inner join activity_item ON activity_item_id = activity_item.id where user_id = 1 AND date='2019-04-20';
-2019-04-21 17:05:46 INFO  Getting user by id: 1
-2019-04-21 17:05:46 INFO  Getting user meal total by user ID : 1
-2019-04-21 17:05:46 INFO  Getting total user's activities by user id: 1
-2019-04-21 17:05:46 INFO  Executing statement: com.mysql.cj.jdbc.ClientPreparedStatement: SELECT SUM(time_spent) as time_spent, SUM(activity_item.calories*time_spent/60) as calories FROM activity inner join activity_item ON activity_item_id = activity_item.id where user_id = 1 AND date='2019-04-20';
+2019-04-21 17:05:19 INFO  Password is ok
+2019-04-21 17:05:19 INFO  Getting user by login: lizz
+2019-04-21 17:05:19 INFO  Getting user by id: 1
+2019-04-21 17:05:19 INFO  Getting user by id: 1
+2019-04-21 17:05:19 INFO  Query: com.mysql.cj.jdbc.ClientPreparedStatement: SELECT * FROM meal_type ;
+2019-04-21 17:05:19 INFO  Getting total by MEAL type id: 1
+2019-04-21 17:05:19 INFO  Getting total by MEAL type id: 2
+2019-04-21 17:05:19 INFO  Getting total by MEAL type id: 3
+2019-04-21 17:05:19 INFO  Getting total by MEAL type id: 4
+2019-04-21 17:05:19 INFO  Getting total by MEAL type id: 5
+2019-04-21 17:05:19 INFO  Executing query: com.mysql.cj.jdbc.ClientPreparedStatement: SELECT * FROM meal_item ORDER BY name ASC;
+2019-04-21 17:05:19 INFO  Executing query: com.mysql.cj.jdbc.ClientPreparedStatement: SELECT * FROM activity_item ;
+2019-04-21 17:05:19 INFO  Executing statement: com.mysql.cj.jdbc.ClientPreparedStatement: SELECT activity.id as id, activity_item.name as activityName, time_spent, activity_item.calories*time_spent/60 as calories FROM activity inner join activity_item ON activity_item_id = activity_item.id where user_id = 1 AND date = '2019-04-20';
+2019-04-21 17:05:19 INFO  Getting total user's activities by user id: 1
+2019-04-21 17:05:19 INFO  Executing statement: com.mysql.cj.jdbc.ClientPreparedStatement: SELECT SUM(time_spent) as time_spent, SUM(activity_item.calories*time_spent/60) as calories FROM activity inner join activity_item ON activity_item_id = activity_item.id where user_id = 1 AND date='2019-04-20';
+2019-04-21 17:05:19 INFO  Getting user by id: 1
+2019-04-21 17:05:19 INFO  Getting user meal total by user ID : 1
+2019-04-21 17:05:19 INFO  Getting total user's activities by user id: 1
+2019-04-21 17:05:19 INFO  Executing statement: com.mysql.cj.jdbc.ClientPreparedStatement: SELECT SUM(time_spent) as time_spent, SUM(activity_item.calories*time_spent/60) as calories FROM activity inner join activity_item ON activity_item_id = activity_item.id where user_id = 1 AND date='2019-04-20';
+2019-04-21 17:05:29 INFO  Getting user by id: 1
+2019-04-21 17:05:29 INFO  Getting user by id: 1
+2019-04-21 17:05:29 INFO  Query: com.mysql.cj.jdbc.ClientPreparedStatement: SELECT * FROM meal_type ;
+2019-04-21 17:05:29 INFO  Getting total by MEAL type id: 1
+2019-04-21 17:05:29 INFO  Getting total by MEAL type id: 2
+2019-04-21 17:05:29 INFO  Getting total by MEAL type id: 3
+2019-04-21 17:05:29 INFO  Getting total by MEAL type id: 4
+2019-04-21 17:05:29 INFO  Getting total by MEAL type id: 5
+2019-04-21 17:05:29 INFO  Executing query: com.mysql.cj.jdbc.ClientPreparedStatement: SELECT * FROM meal_item ORDER BY name ASC;
+2019-04-21 17:05:29 INFO  Executing query: com.mysql.cj.jdbc.ClientPreparedStatement: SELECT * FROM activity_item ;
+2019-04-21 17:05:29 INFO  Executing statement: com.mysql.cj.jdbc.ClientPreparedStatement: SELECT activity.id as id, activity_item.name as activityName, time_spent, activity_item.calories*time_spent/60 as calories FROM activity inner join activity_item ON activity_item_id = activity_item.id where user_id = 1 AND date = '2019-04-20';
+2019-04-21 17:05:29 INFO  Getting total user's activities by user id: 1
+2019-04-21 17:05:29 INFO  Executing statement: com.mysql.cj.jdbc.ClientPreparedStatement: SELECT SUM(time_spent) as time_spent, SUM(activity_item.calories*time_spent/60) as calories FROM activity inner join activity_item ON activity_item_id = activity_item.id where user_id = 1 AND date='2019-04-20';
+2019-04-21 17:05:29 INFO  Getting user by id: 1
+2019-04-21 17:05:29 INFO  Getting user meal total by user ID : 1
+2019-04-21 17:05:29 INFO  Getting total user's activities by user id: 1
+2019-04-21 17:05:29 INFO  Executing statement: com.mysql.cj.jdbc.ClientPreparedStatement: SELECT SUM(time_spent) as time_spent, SUM(activity_item.calories*time_spent/60) as calories FROM activity inner join activity_item ON activity_item_id = activity_item.id where user_id = 1 AND date='2019-04-20';
+2019-04-21 17:05:33 INFO  Adding activity with id : null to page
+2019-04-21 17:05:33 INFO  Executing query: com.mysql.cj.jdbc.ClientPreparedStatement: INSERT INTO activity (time_spent, date, user_id, activity_item_id  ) VALUES (30,'2019-04-20',1,4);
+2019-04-21 17:05:33 INFO  Result of adding Activity = 1
+2019-04-21 17:05:33 INFO  Getting user by id: 1
+2019-04-21 17:05:33 INFO  Getting user by id: 1
+2019-04-21 17:05:33 INFO  Query: com.mysql.cj.jdbc.ClientPreparedStatement: SELECT * FROM meal_type ;
+2019-04-21 17:05:33 INFO  Getting total by MEAL type id: 1
+2019-04-21 17:05:33 INFO  Getting total by MEAL type id: 2
+2019-04-21 17:05:33 INFO  Getting total by MEAL type id: 3
+2019-04-21 17:05:33 INFO  Getting total by MEAL type id: 4
+2019-04-21 17:05:33 INFO  Getting total by MEAL type id: 5
+2019-04-21 17:05:33 INFO  Executing query: com.mysql.cj.jdbc.ClientPreparedStatement: SELECT * FROM meal_item ORDER BY name ASC;
+2019-04-21 17:05:33 INFO  Executing query: com.mysql.cj.jdbc.ClientPreparedStatement: SELECT * FROM activity_item ;
+2019-04-21 17:05:33 INFO  Executing statement: com.mysql.cj.jdbc.ClientPreparedStatement: SELECT activity.id as id, activity_item.name as activityName, time_spent, activity_item.calories*time_spent/60 as calories FROM activity inner join activity_item ON activity_item_id = activity_item.id where user_id = 1 AND date = '2019-04-20';
+2019-04-21 17:05:33 INFO  Getting total user's activities by user id: 1
+2019-04-21 17:05:33 INFO  Executing statement: com.mysql.cj.jdbc.ClientPreparedStatement: SELECT SUM(time_spent) as time_spent, SUM(activity_item.calories*time_spent/60) as calories FROM activity inner join activity_item ON activity_item_id = activity_item.id where user_id = 1 AND date='2019-04-20';
+2019-04-21 17:05:33 INFO  Getting user by id: 1
+2019-04-21 17:05:33 INFO  Getting user meal total by user ID : 1
+2019-04-21 17:05:33 INFO  Getting total user's activities by user id: 1
+2019-04-21 17:05:33 INFO  Executing statement: com.mysql.cj.jdbc.ClientPreparedStatement: SELECT SUM(time_spent) as time_spent, SUM(activity_item.calories*time_spent/60) as calories FROM activity inner join activity_item ON activity_item_id = activity_item.id where user_id = 1 AND date='2019-04-20';
+2019-04-21 17:05:41 INFO  Adding activity with id : null to page
+2019-04-21 17:05:41 INFO  Executing query: com.mysql.cj.jdbc.ClientPreparedStatement: INSERT INTO activity (time_spent, date, user_id, activity_item_id  ) VALUES (30,'2019-04-20',1,7);
+2019-04-21 17:05:41 INFO  Result of adding Activity = 1
+2019-04-21 17:05:41 INFO  Getting user by id: 1
+2019-04-21 17:05:41 INFO  Getting user by id: 1
+2019-04-21 17:05:41 INFO  Query: com.mysql.cj.jdbc.ClientPreparedStatement: SELECT * FROM meal_type ;
+2019-04-21 17:05:41 INFO  Getting total by MEAL type id: 1
+2019-04-21 17:05:41 INFO  Getting total by MEAL type id: 2
+2019-04-21 17:05:41 INFO  Getting total by MEAL type id: 3
+2019-04-21 17:05:41 INFO  Getting total by MEAL type id: 4
+2019-04-21 17:05:41 INFO  Getting total by MEAL type id: 5
+2019-04-21 17:05:41 INFO  Executing query: com.mysql.cj.jdbc.ClientPreparedStatement: SELECT * FROM meal_item ORDER BY name ASC;
+2019-04-21 17:05:41 INFO  Executing query: com.mysql.cj.jdbc.ClientPreparedStatement: SELECT * FROM activity_item ;
+2019-04-21 17:05:41 INFO  Executing statement: com.mysql.cj.jdbc.ClientPreparedStatement: SELECT activity.id as id, activity_item.name as activityName, time_spent, activity_item.calories*time_spent/60 as calories FROM activity inner join activity_item ON activity_item_id = activity_item.id where user_id = 1 AND date = '2019-04-20';
+2019-04-21 17:05:41 INFO  Getting total user's activities by user id: 1
+2019-04-21 17:05:41 INFO  Executing statement: com.mysql.cj.jdbc.ClientPreparedStatement: SELECT SUM(time_spent) as time_spent, SUM(activity_item.calories*time_spent/60) as calories FROM activity inner join activity_item ON activity_item_id = activity_item.id where user_id = 1 AND date='2019-04-20';
+2019-04-21 17:05:41 INFO  Getting user by id: 1
+2019-04-21 17:05:41 INFO  Getting user meal total by user ID : 1
+2019-04-21 17:05:41 INFO  Getting total user's activities by user id: 1
+2019-04-21 17:05:41 INFO  Executing statement: com.mysql.cj.jdbc.ClientPreparedStatement: SELECT SUM(time_spent) as time_spent, SUM(activity_item.calories*time_spent/60) as calories FROM activity inner join activity_item ON activity_item_id = activity_item.id where user_id = 1 AND date='2019-04-20';
+2019-04-21 17:05:47 INFO  Getting user by id: 1
+2019-04-21 17:05:47 INFO  Getting user by id: 1
+2019-04-21 17:05:47 INFO  Query: com.mysql.cj.jdbc.ClientPreparedStatement: SELECT * FROM meal_type ;
+2019-04-21 17:05:47 INFO  Getting total by MEAL type id: 1
+2019-04-21 17:05:47 INFO  Getting total by MEAL type id: 2
+2019-04-21 17:05:47 INFO  Getting total by MEAL type id: 3
+2019-04-21 17:05:47 INFO  Getting total by MEAL type id: 4
+2019-04-21 17:05:47 INFO  Getting total by MEAL type id: 5
+2019-04-21 17:05:47 INFO  Executing query: com.mysql.cj.jdbc.ClientPreparedStatement: SELECT * FROM meal_item ORDER BY name ASC;
+2019-04-21 17:05:47 INFO  Executing query: com.mysql.cj.jdbc.ClientPreparedStatement: SELECT * FROM activity_item ;
+2019-04-21 17:05:47 INFO  Executing statement: com.mysql.cj.jdbc.ClientPreparedStatement: SELECT activity.id as id, activity_item.name as activityName, time_spent, activity_item.calories*time_spent/60 as calories FROM activity inner join activity_item ON activity_item_id = activity_item.id where user_id = 1 AND date = '2019-04-20';
+2019-04-21 17:05:47 INFO  Getting total user's activities by user id: 1
+2019-04-21 17:05:47 INFO  Executing statement: com.mysql.cj.jdbc.ClientPreparedStatement: SELECT SUM(time_spent) as time_spent, SUM(activity_item.calories*time_spent/60) as calories FROM activity inner join activity_item ON activity_item_id = activity_item.id where user_id = 1 AND date='2019-04-20';
+2019-04-21 17:05:47 INFO  Getting user by id: 1
+2019-04-21 17:05:47 INFO  Getting user meal total by user ID : 1
+2019-04-21 17:05:47 INFO  Getting total user's activities by user id: 1
+2019-04-21 17:05:47 INFO  Executing statement: com.mysql.cj.jdbc.ClientPreparedStatement: SELECT SUM(time_spent) as time_spent, SUM(activity_item.calories*time_spent/60) as calories FROM activity inner join activity_item ON activity_item_id = activity_item.id where user_id = 1 AND date='2019-04-20';
+2019-04-21 17:05:54 INFO  Getting user by id: 1
+2019-04-21 17:05:54 INFO  Getting user by id: 1
+2019-04-21 17:05:54 INFO  Query: com.mysql.cj.jdbc.ClientPreparedStatement: SELECT * FROM meal_type ;
+2019-04-21 17:05:54 INFO  Getting total by MEAL type id: 1
+2019-04-21 17:05:54 INFO  Getting total by MEAL type id: 2
+2019-04-21 17:05:54 INFO  Getting total by MEAL type id: 3
+2019-04-21 17:05:54 INFO  Getting total by MEAL type id: 4
+2019-04-21 17:05:54 INFO  Getting total by MEAL type id: 5
+2019-04-21 17:05:54 INFO  Executing query: com.mysql.cj.jdbc.ClientPreparedStatement: SELECT * FROM meal_item ORDER BY name ASC;
+2019-04-21 17:05:54 INFO  Executing query: com.mysql.cj.jdbc.ClientPreparedStatement: SELECT * FROM activity_item ;
+2019-04-21 17:05:54 INFO  Executing statement: com.mysql.cj.jdbc.ClientPreparedStatement: SELECT activity.id as id, activity_item.name as activityName, time_spent, activity_item.calories*time_spent/60 as calories FROM activity inner join activity_item ON activity_item_id = activity_item.id where user_id = 1 AND date = '2019-04-20';
+2019-04-21 17:05:54 INFO  Getting total user's activities by user id: 1
+2019-04-21 17:05:54 INFO  Executing statement: com.mysql.cj.jdbc.ClientPreparedStatement: SELECT SUM(time_spent) as time_spent, SUM(activity_item.calories*time_spent/60) as calories FROM activity inner join activity_item ON activity_item_id = activity_item.id where user_id = 1 AND date='2019-04-20';
+2019-04-21 17:05:54 INFO  Getting user by id: 1
+2019-04-21 17:05:54 INFO  Getting user meal total by user ID : 1
+2019-04-21 17:05:54 INFO  Getting total user's activities by user id: 1
+2019-04-21 17:05:54 INFO  Executing statement: com.mysql.cj.jdbc.ClientPreparedStatement: SELECT SUM(time_spent) as time_spent, SUM(activity_item.calories*time_spent/60) as calories FROM activity inner join activity_item ON activity_item_id = activity_item.id where user_id = 1 AND date='2019-04-20';
+2019-04-21 17:05:03 INFO  Deleting user's activity by  id: 54
+2019-04-21 17:05:03 INFO  Executing statement: com.mysql.cj.jdbc.ClientPreparedStatement: DELETE FROM activity WHERE id=54;
+2019-04-21 17:05:03 INFO  Result set of deleting = 1
+2019-04-21 17:05:05 INFO  Deleting user's activity by  id: 54
+2019-04-21 17:05:05 INFO  Executing statement: com.mysql.cj.jdbc.ClientPreparedStatement: DELETE FROM activity WHERE id=54;
+2019-04-21 17:05:05 INFO  Result set of deleting = 0
+2019-04-21 17:05:07 INFO  Getting user by id: 1
+2019-04-21 17:05:07 INFO  Getting user by id: 1
+2019-04-21 17:05:07 INFO  Query: com.mysql.cj.jdbc.ClientPreparedStatement: SELECT * FROM meal_type ;
+2019-04-21 17:05:07 INFO  Getting total by MEAL type id: 1
+2019-04-21 17:05:07 INFO  Getting total by MEAL type id: 2
+2019-04-21 17:05:07 INFO  Getting total by MEAL type id: 3
+2019-04-21 17:05:07 INFO  Getting total by MEAL type id: 4
+2019-04-21 17:05:07 INFO  Getting total by MEAL type id: 5
+2019-04-21 17:05:07 INFO  Executing query: com.mysql.cj.jdbc.ClientPreparedStatement: SELECT * FROM meal_item ORDER BY name ASC;
+2019-04-21 17:05:07 INFO  Executing query: com.mysql.cj.jdbc.ClientPreparedStatement: SELECT * FROM activity_item ;
+2019-04-21 17:05:07 INFO  Executing statement: com.mysql.cj.jdbc.ClientPreparedStatement: SELECT activity.id as id, activity_item.name as activityName, time_spent, activity_item.calories*time_spent/60 as calories FROM activity inner join activity_item ON activity_item_id = activity_item.id where user_id = 1 AND date = '2019-04-20';
+2019-04-21 17:05:07 INFO  Getting total user's activities by user id: 1
+2019-04-21 17:05:07 INFO  Executing statement: com.mysql.cj.jdbc.ClientPreparedStatement: SELECT SUM(time_spent) as time_spent, SUM(activity_item.calories*time_spent/60) as calories FROM activity inner join activity_item ON activity_item_id = activity_item.id where user_id = 1 AND date='2019-04-20';
+2019-04-21 17:05:07 INFO  Getting user by id: 1
+2019-04-21 17:05:07 INFO  Getting user meal total by user ID : 1
+2019-04-21 17:05:07 INFO  Getting total user's activities by user id: 1
+2019-04-21 17:05:07 INFO  Executing statement: com.mysql.cj.jdbc.ClientPreparedStatement: SELECT SUM(time_spent) as time_spent, SUM(activity_item.calories*time_spent/60) as calories FROM activity inner join activity_item ON activity_item_id = activity_item.id where user_id = 1 AND date='2019-04-20';

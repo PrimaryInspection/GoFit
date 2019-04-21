@@ -19,6 +19,7 @@ public class BlockUserFilter implements Filter {
     public void init(FilterConfig filterConfig) throws ServletException {
 
     }
+
     /**
      * Filter for users blocking/unblocking
      */
@@ -30,18 +31,18 @@ public class BlockUserFilter implements Filter {
 
         User user = (User) request.getSession().getAttribute("user");
 
-        RequestDispatcher dispatcher =request.getRequestDispatcher(ConfigurationManager.getProperty("path.page.login"));
-        if(user == null){
+        RequestDispatcher dispatcher = request.getRequestDispatcher(ConfigurationManager.getProperty("path.page.login"));
+        if (user == null) {
             logger.info("User tried to reach " + request.getRequestURI() + "being not logged in. Forwarding to login page.");
-            request.setAttribute("userNullMessage" , MessageManager.getProperty("message.usernullerror"));
-            dispatcher.forward(request,response);
-        }else if(UtilManager.getProperty("status.blocked").equalsIgnoreCase(user.getStatus().toString())){
+            request.setAttribute("userNullMessage", MessageManager.getProperty("message.usernullerror"));
+            dispatcher.forward(request, response);
+        } else if (UtilManager.getProperty("status.blocked").equalsIgnoreCase(user.getStatus().toString())) {
             logger.info("User tried to reach " + request.getRequestURI() + "having status 'BLOCKED'. Forwarding to login page.");
-            request.setAttribute("userBlockMessage" , MessageManager.getProperty("message.userblocked"));
-            dispatcher.forward(request,response);
-        }else {
+            request.setAttribute("userBlockMessage", MessageManager.getProperty("message.userblocked"));
+            dispatcher.forward(request, response);
+        } else {
             logger.debug("@@@@ TEST IN BLOCK FILTER @@@@ ");
-            chain.doFilter(servletRequest,servletResponse);
+            chain.doFilter(servletRequest, servletResponse);
         }
 
     }

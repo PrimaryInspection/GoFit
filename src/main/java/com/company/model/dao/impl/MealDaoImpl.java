@@ -2,9 +2,9 @@ package com.company.model.dao.impl;
 
 import com.company.model.dao.connection.ConnectionPool;
 import com.company.model.dao.mapper.MealDao;
-import com.company.model.exceptions.DataBaseException;
 import com.company.model.entity.Meal;
 import com.company.model.entity.MealToDisplay;
+import com.company.model.exceptions.DataBaseException;
 import com.company.model.utils.QueryManager;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -16,7 +16,6 @@ import java.util.List;
 
 public class MealDaoImpl extends CrudDaoImpl<Meal> implements MealDao {
     private static final Logger logger = LogManager.getLogger(MealDaoImpl.class);
-
     private static final String SELECT_MEAL_BY_USER_ID = QueryManager.getProperty("mealSelectByUserId");
     private static final String SELECT_MEAL_DAY_TOTALS = QueryManager.getProperty("mealSelectDayTotals");
     private static final String SELECT_TOTALS_MEAL_BY_TYPE = QueryManager.getProperty("mealSelectTotalsByType");
@@ -62,7 +61,6 @@ public class MealDaoImpl extends CrudDaoImpl<Meal> implements MealDao {
     @Override
     public MealToDisplay getTotalsByMealType(Integer userId, LocalDate date, Integer mealTypeId) {
         MealToDisplay totalsMeal = null;
-
         try (Connection connection = ConnectionPool.getConnection();
              PreparedStatement statement = connection.prepareStatement(SELECT_TOTALS_MEAL_BY_TYPE)) {
             statement.setInt(1, userId);
@@ -92,7 +90,6 @@ public class MealDaoImpl extends CrudDaoImpl<Meal> implements MealDao {
     @Override
     public MealToDisplay getTotals(Integer userId, LocalDate date) {
         MealToDisplay totalsMealDay = null;
-
         try (Connection connection = ConnectionPool.getConnection();
              PreparedStatement statement = connection.prepareStatement(SELECT_MEAL_DAY_TOTALS)) {
             statement.setInt(1, userId);

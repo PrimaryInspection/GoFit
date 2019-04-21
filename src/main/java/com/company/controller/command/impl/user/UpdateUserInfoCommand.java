@@ -16,8 +16,6 @@ import java.time.LocalDate;
 
 public class UpdateUserInfoCommand implements ActionCommand {
     private static final Logger logger = LogManager.getLogger(UpdateUserInfoCommand.class);
-
-
     private static final String PARAM_NAME_BIRTHDAY = "birthday";
     private static final String PARAM_NAME_WEIGHT = "weight";
     private static final String PARAM_NAME_GOAL_WEIGHT = "weightGoal";
@@ -26,8 +24,6 @@ public class UpdateUserInfoCommand implements ActionCommand {
 
     private IUserService userService = ServiceFactory.getUserService();
     private IPageService pageService = ServiceFactory.getPageService();
-
-
 
     /**
      * Updating user's body stats information
@@ -38,10 +34,8 @@ public class UpdateUserInfoCommand implements ActionCommand {
         String page = ConfigurationManager.getProperty("path.page.main");
         HttpSession session = request.getSession();
 
-
         User newUser = updateUser(request, (User) session.getAttribute("user"));
         logger.info("User to be updated: " + newUser);
-
 
         if (userService.updateUser(newUser)) {
             request.setAttribute("updateUserSuccessMessage", MessageManager.getProperty("message.updateuserconfirm"));
@@ -52,7 +46,6 @@ public class UpdateUserInfoCommand implements ActionCommand {
 
         return page;
     }
-
 
     /**
      * Getting user parameters from request

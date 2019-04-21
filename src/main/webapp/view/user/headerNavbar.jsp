@@ -2,7 +2,8 @@
 <div class="row">
     <nav class="navbar container-fluid navbar-header">
         <form class="form-no-margin-bottom" action="/controller" method="post">
-            <button class="navbar-brand fitness-buddy btn btn-link" name="command" value="HOME"><span class="fitness">Fitness</span>Buddy
+            <button class="navbar-brand fitness-buddy btn btn-link" name="command" value="HOME"><span
+                    class="fitness">Go</span>Fit
             </button>
         </form>
         <form class="form-inline form-no-margin-bottom" method="post" action="/controller">

@@ -101,7 +101,6 @@
                        class="register-form__input"> santimeters</label>
 
 
-
             <label><span>Lifestyle:</span>
                 <select name="lifestyle" class="register-form__input">
                     <c:forEach var="item" items="${lifestyles}">
@@ -122,7 +121,8 @@
             <c:if test="${not empty errorPassConfirmMessage}">
                 <h4 class="error">${errorPassConfirmMessage}</h4>
             </c:if>
-        </div><br>
+        </div>
+        <br>
 
         <div class="wrapper">
 

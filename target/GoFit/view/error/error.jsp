@@ -8,16 +8,16 @@
 </head>
 <body>
 <header>
-        <div class="row">
-            <div class="col logo">
+    <div class="row">
+        <div class="col logo">
             <span class="logo__first-word">
           Go
         </span>
-                <span class="logo__second-word">
+            <span class="logo__second-word">
           Fit
         </span>
-            </div>
         </div>
+    </div>
 </header>
 <main>
 

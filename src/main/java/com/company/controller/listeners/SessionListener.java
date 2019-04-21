@@ -9,7 +9,6 @@ import javax.servlet.http.HttpSessionListener;
 public class SessionListener implements HttpSessionListener {
     private static final Logger LOGGER = LogManager.getLogger(SessionListener.class);
 
-
     @Override
     public void sessionCreated(HttpSessionEvent se) {
         LOGGER.debug("Session created");

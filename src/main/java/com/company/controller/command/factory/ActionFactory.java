@@ -15,22 +15,23 @@ public class ActionFactory {
 
     /**
      * Method that takes request from servlet and return command
+     *
      * @return CommandEnum
      * @throws IllegalArgumentException
-     * */
-    public ActionCommand defineCommand(HttpServletRequest request , HttpServletResponse response){
+     */
+    public ActionCommand defineCommand(HttpServletRequest request, HttpServletResponse response) {
         ActionCommand currentCommand = new EmptyCommand();
         String action = request.getParameter("command");
-        logger.info("Request attribute 'command'='" + action+"'");
-        if(action == null  || action.isEmpty()){
+        logger.info("Request attribute 'command'='" + action + "'");
+        if (action == null || action.isEmpty()) {
             logger.info("Command is null or empty.");
             return currentCommand;
         }
         try {
             CommandsEnum currentEnum = CommandsEnum.valueOf(action.toUpperCase());
             currentCommand = currentEnum.getCurrentCommand();
-        }catch (IllegalArgumentException e){
-            request.setAttribute("wrongAction",action + MessageManager.getProperty("message.wrongaction"));
+        } catch (IllegalArgumentException e) {
+            request.setAttribute("wrongAction", action + MessageManager.getProperty("message.wrongaction"));
         }
         return currentCommand;
     }
