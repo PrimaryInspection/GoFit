@@ -10,6 +10,10 @@ import javax.servlet.http.HttpServletResponse;
 public class CancelCommand implements ActionCommand {
     private static final Logger logger = LogManager.getLogger(CancelCommand.class);
 
+    /**
+     * Canceling some action, and backward to main page
+     * @return page path
+     */
     @Override
     public String execute(HttpServletRequest request, HttpServletResponse response) {
 

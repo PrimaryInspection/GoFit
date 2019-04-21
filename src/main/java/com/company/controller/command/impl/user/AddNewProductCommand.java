@@ -23,7 +23,10 @@ public class AddNewProductCommand implements ActionCommand {
 
     private IPageService pageService = ServiceFactory.getPageService();
     private IMealItemService productService = ServiceFactory.getMealItemService();
-
+    /**
+     * Adding user's food to list of food if such does not exist
+     * @return page path
+     */
     @Override
     public String execute(HttpServletRequest request , HttpServletResponse response) {
         HttpSession session = request.getSession();
@@ -51,7 +54,10 @@ public class AddNewProductCommand implements ActionCommand {
 
         return page;
     }
-
+    /**
+     * Getting MealItem from request
+     * @return MealItem product
+     */
     private MealItem getProductFromRequest(HttpServletRequest request) {
         MealItem product = new MealItem(
                 request.getParameter(PARAM_NAME_NAME),

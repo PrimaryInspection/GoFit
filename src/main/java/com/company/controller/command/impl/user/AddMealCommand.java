@@ -28,7 +28,8 @@ public class AddMealCommand implements ActionCommand {
     private IMenuService menuService = ServiceFactory.getMenuService();
 
     /**
-     * {@inheritDoc}.
+     * Adding user's eaten meal to diary
+     * @return page path
      */
     @Override
     public String execute(HttpServletRequest request , HttpServletResponse response) {

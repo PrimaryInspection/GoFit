@@ -25,6 +25,10 @@ public class BlockUnblockUserCommand implements ActionCommand {
 
     private HttpSession session;
 
+    /**
+     * Method that doing blocking/unblocking users'es permission to website
+     * @return page path
+     * */
     @Override
     public String execute(HttpServletRequest request , HttpServletResponse response) {
         String page = ConfigurationManager.getProperty("path.page.admin");

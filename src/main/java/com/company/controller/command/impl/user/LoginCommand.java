@@ -22,6 +22,10 @@ public class LoginCommand implements ActionCommand {
     private ILoginRegistrationService logRegService=ServiceFactory.getLoginRegistrationService();
     private IPageService pageService = ServiceFactory.getPageService();
 
+    /**
+     * Checking user's password and login, doing logining user to main page
+     * @return page path
+     */
     @Override
     public String execute(HttpServletRequest request, HttpServletResponse response) {
         String page = ConfigurationManager.getProperty("path.page.login");

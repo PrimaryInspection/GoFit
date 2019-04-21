@@ -13,6 +13,11 @@ import javax.servlet.http.HttpServletResponse;
 public class ActionFactory {
     private static final Logger logger = LogManager.getLogger(ActionFactory.class);
 
+    /**
+     * Method that takes request from servlet and return command
+     * @return CommandEnum
+     * @throws IllegalArgumentException
+     * */
     public ActionCommand defineCommand(HttpServletRequest request , HttpServletResponse response){
         ActionCommand currentCommand = new EmptyCommand();
         String action = request.getParameter("command");

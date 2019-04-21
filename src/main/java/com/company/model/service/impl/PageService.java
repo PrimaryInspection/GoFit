@@ -205,6 +205,15 @@ public class PageService implements IPageService {
         return map;
     }
 
+
+    /**
+     * Makes map with key = MealType.getName(), value =  meals within MealType
+     * to be displayed on jsp page.
+     *
+     * @param userId
+     * @param mealTypes     - list of all meal types of certain user on certain date
+     * @return HashMap map
+     */
     private Map<String, MealToDisplay> makeMap2(int userId, LocalDate chosenDate, List<MealType> mealTypes) {
         Map<String, MealToDisplay> map = new HashMap<>();
         for (MealType type : mealTypes) {

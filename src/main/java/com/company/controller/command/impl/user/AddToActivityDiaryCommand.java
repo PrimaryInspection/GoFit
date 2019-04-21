@@ -26,6 +26,10 @@ public class AddToActivityDiaryCommand implements ActionCommand {
     private IPageService pageService = ServiceFactory.getPageService();
     private IActivityService activityDiaryService = ServiceFactory.getActivityService();
 
+    /**
+     * Adding user's daily activity to diary
+     * @return page path
+     */
     @Override
     public String execute(HttpServletRequest request , HttpServletResponse response) {
         HttpSession session = request.getSession();

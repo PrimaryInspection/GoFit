@@ -21,6 +21,10 @@ public class DeleteEntryFromActivityDiaryCommand implements ActionCommand {
     private IPageService pageService = ServiceFactory.getPageService();
     private IActivityService activityDiaryService = ServiceFactory.getActivityService();
 
+    /**
+     * Deleting chosen user's ActivityItem
+     * @return page path
+     */
     @Override
     public String execute(HttpServletRequest request , HttpServletResponse response) {
         HttpSession session = request.getSession();

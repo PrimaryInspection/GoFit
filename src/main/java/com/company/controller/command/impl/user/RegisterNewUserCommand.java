@@ -32,6 +32,11 @@ public class RegisterNewUserCommand implements ActionCommand {
     private ILoginRegistrationService loginRegistrationService = ServiceFactory.getLoginRegistrationService();
 
     private HttpSession session;
+
+    /**
+     * Registration of new user
+     * @return page path
+     */
     @Override
     public String execute(HttpServletRequest request, HttpServletResponse response) {
         String page =
@@ -64,6 +69,10 @@ public class RegisterNewUserCommand implements ActionCommand {
         return page;
     }
 
+    /**
+     * Getting user's parameters from request
+     * @return User user
+     */
     private User getUserFromRequest(HttpServletRequest request){
         User user = new User(
                 request.getParameter(PARAM_NAME_FIRST_NAME),

@@ -12,7 +12,10 @@ import javax.servlet.http.HttpSession;
 public class SetLocaleCommand implements ActionCommand {
     private static final Logger logger = LogManager.getLogger(SetLocaleCommand.class);
 
-
+    /**
+     * Setting locale properties for login page
+     * @return page path
+     */
     @Override
     public String execute(HttpServletRequest request , HttpServletResponse response) {
         String page = (ConfigurationManager.getProperty("path.page.login"));

@@ -14,6 +14,10 @@ public class ToNPageCommand implements ActionCommand {
 
     private IPageService pageService = ServiceFactory.getPageService();
 
+    /**
+     * Move to the next page in the list of users
+     * @return next page path
+     */
     @Override
     public String execute(HttpServletRequest request , HttpServletResponse response) {
         String page = ConfigurationManager.getProperty("path.page.admin");

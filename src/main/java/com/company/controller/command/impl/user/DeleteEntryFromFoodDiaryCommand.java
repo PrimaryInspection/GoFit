@@ -20,7 +20,10 @@ public class DeleteEntryFromFoodDiaryCommand implements ActionCommand {
 
     private IPageService pageService = ServiceFactory.getPageService();
     private IMenuService menuService = ServiceFactory.getMenuService();
-
+    /**
+     * Deleting chosen user's MealItem
+     * @return page path
+     */
     @Override
     public String execute(HttpServletRequest request , HttpServletResponse response) {
         HttpSession session = request.getSession();

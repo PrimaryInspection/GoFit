@@ -23,7 +23,10 @@ public class AddNewActivityCommand implements ActionCommand {
 
     private IPageService pageService = ServiceFactory.getPageService();
     private IActivityItemService activityService = ServiceFactory.getActivityItemService();
-
+    /**
+     * Adding user's activity to list of activities if such does not exist
+     * @return page path
+     */
     @Override
     public String execute(HttpServletRequest request, HttpServletResponse response) {
         HttpSession session = request.getSession();
@@ -51,7 +54,10 @@ public class AddNewActivityCommand implements ActionCommand {
 
         return page;
     }
-
+    /**
+     * Getting ActivityItem from request
+     * @return Activityitem food
+     */
     private ActivityItem getActivityFromRequest(HttpServletRequest request) {
         ActivityItem activity = new ActivityItem(
                 request.getParameter(PARAM_NAME_NAME),

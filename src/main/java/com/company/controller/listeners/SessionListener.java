@@ -15,6 +15,9 @@ public class SessionListener implements HttpSessionListener {
         LOGGER.debug("Session created");
     }
 
+    /**
+     * Remove user from session, after session's destruction
+     */
     @Override
     public void sessionDestroyed(HttpSessionEvent se) {
         LOGGER.debug("Session destroyed");

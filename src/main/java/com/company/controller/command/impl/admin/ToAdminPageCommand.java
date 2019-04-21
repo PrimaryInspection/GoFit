@@ -13,7 +13,7 @@ public class ToAdminPageCommand implements ActionCommand {
 
     /**
      * select all users from DB and forwards to admin page
-     * @return page
+     * @return page path
      */
     @Override
     public String execute(HttpServletRequest request, HttpServletResponse response) {

@@ -15,6 +15,9 @@ public class EncodingFilter implements Filter {
         code = filterConfig.getInitParameter("encoding");
     }
 
+    /**
+     * Filter that encode text to right format
+     */
     @Override
     public void doFilter(ServletRequest servletRequest, ServletResponse servletResponse, FilterChain filterChain) throws IOException, ServletException {
         // getting current encoding

@@ -12,6 +12,11 @@ import javax.servlet.http.HttpSession;
 public class SetLocaleMainCommand implements ActionCommand {
     private static final Logger logger = LogManager.getLogger(SetLocaleCommand.class);
 
+
+    /**
+     * Setting locale properties for main page
+     * @return page path
+     */
     @SuppressWarnings("all")
     @Override
     public String execute(HttpServletRequest request , HttpServletResponse response) {

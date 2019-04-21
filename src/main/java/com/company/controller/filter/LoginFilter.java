@@ -19,6 +19,9 @@ public class LoginFilter  implements Filter{
 
     }
 
+    /**
+     * Filter that checking for user role and doing authentication
+     */
     @Override
     public void doFilter(ServletRequest servletRequest, ServletResponse servletResponse, FilterChain chain)
             throws IOException, ServletException {

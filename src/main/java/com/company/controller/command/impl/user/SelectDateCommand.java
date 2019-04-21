@@ -18,6 +18,10 @@ public class SelectDateCommand implements ActionCommand {
     private static final String PARAM_NAME_SELECTED_DATE = "chosenDate";
     private IPageService pageService = ServiceFactory.getPageService();
 
+    /**
+     * Selecting date for right day of diary
+     * @return page path
+     */
     @Override
     public String execute(HttpServletRequest request , HttpServletResponse response) {
         HttpSession session = request.getSession();

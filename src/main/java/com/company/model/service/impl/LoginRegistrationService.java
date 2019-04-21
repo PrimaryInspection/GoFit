@@ -15,7 +15,10 @@ public class LoginRegistrationService implements ILoginRegistrationService{
     public LoginRegistrationService(){}
     public static LoginRegistrationService getInstance(){return instance;}
 
-
+    /**
+     * Checking is such login and password exist in database
+     * @return true if user password inputing equals password in database
+     */
     @Override
     public boolean checkLogin(String login, String password) {
         logger.info(" This is checkLogin service ,Geting user from DB with login = " + login);
@@ -32,7 +35,10 @@ public class LoginRegistrationService implements ILoginRegistrationService{
         return user.getPassword().equals(password);
 
     }
-
+    /**
+     * Checking password confirmation
+     * @return true if confirm
+     */
     @Override
     public boolean confirmPassword(String password, String passwordConfirm) {
         logger.info("Checking password confirmation...");
@@ -45,6 +51,10 @@ public class LoginRegistrationService implements ILoginRegistrationService{
         return false;
     }
 
+    /**
+     * Check is such login does not exist in database
+     * @return true if login does not exist
+     */
     @Override
     public boolean checkLoginExist(String login) {
         logger.info("check if login exists");

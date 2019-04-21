@@ -16,19 +16,34 @@ public class MealItemService implements IMealItemService {
 
     private MealItemService() {}
 
+    /**
+     * Getting singletone instance of MealItemService
+     * @return MealItemService
+     */
     public static MealItemService getInstance(){return instance;}
 
+    /**
+     * Getting all Mealitems from database
+     * @return List<MealItem>
+     */
     @Override
     public List<MealItem> getAll() {
         return mealItemDao.getAll();
     }
 
+    /**
+     * Adding new meal item to database
+     * @return boolean(true  if addition is done)
+     */
     @Override
     public boolean addMealItem(MealItem mealItem) {
         logger.info("Getting meal item :" + mealItem.toString());
         return mealItemDao.addItem(mealItem);    }
 
-
+    /**
+     * Checking is meal item does not existing in database
+     * @return boolean(true if does not exist)
+     */
     @Override
     public boolean checkIsMealItemExist(String name) {
     logger.info("Checking is meal item by name" + name + " exist ");

@@ -28,6 +28,11 @@ public class UpdateUserInfoCommand implements ActionCommand {
     private IPageService pageService = ServiceFactory.getPageService();
 
 
+
+    /**
+     * Updating user's body stats information
+     * @return page path
+     */
     @Override
     public String execute(HttpServletRequest request , HttpServletResponse response) {
         String page = ConfigurationManager.getProperty("path.page.main");
@@ -48,6 +53,11 @@ public class UpdateUserInfoCommand implements ActionCommand {
         return page;
     }
 
+
+    /**
+     * Getting user parameters from request
+     * @return page path
+     */
     private User updateUser(HttpServletRequest request, User user) {
         user.setWeight(Integer.parseInt(request.getParameter(PARAM_NAME_WEIGHT)));
         user.setWeightGoal(Integer.parseInt(request.getParameter(PARAM_NAME_GOAL_WEIGHT)));

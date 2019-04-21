@@ -19,7 +19,9 @@ public class BlockUserFilter implements Filter {
     public void init(FilterConfig filterConfig) throws ServletException {
 
     }
-
+    /**
+     * Filter for users blocking/unblocking
+     */
     @Override
     public void doFilter(ServletRequest servletRequest, ServletResponse servletResponse, FilterChain chain)
             throws IOException, ServletException {

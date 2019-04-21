@@ -18,7 +18,9 @@ public class AuthFilter implements Filter {
     public void init(FilterConfig filterConfig) throws ServletException {
 
     }
-
+    /**
+     * Filter for user authorization, also checks if the user is admin
+     */
     @Override
     public void doFilter(ServletRequest servletRequest,
                          ServletResponse servletResponse,
