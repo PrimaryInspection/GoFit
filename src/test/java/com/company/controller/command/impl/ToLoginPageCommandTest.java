@@ -10,6 +10,7 @@ public class ToLoginPageCommandTest {
     @Test
     public void execute() {
         String page = ConfigurationManager.getProperty("path.page.login");
-        assertEquals(page,"/jsp/login.jsp");
+        assertNotNull(page);
+        assertEquals(page,"/view/common/login.jsp");
     }
 }

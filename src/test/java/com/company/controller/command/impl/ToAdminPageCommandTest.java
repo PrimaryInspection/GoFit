@@ -10,6 +10,7 @@ public class ToAdminPageCommandTest {
     @Test
     public void execute() {
         String page = ConfigurationManager.getProperty("path.page.admin");
-        assertEquals(page,"/jsp/pages/admin/adminPage.jsp");
+        assertNotNull(page);
+        assertEquals(page,"/view/admin/adminPage.jsp");
     }
 }

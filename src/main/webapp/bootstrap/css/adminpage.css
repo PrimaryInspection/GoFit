@@ -5,7 +5,7 @@
 
 .admin {
     font-family: HelveticaNeue-Medium;
-    background-color: rgba(25, 169, 169, 0.6);
+    background-color: rgba(106, 106, 195, 0.6);
     font-size: 24px;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
@@ -15,9 +15,9 @@
 }
 
 .btn-outline-info {
-color: #19a9a9;
+color: #878bc3;
 background-color: transparent;
-border-color: #19a9a9;
+border-color: #878bc3;
 }
 
 .btn-danger {
@@ -27,8 +27,8 @@ border-color: #e30e17;
 }
 
 .btn-outline-info:hover {
-background-color: #19a9a9;
-border-color: #19a9a9;
+background-color: #878bc3;
+border-color: #878bc3;
 }
 
 .btn-danger:hover {
@@ -37,29 +37,29 @@ border-color: #e30e17;
 }
 
 .page-link{
-    color: #19a9a9;
+    color: #878bc3;
     background-color: transparent;
-    border-color: #19a9a9;
+    border-color: #878bc3;
 }
 .page-link:hover{
     color: white;
-    background-color: #19a9a9;
-    border-color: #19a9a9;
+    background-color: #878bc3;
+    border-color: #878bc3;
 }
 .page-link:focus{
-    color: #19a9a9;
+    color: #878bc3;
     background-color: transparent;
-    border-color: #19a9a9;
+    border-color: #878bc3;
 }
 .page-link:active{
     color: white;
-    background-color: #19a9a9;
-    border-color: #19a9a9;
+    background-color: #878bc3;
+    border-color: #878bc3;
 }
 .page-item.active .page-link {
     color: white;
-    background-color: #19a9a9;
-    border-color: #19a9a9;
+    background-color: #878bc3;
+    border-color: #878bc3;
 }
 
 .error{

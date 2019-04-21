@@ -17,8 +17,8 @@ public class ToRegistrationPageCommandTest {
         HttpSession session = mock(HttpSession.class);
         HttpServletRequest request = mock(HttpServletRequest.class);
         String page = ConfigurationManager.getProperty("path.page.registration");
-        assertEquals(page,"/jsp/registration.jsp");
-
+        assertNotNull(request);
+        assertEquals(page,"/view/common/registration.jsp");
         when(request.getSession()).thenReturn(session);
 
     }

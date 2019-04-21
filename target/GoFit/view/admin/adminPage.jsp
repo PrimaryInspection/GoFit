@@ -20,13 +20,11 @@
         <form class="form-inline form-no-margin-bottom" method="post" action="/controller">
             <c:if test="${not empty user}">
                 <c:if test="${user.admin}">
-                    <button type="submit" class="btn btn-link" name="command" >Main</button>
-        </form>
-        <form class="form-inline form-no-margin-bottom" method="post" action="/controller">
-        </c:if>
-                <button type="submit" class="btn btn-link" name="command" >Logout</button>
+                    <button type="submit" class="btn btn-link" name="command" value="TO_MAIN_PAGE">Main</button>
+                </c:if>
+                <button type="submit" class="btn btn-link" name="command" value="LOGOUT">Logout</button>
             </c:if>
-       </form>
+        </form>
     </nav>
 </div>
 <br/>

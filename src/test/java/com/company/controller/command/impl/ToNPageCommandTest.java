@@ -10,6 +10,6 @@ public class ToNPageCommandTest {
     @Test
     public void execute() {
         String page = ConfigurationManager.getProperty("path.page.admin");
-        assertEquals(page,"/jsp/pages/admin/adminPage.jsp");
+        assertEquals(page,"/view/admin/adminPage.jsp");
     }
 }

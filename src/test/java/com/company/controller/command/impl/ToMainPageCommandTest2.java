@@ -10,6 +10,6 @@ public class ToMainPageCommandTest2 {
     @Test
     public void execute() {
         String page = ConfigurationManager.getProperty("path.page.main");
-        assertEquals(page,"/jsp/pages/main.jsp");
+        assertEquals(page,"/view/user/main.jsp");
     }
 }

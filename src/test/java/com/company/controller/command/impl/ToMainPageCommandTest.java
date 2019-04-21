@@ -7,6 +7,7 @@ import org.junit.Test;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
+import static org.junit.Assert.*;
 
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
@@ -16,9 +17,8 @@ public class ToMainPageCommandTest {
     @Test
     public void execute() {
         HttpServletRequest request = mock(HttpServletRequest.class);
-
         HttpSession session = mock(HttpSession.class);
-
+        assertNotNull(session);
         when(session.getAttribute("user")).thenReturn(UtilManager.getProperty("session.user"));
 
 

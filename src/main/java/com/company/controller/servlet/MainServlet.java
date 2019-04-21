@@ -48,7 +48,7 @@ public class MainServlet extends HttpServlet {
             }else {
                 logger.info("Request will be forwarded to " + page );
                 RequestDispatcher dispatcher = getServletContext().getRequestDispatcher(page);
-                dispatcher.forward(request,response);
+                    dispatcher.forward(request,response);
             }
         }
         else {

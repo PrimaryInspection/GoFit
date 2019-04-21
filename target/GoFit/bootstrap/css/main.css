@@ -61,19 +61,19 @@ body {
     font-size: 24px;
     font-weight: 300;
     padding-bottom: 20px;
-    color: #e96800;
+    color: #878bc3;
 }
 
 .still_to_go_text {
     font-size: 16px;
     font-weight: 300;
-    color: #4d4d4d;
+    color: #878bc3;
 }
 
 .still-to-go-number {
     font-size: 18px;
     font-weight: normal;
-    color: #e96800;
+    color: #878bc3;
 }
 .still-to-go-number-minus {
     font-size: 18px;
@@ -85,7 +85,7 @@ body {
 .your-daily-summary {
     font-family: HelveticaNeue-Medium;
     font-size: 30px;
-    color: #e96800;
+    color: #878bc3;
     margin-bottom: 20px;
 }
 
@@ -96,7 +96,7 @@ body {
 }
 
 .remaining {
-    color: #e96800;
+    color: rgba(106, 106, 195, 0.91);
 }
 .remaining-minus {
     color: #a90411;
@@ -114,7 +114,7 @@ table.borderless td, table.borderless th {
 }
 
 .nav-link:active {
-    background-color: #e96800;
+    background-color: #878bc3;
     color: #4d4d4d;
 }
 
@@ -124,24 +124,24 @@ table.borderless td, table.borderless th {
 }
 
 .btn-success {
-    background-color: #e96800;
-    border-color: #e96800;
+    background-color: #878bc3;
+    border-color: #878bc3;
 }
 
 .btn-success:hover {
-    background-color: #e96800;
-    border-color: #e96800;
+    background-color: #878bc3;
+    border-color: #878bc3;
 }
 
 .btn-success:active {
-    background-color: #e96800 !important;
-    border-color: #e96800;
+    background-color: #878bc3 !important;
+    border-color: #878bc3;
 }
 
 .btn-success:focus {
-    background-color: #e96800 !important;
-    border-color: #e96800;
-    box-shadow: 0 0 0 0.2rem #e96800 !important;
+    background-color: #878bc3 !important;
+    border-color: #878bc3;
+    box-shadow: 0 0 0 0.2rem #878bc3 !important;
 }
 
 .internal div {
@@ -159,7 +159,7 @@ table.borderless td, table.borderless th {
 }
 
 .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
-    background-color: #e96800;
+    background-color: #878bc3;
     border-top-right-radius: 15px;
     border-top-left-radius: 15px;
     border: 3px solid white;
@@ -182,7 +182,7 @@ a {
 
 .nav-tabs .nav-link:focus, .nav-tabs .nav-link:hover {
     color: #4d4d4d;
-    background-color: #e96800;
+    background-color: #878bc3;
     border-bottom: white;
     border-color: transparent;
 
@@ -227,13 +227,13 @@ a {
     font-size: 13px;
     color: #4d4d4d;
     font-weight: 600;
-    background-color: #e96800;
+    background-color: #878bc3;
     border: none;
 }
 
 .table-bordered td, .table-bordered th {
     border-color: transparent;
-    border-bottom-color: #eff1f3    ;
+    border-bottom-color: #eff1f3;
 }
 
 .table thead th {

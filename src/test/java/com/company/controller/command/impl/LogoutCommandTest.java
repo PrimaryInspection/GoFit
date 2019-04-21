@@ -15,7 +15,6 @@ LogoutCommand command = new LogoutCommand();
     public void execute() {
         HttpServletRequest request = mock(HttpServletRequest.class);
         HttpSession session = mock(HttpSession.class);
-
        when(request.getSession()).thenReturn(session);
     }
 }
