@@ -32,14 +32,14 @@
                    name="first_name"
                    value="${registrationUser.firstName}"
                    placeholder="First name"
-                   class="register-form__input">
+                   class="register-form__input <c:if test="${not empty errorWrongFnameMessage}">border-danger</c:if>">
             <input type="text"
                    required
                    maxlength="30"
                    name="second_name"
                    value="${registrationUser.secondName}"
                    placeholder="Second name"
-                   class="register-form__input">
+                   class="register-form__input <c:if test="${not empty errorWrongSnameMessage}">border-danger</c:if>">
 
             <input type="text"
                    required
@@ -47,26 +47,26 @@
                    name="login"
                    value="${registrationUser.login}"
                    placeholder="Login"
-                   class="register-form__input  <c:if test="${not empty errorLoginExistMessage}">border-danger</c:if>">
+                   class="register-form__input  <c:if test="${not empty errorWrongLoginMessage}">border-danger</c:if>">
             <input type="password"
                    required
                    maxlength="30"
                    name="password"
                    placeholder="Password"
-                   class="register-form__input">
+                   class="register-form__input <c:if test="${not empty errorWrongPassMessage}">border-danger</c:if>">
             <input type="password"
                    required
                    maxlength="30"
                    name="password_confirmation"
                    placeholder="Confirm password"
-                   class="register-form__input">
+                   class="register-form__input <c:if test="${not empty errorWrongPassMessage}">border-danger</c:if>">
             <input type="email"
                    required
                    maxlength="30"
                    value="${registrationUser.email}"
                    name="email"
                    placeholder="e-mail"
-                   class="register-form__input">
+                   class="register-form__input <c:if test="${not empty errorWrongEmailMessage}">border-danger</c:if>">
         </div>
 
         <div class="wrapper">

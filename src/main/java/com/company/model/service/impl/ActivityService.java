@@ -19,6 +19,7 @@ public class ActivityService implements IActivityService {
     public ActivityService() {
     }
 
+
     /**
      * Getting singletone instance of ActivityService
      *

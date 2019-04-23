@@ -19,6 +19,7 @@ public class LoginRegistrationService implements ILoginRegistrationService {
         return instance;
     }
 
+
     /**
      * Checking is such login and password exist in database
      *

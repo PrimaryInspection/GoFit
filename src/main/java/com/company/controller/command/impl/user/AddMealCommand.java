@@ -6,7 +6,9 @@ import com.company.model.entity.User;
 import com.company.model.service.IMenuService;
 import com.company.model.service.IPageService;
 import com.company.model.service.factory.ServiceFactory;
-import com.company.model.utils.*;
+import com.company.model.utils.ConfigurationManager;
+import com.company.model.utils.MessageManager;
+import com.company.model.utils.UtilManager;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -24,6 +26,7 @@ public class AddMealCommand implements ActionCommand {
     private static final String REQUEST_PARAM_MEAL_TYPE_ID = UtilManager.getProperty("request.mealTypeId");
     private IPageService pageService = ServiceFactory.getPageService();
     private IMenuService menuService = ServiceFactory.getMenuService();
+
 
     /**
      * Adding user's eaten meal to diary

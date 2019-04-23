@@ -46,8 +46,8 @@ public class PageService implements IPageService {
 
     @Override
     public void updateMainPageData(HttpSession session, int userId) {
-        LocalDate chosenDate = getChosenDate(session);
 
+        LocalDate chosenDate = getChosenDate(session);
         updateUserData(session, userId);
         updateFoodTab(session, userId, chosenDate);
         updateActivityTab(session, userId, chosenDate);

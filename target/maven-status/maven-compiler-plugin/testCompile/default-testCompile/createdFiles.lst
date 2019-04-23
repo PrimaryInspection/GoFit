@@ -1,0 +1,8 @@
+com\company\controller\command\impl\ToLoginPageCommandTest.class
+com\company\controller\command\impl\ToMainPageCommandTest.class
+com\company\controller\command\impl\ToNPageCommandTest.class
+com\company\controller\command\impl\LogoutCommandTest.class
+com\company\controller\command\impl\ToRegistrationPageCommandTest.class
+com\company\controller\command\impl\ToAdminPageCommandTest.class
+com\company\controller\command\impl\DeleteEntryFromFoodDiaryCommandTest.class
+com\company\controller\command\impl\ToMainPageCommandTest2.class
