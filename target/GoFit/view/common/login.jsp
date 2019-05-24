@@ -67,7 +67,7 @@
     <h2 class="h2-index h2-index_grey">
         ${gaslo}
     </h2>
-    <form class="login-form" method="post" action="/controller">
+    <form class="login-form" method="post" action="/controller?action=to_registration_page">
         <div class="wrapper">
             <input
                     type="text"
@@ -83,10 +83,10 @@
                     value="${password}">
         </div>
 
-        <button type="submit" value="Login" class="login-form__input login-form__btn_submit" name="command"
+     <%--   <button type="submit" value="Login" class="login-form__input login-form__btn_submit" name="command"
                 value="to_registration_page">${loginBtn}
         </button>
-
+--%>
         <div class="wrapper">
             <span class="login-form__questions">${notAMember}&nbsp;</span>
             <button type="submit" class="btn btn-link" name="command"

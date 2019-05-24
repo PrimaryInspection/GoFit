@@ -21,7 +21,7 @@ public class ToAdminPageCommand implements ActionCommand {
     public String execute(HttpServletRequest request, HttpServletResponse response) {
         String page = ConfigurationManager.getProperty("path.page.admin");
         if (page == null) {
-            throw new PageNotFoundException(ConfigurationManager.getProperty("path.page.erro"));
+            throw new PageNotFoundException(ConfigurationManager.getProperty("path.page.error"));
         }
         pageService.updateAdminPageData(request);
         return page;

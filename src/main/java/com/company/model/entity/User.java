@@ -22,8 +22,6 @@ public class User implements Serializable {
     private Integer status;
     private Integer roleId;
 
-
-
     public User() {
     }
 

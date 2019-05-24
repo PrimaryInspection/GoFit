@@ -601,3 +601,9 @@
 2019-04-23 08:08:06 INFO  Getting user meal total by user ID : 1
 2019-04-23 08:08:06 INFO  Getting total user's activities by user id: 1
 2019-04-23 08:08:06 INFO  Executing statement: com.mysql.cj.jdbc.ClientPreparedStatement: SELECT SUM(time_spent) as time_spent, SUM(activity_item.calories*time_spent/60) as calories FROM activity inner join activity_item ON activity_item_id = activity_item.id where user_id = 1 AND date='2019-04-22';
+2019-04-23 08:08:27 INFO  Checking password confirmation...
+2019-04-23 08:08:27 INFO  Confirm password OK
+2019-04-23 08:08:27 INFO  check if login exists
+2019-04-23 08:08:06 INFO  Checking password confirmation...
+2019-04-23 08:08:06 INFO  Confirm password OK
+2019-04-23 08:08:06 INFO  check if login exists
